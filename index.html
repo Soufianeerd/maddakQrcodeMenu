@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <!-- PWA / full-screen app on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0A2420" />
+    <title>Notre Carte • Maddak — Nancy</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+
+
+    <main id="scene">
+        <div id="bwrap">
+            <div id="book">
+
+                <!-- ══ COVER ══ -->
+                <div class="page pcov" id="p0">
+                    <div class="pface">
+                        <img class="cov-img" src="asset/couverture.png" alt="Couverture Maddak">
+                        <div class="cov-overlay"></div>
+                        <div class="cov-content">
+                            <button class="btn-open" onclick="openBook()" aria-label="Ouvrir le menu complet">Ouvrir la
+                                Carte &nbsp;✦</button>
+                        </div>
+                        <p class="swipe-hint">← glisser pour feuilleter →</p>
+                    </div>
+                    <div class="pback"></div>
+                </div>
+
+                <!-- ══ PAGE 1 — Smash Burgers + Philly's ══ -->
+                <div class="page pint" id="p1">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">1 / 8</span>
+                            </div>
+
+                            <div class="ms">
+                                <div class="ms-title">Smash Burgers</div>
+                                <p class="ms-note">Tous servis avec frites maison fraîches</p>
+                                <div class="mi"><span class="mn">Cute Cheeseburger</span><span class="md"></span><span
+                                        class="mp">9,90 €</span></div>
+                                <div class="mi"><span class="mn">Smash Veggie</span><span class="md"></span><span
+                                        class="mp">10,90 €</span></div>
+                                <div class="mi"><span class="mn">Double Cheese</span><span class="md"></span><span
+                                        class="mp">11,50 €</span></div>
+                                <div class="mi"><span class="mn">Double Cheese et Bacon</span><span
+                                        class="md"></span><span class="mp">12,50 €</span></div>
+                                <div class="info-block">
+                                    <p>🌿 <strong>T'es plutôt Végé ?</strong> Remplace ton steak par un Beyond Meat
+                                        <strong>+2,50 €</strong>
+                                    </p>
+                                    <p>Menu : Burger + frites fraîches ou frites patate douce <strong>(+2 €)</strong> ou
+                                        Coleslaw</p>
+                                </div>
+                            </div>
+
+                            <div class="ms">
+                                <div class="ms-title">🥪 Philly's</div>
+                                <p class="ms-note">Pain moelleux garni · servis avec frites (supp. cheddar +1€ / cheddar
+                                    et bacon +2€)</p>
+                                <div class="mi"><span class="mn">Le Fondant</span><span class="md"></span><span
+                                        class="mp">10,90 €</span></div>
+                                <p class="mi-desc">Viande hachée fraîche marinée, poivrons confits, oignons, emmental,
+                                    sauce burger</p>
+                                <div class="mi"><span class="mn">Le Fermier</span><span class="md"></span><span
+                                        class="mp">10,90 €</span></div>
+                                <p class="mi-desc">Poulet mariné, poivrons confits, oignons, emmental, sauce Brazil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 2 — Burgers Gourmets 1/2 ══ -->
+                <div class="page pint" id="p2">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">2 / 8</span>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">Burgers Gourmets</div>
+                                <p class="ms-note">Pain Farine Label Rouge · Viande hachée fraîche française · Cuits à
+                                    votre cuisson</p>
+                                <div class="mi"><span class="mn">Smash Gourmand</span><span class="md"></span><span
+                                        class="mp">18,90 €</span></div>
+                                <div class="mi"><span class="mn">Super Chic 'N Beef</span><span class="md"></span><span
+                                        class="mp">18,90 €</span></div>
+                                <div class="mi"><span class="mn">L'Auvergnat</span><span class="md"></span><span
+                                        class="mp">14,90 €</span></div>
+                                <p class="mi-desc">Bœuf, fourme d'Ambert AOP, tomates confites, confit de figues,
+                                    oignons caramélisés, mayo verte</p>
+                                <div class="mi"><span class="mn">Cheesy Sweet</span><span class="md"></span><span
+                                        class="mp">13,90 €</span></div>
+                                <p class="mi-desc">Bœuf, comté affiné 18 mois, oignons caramélisés, sauce Brazil</p>
+                                <div class="mi"><span class="mn">KBO</span><span class="md"></span><span
+                                        class="mp">15,90 €</span></div>
+                                <p class="mi-desc">Cabillaud snacké, pickles, oignons frits, cheddar maturé, sauce
+                                    tartare</p>
+                                <div class="mi"><span class="mn">Super Maddak</span><span class="md"></span><span
+                                        class="mp">15,90 €</span></div>
+                                <p class="mi-desc">Poulet pané maison, coleslaw, cheddar, pickles, oignons crispy, sauce
+                                    fines herbes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 3 — Burgers Gourmets 2/2 + Suppléments ══ -->
+                <div class="page pint" id="p3">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">3 / 8</span>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">Gourmets (suite)</div>
+                                <div class="mi"><span class="mn">Nashville Chicken</span><span class="md"></span><span
+                                        class="mp">14,50 €</span></div>
+                                <p class="mi-desc">Bœuf, cheddar, pickles, bacon, oignons, coleslaw, œuf bio, sauce
+                                    maison</p>
+                                <div class="mi"><span class="mn">Ground Chicken Avocado</span><span
+                                        class="md"></span><span class="mp">13,90 €</span></div>
+                                <p class="mi-desc">Steak de poulet maison, avocat, tomate, cheddar, oignons caramélisés,
+                                    sauce Brazil</p>
+                                <div class="mi"><span class="mn">Master Chèvre</span><span class="md"></span><span
+                                        class="mp">13,90 €</span></div>
+                                <p class="mi-desc">Bœuf, tomates confites, chèvre, miel, sauce Brazil</p>
+                                <div class="mi"><span class="mn">Montagnard</span><span class="md"></span><span
+                                        class="mp">14,90 €</span></div>
+                                <p class="mi-desc">Bœuf, raclette fumée, marmelade de poivrons, galette de pomme de
+                                    terre, oignons crispy</p>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">➕ Suppléments Burgers</div>
+                                <div class="sup-item"><span class="sup-nm">River Cheddar</span><span class="sup-pr">3,00
+                                        €</span></div>
+                                <div class="sup-item"><span class="sup-nm">River Cheddar + Bacon</span><span
+                                        class="sup-pr">3,50 €</span></div>
+                                <div class="sup-item"><span class="sup-nm">Double viande et fromage</span><span
+                                        class="sup-pr">+3,50 €</span></div>
+                                <div class="sup-item"><span class="sup-nm">Fromage ou Bacon</span><span
+                                        class="sup-pr">+1,50 €</span></div>
+                                <div class="sup-item"><span class="sup-nm">Ingrédient supplémentaire</span><span
+                                        class="sup-pr">+1,50 €</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 4 — Assiettes ══ -->
+                <div class="page pint" id="p4">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">4 / 8</span>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">🍽️ Assiettes</div>
+                                <div class="mi"><span class="mn">Steak à cheval ×2</span><span class="md"></span><span
+                                        class="mp">15,90 €</span></div>
+                                <div class="mi"><span class="mn">Escalope de poulet mariné</span><span
+                                        class="md"></span><span class="mp">16,90 €</span></div>
+                                <div class="mi"><span class="mn">Cordon bleu maison</span><span class="md"></span><span
+                                        class="mp tba">16,90 €</span></div>
+                                <div class="mi"><span class="mn">Pavé de Rumsteak</span><span class="md"></span><span
+                                        class="mp tba">18,90 €</span></div>
+                                <div class="mi"><span class="mn">Faux filet</span><span class="md"></span><span
+                                        class="mp tba">18,90 €</span></div>
+                                <div class="mi"><span class="mn">Poulet gratiné</span><span class="md"></span><span
+                                        class="mp tba">18,90 €</span></div>
+                                <div class="mi"><span class="mn">Escalope de veau marinée</span><span
+                                        class="md"></span><span class="mp">18,90 €</span></div>
+                                <div class="mi"><span class="mn">Tagliatelles au saumon</span><span
+                                        class="md"></span><span class="mp tba">18,90 €</span></div>
+                                <div class="info-block">
+                                    <p><strong>Accompagnement au choix :</strong> Frites · Riz · Frites patate douce ou
+                                        Pâtes <strong>(+2 €)</strong></p>
+                                    <p><strong>Accompagnement supplémentaire : +4 €</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 5 — Bowls + Salades + Snacks ══ -->
+                <div class="page pint" id="p5">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">5 / 8</span>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">Bowls Signature</div>
+                                <div class="mi"><span class="mn">Délice de poulet</span><span class="md"></span><span
+                                        class="mp">9,90 €</span></div>
+                                <p class="mi-desc">Frites fraîches, émincé de poulet aux poivrons, oignons crispy,
+                                    avocat, sauce cheddar</p>
+                                <div class="mi"><span class="mn">New Yorkaise</span><span class="md"></span><span
+                                        class="mp">9,90 €</span></div>
+                                <p class="mi-desc">Frites fraîches, viande hachée maison, oignons crispy, tomate,
+                                    emmental, sauce cheddar</p>
+                                <p class="ms-note" style="margin-top:3px">Ingrédient supp. +1,50 € : Bacon, Œuf, Oignons
+                                    frits, Raclette, Chèvre, Comté, Cheddar, Avocat</p>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">Salades</div>
+                                <div class="mi"><span class="mn">Suprême César</span><span class="md"></span><span
+                                        class="mp">12,50 €</span></div>
+                                <p class="mi-desc">Salade, poulet, mozzarella, croûtons, parmesan, tomates cerises,
+                                    sauce césar</p>
+                                <div class="mi"><span class="mn">Toasts chèvre chaud</span><span class="md"></span><span
+                                        class="mp">11,90 €</span></div>
+                                <p class="mi-desc">Salade, chèvre chaud, mozzarella, olives, miel, tomates cerises,
+                                    vinaigrette balsamique</p>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">Snacks et Accompagnements</div>
+                                <div class="mi"><span class="mn">Frites fraîches</span><span class="md"></span><span
+                                        class="mp">3,50 €</span></div>
+                                <div class="mi"><span class="mn">Frites patates douces</span><span
+                                        class="md"></span><span class="mp">4,00 €</span></div>
+                                <div class="mi"><span class="mn">Coleslaw maison</span><span class="md"></span><span
+                                        class="mp">3,50 €</span></div>
+                                <div class="mi"><span class="mn">Chicken crispy ×4</span><span class="md"></span><span
+                                        class="mp">6,00 €</span></div>
+                                <div class="mi"><span class="mn">Chicken crispy ×6</span><span class="md"></span><span
+                                        class="mp">8,00 €</span></div>
+                                <p class="ms-note" style="margin-top:3px">Supp. cheddar +1,50 € · Cheddar et bacon
+                                    +2,50 € · Cumin/Parmesan/Paprika +0,50€/u</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 6 — Menu Enfant + Desserts ══ -->
+                <div class="page pint" id="p6">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">6 / 8</span>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">Menu Enfant</div>
+                                <div class="mi"><span class="mn">Menu Kids complet</span><span class="md"></span><span
+                                        class="mp">8,50 €</span></div>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">Desserts Maison</div>
+                                <div class="mi"><span class="mn">Panna Cotta</span><span class="md"></span><span
+                                        class="mp">5,90 €</span></div>
+                                <div class="mi"><span class="mn">Crème Brûlée</span><span class="md"></span><span
+                                        class="mp">6,90 €</span></div>
+                                <p class="mi-desc">Vanille ou Pistache</p>
+                                <div class="mi"><span class="mn">Tiramisu</span><span class="md"></span><span
+                                        class="mp">6,90 €</span></div>
+                                <div class="mi"><span class="mn">Cheesecake</span><span class="md"></span><span
+                                        class="mp">6,90 €</span></div>
+                                <p class="mi-desc">Fruits rouges ou Spéculoos et chantilly</p>
+                                <div class="mi"><span class="mn">Verrine Gourmande</span><span class="md"></span><span
+                                        class="mp">6,90 €</span></div>
+                                <p class="mi-desc">Mousse chocolat Valrhona · Tarte citron · Mousse fruits rouges ·
+                                    Mousse passion mangue</p>
+                                <div class="mi"><span class="mn">Fondant Chocolat</span><span class="md"></span><span
+                                        class="mp">7,00 €</span></div>
+                                <p class="mi-desc">Crème anglaise, glace vanille, coulis choco et caramel, chantilly
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 7 — Boissons ══ -->
+                <div class="page pint" id="p7">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">7 / 8</span>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">🥤 Boissons</div>
+                                <div class="mi"><span class="mn">Mojito fraise / Lassi mangue / fraise</span><span
+                                        class="md"></span><span class="mp">6,90 €</span></div>
+                                <div class="mi"><span class="mn">Thé glacé hibiscus / maison</span><span
+                                        class="md"></span><span class="mp">4,50 €</span></div>
+                                <p class="mi-desc">Pêche · Mangue · Melon · Framboise · Banane</p>
+                                <div class="mi"><span class="mn">Limonade</span><span class="md"></span><span
+                                        class="mp">3,50 €</span></div>
+                                <p class="mi-desc">Citron vert · Orange sanguine · Fruit de la passion</p>
+                                <div class="mi"><span class="mn">Coca-Cola / Zéro</span><span class="md"></span><span
+                                        class="mp">3,00 €</span></div>
+                                <div class="mi"><span class="mn">Coca Cherry</span><span class="md"></span><span
+                                        class="mp">3,50 €</span></div>
+                                <div class="mi"><span class="mn">Fanta Orange</span><span class="md"></span><span
+                                        class="mp">3,00 €</span></div>
+                                <div class="mi"><span class="mn">Symples</span><span class="md"></span><span
+                                        class="mp">3,50 €</span></div>
+                                <p class="mi-desc">Relaxante · Détoxifiante · Energisante · Menthe · Basilic</p>
+                                <div class="mi"><span class="mn">Orangina / Lipton / Oasis</span><span
+                                        class="md"></span><span class="mp">3,00 €</span></div>
+                                <div class="mi"><span class="mn">Schweppes</span><span class="md"></span><span
+                                        class="mp">3,50 €</span></div>
+                                <div class="mi"><span class="mn">Jus de fruits</span><span class="md"></span><span
+                                        class="mp">3,50 €</span></div>
+                                <p class="mi-desc">Pomme · Ananas · Orange · Multifruits · Litchi</p>
+                                <div class="ms-title"> ☕️ Boissons Chaudes</div>
+                                <div class="mi"><span class="mn">Café / Infusion</span><span class="md"></span><span
+                                        class="mp">2,00 €</span></div>
+                            </div>
+                            <div class="ms">
+                                <div class="ms-title">💧 Eaux et Boissons Chaudes</div>
+                                <div class="mi"><span class="mn">Evian 1L</span><span class="md"></span><span
+                                        class="mp">4,00 €</span></div>
+                                <div class="mi"><span class="mn">Cristaline</span><span class="md"></span><span
+                                        class="mp">1,50 €</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 8 — Fermeture ══ -->
+                <div class="page pint" id="p8">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd"><span class="phd-logo">Maddak</span><span class="phd-num">8 / 8</span>
+                            </div>
+                            <div class="closing">
+                                <div class="cl-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+                                <p class="cl-thanks">Bon appétit !</p>
+                                <div
+                                    style="width:48px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:0 auto">
+                                </div>
+                                <p class="cl-sub">Merci de votre visite</p>
+                                <p class="cl-addr">21 Rue Braconnot<br>54000 Nancy<br>09 52 02 00 99</p>
+                                <p class="cl-insta"><a id="insta-link" href="https://www.instagram.com/maddak_nancy/"
+                                        target="_blank" rel="noopener noreferrer">@maddak_nancy</a></p>
+                                <div class="certif-box">
+                                    <div class="certif-item"><span class="certif-dot"></span>Viandes certifiées Halal
+                                        AVS</div>
+                                    <div class="certif-item"><span class="certif-dot"></span>Viande hachée fraîche et
+                                        française — non congelée</div>
+                                    <div class="certif-item"><span class="certif-dot"></span>Pains Farine Label Rouge
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback bc-design" onclick="prev()">
+                        <div class="bc-inner">
+                            <svg viewBox="0 0 200 180" fill="none" stroke="var(--gold)" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <ellipse cx="100" cy="78" rx="50" ry="45" stroke-width="3" />
+                                <ellipse cx="100" cy="118" rx="22" ry="26" stroke-width="2.5" />
+                                <path d="M78 104Q65 117 60 132Q80 140 100 140Q120 140 140 132Q135 117 122 104"
+                                    stroke-width="2.5" />
+                                <path d="M50 86Q20 54 8 24Q35 48 62 80" stroke-width="2.5" />
+                                <path d="M150 86Q180 54 192 24Q165 48 138 80" stroke-width="2.5" />
+                                <path d="M8 24Q13 17 19 21" />
+                                <path d="M192 24Q187 17 181 21" />
+                                <ellipse cx="82" cy="74" rx="13" ry="11" />
+                                <ellipse cx="118" cy="74" rx="13" ry="11" />
+                                <ellipse cx="96" cy="100" rx="5" ry="6.5" stroke-width="2" />
+                                <ellipse cx="104" cy="100" rx="5" ry="6.5" stroke-width="2" />
+                                <path d="M88 130L90 142M96 131L96 144M104 131L104 144M112 130L110 142"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- #book -->
+        </div><!-- #bwrap -->
+
+        <nav id="nav" aria-label="Pagination du menu">
+            <button class="nbtn" id="btnPrev" onclick="prev()" disabled aria-label="Page précédente">&#8592;</button>
+            <span id="pgind" aria-live="polite">Couverture</span>
+            <button class="nbtn" id="btnNext" onclick="next()" aria-label="Page suivante">&#8594;</button>
+        </nav>
+    </main>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>
