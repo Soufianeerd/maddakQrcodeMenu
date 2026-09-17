@@ -180,6 +180,72 @@ body::after {
     pointer-events: none;
 }
 
+/* ── Language Selector on Cover ── */
+.lang-selector {
+    position: absolute;
+    top: clamp(12px, 2.8vh, 20px);
+    right: clamp(12px, 3.5vw, 20px);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background: rgba(10, 36, 32, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.38);
+    border-radius: 30px;
+    padding: 3px 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.08);
+}
+
+.lang-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: clamp(4px, 0.9vh, 6px) clamp(6px, 1.6vw, 9px);
+    color: var(--cream);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.55rem, 1.6vw, 0.68rem);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: all 0.25s ease;
+    min-height: 32px;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.lang-flag {
+    font-size: clamp(0.85rem, 2.2vw, 1rem);
+    line-height: 1;
+}
+
+.lang-code {
+    opacity: 0.8;
+}
+
+.lang-btn:hover {
+    color: var(--goldl);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.lang-btn.active {
+    background: rgba(212, 175, 55, 0.22);
+    border-color: var(--gold);
+    color: var(--goldl);
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+.lang-btn.active .lang-code {
+    opacity: 1;
+}
+
 .cov-content {
     position: relative;
     z-index: 2;
