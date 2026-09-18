@@ -26,7 +26,7 @@
                 <!-- ══ COVER (Page 0) ══ -->
                 <div class="page pcov" id="p0">
                     <div class="pface">
-                        <!-- Sélecteur de langue sur la couverture (haut droite compact) -->
+                        <!-- Sélecteur de langue discret sur la couverture (haut droite) -->
                         <div class="lang-selector" id="langSelector" role="group" aria-label="Sélection de la langue">
                             <button type="button" class="lang-btn active" data-lang="fr"
                                 aria-label="Afficher le menu en français" title="Français" aria-pressed="true"
@@ -59,7 +59,7 @@
                     <div class="pback"></div>
                 </div>
 
-                <!-- ══ PAGE 1 — Smash Burgers ══ -->
+                <!-- ══ PAGE 1 — Smash Burgers (Bœuf) ══ -->
                 <div class="page pint" id="p1">
                     <div class="pface" onclick="next()">
                         <div class="pc">
@@ -70,7 +70,7 @@
 
                             <div class="ms">
                                 <div class="ms-title" data-i18n="sec.smash">Smash Burgers</div>
-                                <p class="ms-note" data-i18n="note.smash">Tous servis avec frites maison fraîches</p>
+                                <p class="ms-note" data-i18n="note.smash">Viande fraîche smashée minute · Servis avec frites fraîches</p>
 
                                 <div class="mi"><span class="mn" data-i18n="smash.cute.name">Cute Cheeseburger</span><span class="md"></span><span class="mp">10,00 €</span></div>
                                 <p class="mi-desc" data-i18n="smash.cute.desc">Bœuf frais smashé, cheddar, laitue, oignons, pickles, sauce maison.</p>
@@ -86,8 +86,40 @@
 
                                 <div class="mi"><span class="mn" data-i18n="smash.gourmand.name">Smash Gourmand</span><span class="md"></span><span class="mp">17,90 €</span></div>
                                 <p class="mi-desc" data-i18n="smash.gourmand.desc">Un cheeseburger et un cheese bacon burger bien savoureux, tranchés en deux et disposés sur notre sauce forestière gourmande pour une expérience unique.</p>
-                                
-                                <p class="ms-note" style="margin-top:clamp(8px, 1.8vh, 16px)" data-i18n="mention.bacon">« Bacon de bœuf ou dinde fumée »</p>
+                                <p class="ms-note" style="margin-top:2px" data-i18n="mention.bacon">« Bacon de bœuf ou dinde fumée »</p>
+                            </div>
+
+                            <!-- Bloc Options Burgers -->
+                            <div class="b-options-card">
+                                <div class="b-opt-sec">
+                                    <div class="b-opt-hd">
+                                        <span class="b-opt-title" data-i18n="bopt.river.title">River Cheddar</span>
+                                        <span class="b-opt-quote" data-i18n="bopt.river.quote">« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »</span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span data-i18n="bopt.river.items">Persil & oignons crispy : <strong>3,20 €</strong> · Supplément bacon : <strong>+0,50 €</strong></span>
+                                    </div>
+                                </div>
+                                <div class="b-opt-sec">
+                                    <div class="b-opt-hd">
+                                        <span class="b-opt-title" data-i18n="bopt.supp.title">Suppléments Burgers</span>
+                                        <span class="b-opt-line"><span data-i18n="bopt.supp.double">Double viande + fromage :</span> <strong>+3,50 €</strong></span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span class="b-opt-tag">+1,50 € :</span> <span data-i18n="bopt.supp.150">Fromage · Œuf · Avocat · Bacon</span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span class="b-opt-tag">+1,00 € :</span> <span data-i18n="bopt.supp.100">Tomates confites · Oignons caramélisés · Oignons rouges · Pickles · Oignons frits</span>
+                                    </div>
+                                </div>
+                                <div class="b-opt-sec">
+                                    <div class="b-opt-hd">
+                                        <span class="b-opt-title" data-i18n="bopt.fries.title">Options Frites</span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span data-i18n="bopt.fries.items">Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -105,6 +137,7 @@
 
                             <div class="ms">
                                 <div class="ms-title" data-i18n="sec.chickensmash">Chicken Smash & Veggie</div>
+                                <p class="ms-note" data-i18n="note.chickensmash">Recettes signatures croustillantes et végétales</p>
 
                                 <div class="mi"><span class="mn" data-i18n="smash.doublechicken.name">Double Chicken’Cheese</span><span class="md"></span><span class="mp">12,50 €</span></div>
                                 <p class="mi-desc" data-i18n="smash.doublechicken.desc">Poulet frais smashé, cheddar, laitue, oignons, pickles, sauce maison. Supplément œuf : +1,50 €.</p>
@@ -116,8 +149,11 @@
                                 <p class="mi-desc" data-i18n="smash.veggie.desc">Salade, coleslaw, cheddar, tranches d’avocat, tomate.</p>
                                 <p class="mi-desc" style="color:var(--em);font-weight:500" data-i18n="smash.veggie.options">Options (+1,50 €) : Œuf · Galette de pomme de terre · Artichaut ou aubergine confite</p>
 
-                                <div class="info-block">
-                                    <p data-i18n="info.vege">🌿 <strong>T'es plutôt Végé ?</strong> Remplace ton steak par un Beyond Meat <strong>+2,50 €</strong></p>
+                                <div class="info-block" style="margin-bottom:clamp(4px, 1vh, 8px)">
+                                    <p>
+                                        <svg class="veggie-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+                                        <span data-i18n="info.vege"><strong>Option Végétarienne :</strong> Remplace ton steak par un Beyond Meat <strong>+2,50 €</strong></span>
+                                    </p>
                                 </div>
                             </div>
 
@@ -184,9 +220,39 @@
 
                                 <div class="mi"><span class="mn" data-i18n="bg.masterchevre.name">Master Chèvre</span><span class="md"></span><span class="mp">13,95 €</span></div>
                                 <p class="mi-desc" data-i18n="bg.masterchevre.desc">Bœuf frais, salade, tomates confites, chèvre frais, miel, noix, sauce Brazil.</p>
+                            </div>
 
-                                <div class="mi"><span class="mn" data-i18n="bg.auvergnat.name">L’Auvergnat</span><span class="md"></span><span class="mp">16,90 €</span></div>
-                                <p class="mi-desc" data-i18n="bg.auvergnat.desc">Bœuf frais, Fourme d’Ambert AOP, tomates confites, confit de figues, oignons caramélisés, salade, mayonnaise verte.</p>
+                            <!-- Bloc Options Burgers -->
+                            <div class="b-options-card">
+                                <div class="b-opt-sec">
+                                    <div class="b-opt-hd">
+                                        <span class="b-opt-title" data-i18n="bopt.river.title">River Cheddar</span>
+                                        <span class="b-opt-quote" data-i18n="bopt.river.quote">« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »</span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span data-i18n="bopt.river.items">Persil & oignons crispy : <strong>3,20 €</strong> · Supplément bacon : <strong>+0,50 €</strong></span>
+                                    </div>
+                                </div>
+                                <div class="b-opt-sec">
+                                    <div class="b-opt-hd">
+                                        <span class="b-opt-title" data-i18n="bopt.supp.title">Suppléments Burgers</span>
+                                        <span class="b-opt-line"><span data-i18n="bopt.supp.double">Double viande + fromage :</span> <strong>+3,50 €</strong></span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span class="b-opt-tag">+1,50 € :</span> <span data-i18n="bopt.supp.150">Fromage · Œuf · Avocat · Bacon</span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span class="b-opt-tag">+1,00 € :</span> <span data-i18n="bopt.supp.100">Tomates confites · Oignons caramélisés · Oignons rouges · Pickles · Oignons frits</span>
+                                    </div>
+                                </div>
+                                <div class="b-opt-sec">
+                                    <div class="b-opt-hd">
+                                        <span class="b-opt-title" data-i18n="bopt.fries.title">Options Frites</span>
+                                    </div>
+                                    <div class="b-opt-line">
+                                        <span data-i18n="bopt.fries.items">Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -203,6 +269,9 @@
                             </div>
                             <div class="ms">
                                 <div class="ms-title" data-i18n="sec.gourmets2">Burgers Gourmets (suite)</div>
+
+                                <div class="mi"><span class="mn" data-i18n="bg.auvergnat.name">L’Auvergnat</span><span class="md"></span><span class="mp">16,90 €</span></div>
+                                <p class="mi-desc" data-i18n="bg.auvergnat.desc">Bœuf frais, Fourme d’Ambert AOP, tomates confites, confit de figues, oignons caramélisés, salade, mayonnaise verte.</p>
 
                                 <div class="mi"><span class="mn" data-i18n="bg.montagnard.name">Montagnard</span><span class="md"></span><span class="mp">16,90 €</span></div>
                                 <p class="mi-desc" data-i18n="bg.montagnard.desc">Bœuf frais, salade, fromage à raclette fumée, marmelade de poivrons et oignons, galette de pomme de terre, oignons crispy, sauce oignons-poivrons.</p>
@@ -260,7 +329,7 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 5 — Philly's ══ -->
+                <!-- ══ PAGE 5 — Philly's & Extras ══ -->
                 <div class="page pint" id="p5">
                     <div class="pface" onclick="next()">
                         <div class="pc">
@@ -270,7 +339,7 @@
                             </div>
 
                             <div class="ms">
-                                <div class="ms-title" data-i18n="sec.phillys">Philly’s</div>
+                                <div class="ms-title" data-i18n="sec.phillys">Philly’s Sandwiches</div>
                                 <p class="ms-note" data-i18n="note.phillys">Pain moelleux garni · servis avec frites fraîches</p>
 
                                 <div class="mi"><span class="mn" data-i18n="philly.fondant.name">Le Fondant</span><span class="md"></span><span class="mp">13,90 €</span></div>
@@ -278,7 +347,7 @@
 
                                 <div class="mi"><span class="mn" data-i18n="philly.fermier.name">Le Fermier</span><span class="md"></span><span class="mp">13,90 €</span></div>
                                 <p class="mi-desc" data-i18n="philly.fermier.desc">Dés de poulet marinés aux épices, salade, confit de poivrons et d’oignons, emmental, sauce Brazil.</p>
-                                <p class="ms-note" style="margin-top:clamp(4px, 1vh, 8px)" data-i18n="philly.supp">Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €</p>
+                                <p class="ms-note" style="margin-top:2px" data-i18n="philly.supp">Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €</p>
                             </div>
 
                             <!-- Bloc Options Burgers & Philly's -->
@@ -318,7 +387,7 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 6 — Côté Brasserie (Assiettes) ══ -->
+                <!-- ══ PAGE 6 — Assiettes ══ -->
                 <div class="page pint" id="p6">
                     <div class="pface" onclick="next()">
                         <div class="pc">
@@ -364,8 +433,8 @@
                                 <span class="phd-num">7 / 12</span>
                             </div>
                             <div class="ms">
-                                <div class="ms-title" data-i18n="sec.pasta">Pasta</div>
-                                <p class="ms-note" data-i18n="note.pasta">Pâtes crémeuses cuisinées minute avec des ingrédients nobles</p>
+                                <div class="ms-title" data-i18n="sec.pasta">Pasta & Rigatoni</div>
+                                <p class="ms-note" data-i18n="note.pasta">Pâtes cuisinées minute avec des ingrédients nobles</p>
 
                                 <div class="mi"><span class="mn" data-i18n="pasta.eggsplosion.name">Eggs’plosion</span><span class="md"></span><span class="mp">18,90 €</span></div>
                                 <p class="mi-desc" data-i18n="pasta.eggsplosion.desc">Pâtes crémeuses, viande hachée, raclette fondue, bacon croustillant, œuf au plat.</p>
@@ -387,7 +456,7 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 8 — Bowls & Salades ══ -->
+                <!-- ══ PAGE 8 — Bowls + Salades ══ -->
                 <div class="page pint" id="p8">
                     <div class="pface" onclick="next()">
                         <div class="pc">
@@ -408,7 +477,7 @@
                             </div>
 
                             <div class="ms">
-                                <div class="ms-title" data-i18n="sec.salades">Salades</div>
+                                <div class="ms-title" data-i18n="sec.salades">Salades Gourmandes</div>
 
                                 <div class="mi"><span class="mn" data-i18n="sal.cesar.name">Suprême César</span><span class="md"></span><span class="mp">14,50 €</span></div>
                                 <p class="mi-desc" data-i18n="sal.cesar.desc">Salade verte, poulet, billes de mozzarella, croûtons, parmesan, tomates cerises, sauce césar.</p>
@@ -465,7 +534,7 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 10 — Menu Enfant & Desserts ══ -->
+                <!-- ══ PAGE 10 — Menu Enfant + Desserts ══ -->
                 <div class="page pint" id="p10">
                     <div class="pface" onclick="next()">
                         <div class="pc">
@@ -513,7 +582,7 @@
                             </div>
 
                             <div class="ms">
-                                <div class="ms-title" data-i18n="sec.drinks">Boissons</div>
+                                <div class="ms-title" data-i18n="sec.drinks">Boissons & Rafraîchissements</div>
 
                                 <div class="mi"><span class="mn" data-i18n="drk.virgin_mojito.name">Virgin Mojito</span><span class="md"></span><span class="mp">5,90 €</span></div>
 
@@ -550,7 +619,7 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 12 — Clôture & Certifications ══ -->
+                <!-- ══ PAGE 12 — Fermeture & Certifications ══ -->
                 <div class="page pint" id="p12">
                     <div class="pface" onclick="next()">
                         <div class="pc">
