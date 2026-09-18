@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /**
-     * Initialise dynamiquement les compteurs de pages intérieurs (ex: 1 / 12 ... 12 / 12).
+     * Initialise dynamiquement les compteurs de pages intérieurs (ex: 1 / 11 ... 11 / 11).
      */
     function initPageNumbers() {
         const totalInterior = TOTAL - 1;

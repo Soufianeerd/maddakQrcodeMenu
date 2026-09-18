@@ -21,7 +21,7 @@ const translations = {
         "nav.next": "Page suivante",
         "nav.page": "Page",
 
-        // Labels pagination dynamique (13 pages : p0 à p12)
+        // Labels pagination dynamique (12 pages : p0 à p11)
         "labels.0": "Couverture",
         "labels.1": "Smash Burgers",
         "labels.2": "Chicken & Veggie",
@@ -29,12 +29,11 @@ const translations = {
         "labels.4": "Gourmets 2/2",
         "labels.5": "Philly's",
         "labels.6": "Côté Brasserie",
-        "labels.7": "Pasta",
-        "labels.8": "Bowls & Salades",
-        "labels.9": "Tex-Mex & Sides",
-        "labels.10": "Desserts & Kids",
-        "labels.11": "Boissons",
-        "labels.12": "Fin",
+        "labels.7": "Bowls & Salades",
+        "labels.8": "Tex-Mex & Sides",
+        "labels.9": "Desserts & Kids",
+        "labels.10": "Boissons",
+        "labels.11": "Fin",
 
         // Bloc Options Burgers & Frites commun (sans emojis)
         "bopt.river.title": "River Cheddar",
@@ -132,21 +131,7 @@ const translations = {
         "ass.sides.included": "Accompagnements inclus : Salade composée + frites fraîches OU riz basmati",
         "ass.sides.supp": "Supplément +2,00 € : Frites de patate douce · Twister",
 
-        // Page 7 : Pasta
-        "sec.pasta": "Pasta & Rigatoni",
-        "note.pasta": "Pâtes crémeuses cuisinées minute avec des ingrédients nobles",
-        "pasta.eggsplosion.name": "Eggs’plosion",
-        "pasta.eggsplosion.desc": "Pâtes crémeuses, viande hachée, raclette fondue, bacon croustillant, œuf au plat.",
-        "pasta.affinato.name": "Chicken Affinato",
-        "pasta.affinato.desc": "Pâtes crémeuses, parmesan et comté affiné 18 mois, morceaux de poulet fondants, oignons caramélisés.",
-        "pasta.forest.name": "Forest Classic Beef",
-        "pasta.forest.desc": "Pâtes crémeuses à la sauce forestière, parmesan, persil, oignons caramélisés, viande hachée marinée.",
-        "pasta.pestoratta.name": "Pestoratta",
-        "pasta.pestoratta.desc": "Rigatoni al dente alla Genovese, burrata crémeuse.",
-        "pasta.azzurro.name": "Rigatoni Azzurro",
-        "pasta.azzurro.desc": "Rigatoni à la sauce au bleu, tomates cerises, parmesan.",
-
-        // Page 8 : Bowls & Salades
+        // Page 7 : Bowls & Salades
         "sec.bowls": "Bowls Signature",
         "bowl.poulet.name": "Délice de Poulet",
         "bowl.poulet.desc": "Frites fraîches, émincé de poulet aux poivrons, oignons crispy, purée d'avocat, sauce cheddar.",
@@ -159,7 +144,7 @@ const translations = {
         "sal.chevre.name": "Toasts Chèvre Chaud",
         "sal.chevre.desc": "Salade verte, toast de chèvre chaud, billes de mozzarella, olives, miel, tomates cerises, vinaigrette balsamique.",
 
-        // Page 9 : Tex-Mex & Sides
+        // Page 8 : Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Donuts Poulet Fromage",
         "tm.donuts.desc": "2,50 € / pièce · Beignet croustillant poulet & fromage fondant.",
@@ -179,7 +164,7 @@ const translations = {
         "side.coleslaw.name": "Coleslaw maison",
         "side.coleslaw.desc": "Supplément menu : +1,50 € · Hors menu : 3,00 €",
 
-        // Page 10 : Menu Enfant & Desserts
+        // Page 9 : Menu Enfant & Desserts
         "sec.kids": "Menu Enfant",
         "kids.menu.name": "Menu Enfant — jusqu’à 10 ans",
         "kids.menu.desc": "Burger (steak/cheddar/ketchup) OU Chicken crispy + frites fraîches + boisson + compote.",
@@ -192,7 +177,7 @@ const translations = {
         "des.fondant.name": "Fondant Chocolat",
         "des.fondant.desc": "Crème anglaise, boule de glace vanille, coulis chocolat & caramel, chantilly.",
 
-        // Page 11 : Boissons
+        // Page 10 : Boissons
         "sec.drinks": "Boissons & Rafraîchissements",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Virgin Mojito fraise",
@@ -212,7 +197,7 @@ const translations = {
         "drk.evian.name": "Evian 1L",
         "drk.cristaline.name": "Cristaline",
 
-        // Page 12 : Clôture
+        // Page 11 : Clôture
         "cl.thanks": "Bon appétit !",
         "cl.sub": "Merci de votre visite",
         "certif.halal": "Viandes certifiées Halal AVS",
@@ -235,7 +220,7 @@ const translations = {
         "nav.next": "Next page",
         "nav.page": "Page",
 
-        // Dynamic labels (13 pages : p0 to p12)
+        // Dynamic labels (12 pages : p0 to p11)
         "labels.0": "Cover",
         "labels.1": "Smash Burgers",
         "labels.2": "Chicken & Veggie",
@@ -243,12 +228,11 @@ const translations = {
         "labels.4": "Gourmets 2/2",
         "labels.5": "Philly's",
         "labels.6": "Bistro Plates",
-        "labels.7": "Pasta",
-        "labels.8": "Bowls & Salads",
-        "labels.9": "Tex-Mex & Sides",
-        "labels.10": "Desserts & Kids",
-        "labels.11": "Drinks",
-        "labels.12": "Closing",
+        "labels.7": "Bowls & Salads",
+        "labels.8": "Tex-Mex & Sides",
+        "labels.9": "Desserts & Kids",
+        "labels.10": "Drinks",
+        "labels.11": "Closing",
 
         // Burger & Fries Options block (no emojis)
         "bopt.river.title": "River Cheddar",
@@ -346,21 +330,7 @@ const translations = {
         "ass.sides.included": "Included sides: Mixed salad + fresh fries OR basmati rice",
         "ass.sides.supp": "Extra +€2.00: Sweet potato fries · Twister",
 
-        // Page 7 : Pasta
-        "sec.pasta": "Pasta & Rigatoni",
-        "note.pasta": "Creamy gourmet pasta freshly cooked with premium ingredients",
-        "pasta.eggsplosion.name": "Eggs’plosion",
-        "pasta.eggsplosion.desc": "Creamy pasta, seasoned minced beef, melted raclette cheese, crispy bacon, sunny-side-up egg.",
-        "pasta.affinato.name": "Chicken Affinato",
-        "pasta.affinato.desc": "Creamy pasta, parmesan & 18-month aged Comté, melt-in-the-mouth chicken pieces, caramelized onions.",
-        "pasta.forest.name": "Forest Classic Beef",
-        "pasta.forest.desc": "Creamy pasta with forest mushroom sauce, parmesan, parsley, caramelized onions, marinated beef.",
-        "pasta.pestoratta.name": "Pestoratta",
-        "pasta.pestoratta.desc": "Rigatoni al dente alla Genovese with creamy burrata.",
-        "pasta.azzurro.name": "Rigatoni Azzurro",
-        "pasta.azzurro.desc": "Rigatoni in rich blue cheese cream sauce, cherry tomatoes, parmesan.",
-
-        // Page 8 : Bowls & Salades
+        // Page 7 : Bowls & Salades
         "sec.bowls": "Signature Bowls",
         "bowl.poulet.name": "Chicken Delight",
         "bowl.poulet.desc": "Fresh fries, chicken strips sautéed with bell peppers, crispy onions, avocado mash, cheddar sauce.",
@@ -373,7 +343,7 @@ const translations = {
         "sal.chevre.name": "Warm Goat Cheese Toasts",
         "sal.chevre.desc": "Crisp salad, warm goat cheese toasts, mozzarella pearls, olives, honey, cherry tomatoes, balsamic dressing.",
 
-        // Page 9 : Tex-Mex & Sides
+        // Page 8 : Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Chicken & Cheese Donuts",
         "tm.donuts.desc": "€2.50 / piece · Crispy fried chicken donut with molten cheese center.",
@@ -393,7 +363,7 @@ const translations = {
         "side.coleslaw.name": "House Coleslaw",
         "side.coleslaw.desc": "Meal upgrade: +€1.50 · A la carte: €3.00",
 
-        // Page 10 : Menu Enfant & Desserts
+        // Page 9 : Menu Enfant & Desserts
         "sec.kids": "Kids Menu",
         "kids.menu.name": "Kids Menu — up to 10 years old",
         "kids.menu.desc": "Cheeseburger OR Chicken crispy + fresh fries + cold drink + fruit compote.",
@@ -406,7 +376,7 @@ const translations = {
         "des.fondant.name": "Chocolate Lava Cake",
         "des.fondant.desc": "Warm chocolate fondant, English custard, vanilla ice cream scoop, chocolate & caramel coulis, whipped cream.",
 
-        // Page 11 : Boissons
+        // Page 10 : Boissons
         "sec.drinks": "Beverages & Refreshments",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Strawberry Virgin Mojito",
@@ -426,7 +396,7 @@ const translations = {
         "drk.evian.name": "Evian (1L)",
         "drk.cristaline.name": "Cristaline (50cl)",
 
-        // Page 12 : Clôture
+        // Page 11 : Clôture
         "cl.thanks": "Bon appétit!",
         "cl.sub": "Thank you for dining with us",
         "certif.halal": "AVS Certified Halal meats",
@@ -449,7 +419,7 @@ const translations = {
         "nav.next": "Nächste Seite",
         "nav.page": "Seite",
 
-        // Dynamische Beschriftungen (13 Seiten: p0 bis p12)
+        // Dynamische Beschriftungen (12 Seiten: p0 bis p11)
         "labels.0": "Deckblatt",
         "labels.1": "Smash Burgers",
         "labels.2": "Chicken & Veggie",
@@ -457,12 +427,11 @@ const translations = {
         "labels.4": "Gourmets 2/2",
         "labels.5": "Philly's",
         "labels.6": "Brasserie-Gerichte",
-        "labels.7": "Pasta",
-        "labels.8": "Bowls & Salate",
-        "labels.9": "Tex-Mex & Beilagen",
-        "labels.10": "Desserts & Kinder",
-        "labels.11": "Getränke",
-        "labels.12": "Abschluss",
+        "labels.7": "Bowls & Salate",
+        "labels.8": "Tex-Mex & Beilagen",
+        "labels.9": "Desserts & Kinder",
+        "labels.10": "Getränke",
+        "labels.11": "Abschluss",
 
         // Burger & Pommes Optionen (ohne Emojis)
         "bopt.river.title": "River Cheddar",
@@ -560,21 +529,7 @@ const translations = {
         "ass.sides.included": "Inklusive Beilagen: Gemischter Salat + frische Pommes ODER Basmatireis",
         "ass.sides.supp": "Aufpreis +2,00 €: Süßkartoffel-Pommes · Twister",
 
-        // Page 7 : Pasta
-        "sec.pasta": "Pasta & Rigatoni",
-        "note.pasta": "Cremige Gourmet-Pasta, frisch zubereitet mit edlen Zutaten",
-        "pasta.eggsplosion.name": "Eggs’plosion",
-        "pasta.eggsplosion.desc": "Cremige Pasta, würziges Hackfleisch, geschmolzener Raclettekäse, knuspriger Bacon, Spiegelei.",
-        "pasta.affinato.name": "Chicken Affinato",
-        "pasta.affinato.desc": "Cremige Pasta, Parmesan & 18 Monate gereifter Comté, zarte Hähnchenstücke, karamellisierte Zwiebeln.",
-        "pasta.forest.name": "Forest Classic Beef",
-        "pasta.forest.desc": "Cremige Pasta mit Waldpilzrahmsauce, Parmesan, Petersilie, karamellisierte Zwiebeln, mariniertes Hackfleisch.",
-        "pasta.pestoratta.name": "Pestoratta",
-        "pasta.pestoratta.desc": "Rigatoni al dente alla Genovese mit cremigem Burrata.",
-        "pasta.azzurro.name": "Rigatoni Azzurro",
-        "pasta.azzurro.desc": "Rigatoni in delikater Blauschimmelkäsesauce, Kirschtomaten, Parmesan.",
-
-        // Page 8 : Bowls & Salades
+        // Page 7 : Bowls & Salades
         "sec.bowls": "Signature Bowls",
         "bowl.poulet.name": "Délice de Poulet",
         "bowl.poulet.desc": "Frische Pommes, Hähnchenstreifen mit Paprika, Röstzwiebeln, Avocadopüree, Cheddarsauce.",
@@ -587,7 +542,7 @@ const translations = {
         "sal.chevre.name": "Warmer Ziegenkäse-Toast",
         "sal.chevre.desc": "Blattsalat, warmes Ziegenkäsebrot, Mozzarellaperlen, Oliven, Honig, Kirschtomaten, Balsamico-Dressing.",
 
-        // Page 9 : Tex-Mex & Sides
+        // Page 8 : Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Hähnchen-Käse-Donuts",
         "tm.donuts.desc": "2,50 € / Stück · Knuspriger Hähnchendonut mit schmelzendem Käsekern.",
@@ -607,7 +562,7 @@ const translations = {
         "side.coleslaw.name": "Hausgemachter Coleslaw",
         "side.coleslaw.desc": "Menü-Aufpreis: +1,50 € · Einzeln: 3,00 €",
 
-        // Page 10 : Menu Enfant & Desserts
+        // Page 9 : Menu Enfant & Desserts
         "sec.kids": "Kindermenü",
         "kids.menu.name": "Kindermenü — bis 10 Jahre",
         "kids.menu.desc": "Kinder-Burger ODER Chicken Crispy + frische Pommes + Erfrischungsgetränk + Fruchtkompott.",
@@ -620,7 +575,7 @@ const translations = {
         "des.fondant.name": "Schoko-Lava-Kuchen",
         "des.fondant.desc": "Flüssiger Schokokern, Vanillesauce, Kugel Vanilleeis, Schoko- & Karamellcoulis, Schlagsahne.",
 
-        // Page 11 : Boissons
+        // Page 10 : Boissons
         "sec.drinks": "Erfrischungsgetränke",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Erdbeer-Virgin-Mojito",
@@ -640,7 +595,7 @@ const translations = {
         "drk.evian.name": "Evian (1L)",
         "drk.cristaline.name": "Cristaline (50cl)",
 
-        // Page 12 : Clôture
+        // Page 11 : Clôture
         "cl.thanks": "Guten Appetit!",
         "cl.sub": "Vielen Dank für Ihren Besuch",
         "certif.halal": "AVS Halal-zertifiziertes Fleisch",
