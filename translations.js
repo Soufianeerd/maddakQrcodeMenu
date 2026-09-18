@@ -21,7 +21,7 @@ const translations = {
         "nav.next": "Page suivante",
         "nav.page": "Page",
 
-        // Labels pagination dynamique (12 pages : p0 à p11)
+        // Labels pagination dynamique (14 pages : p0 à p13)
         "labels.0": "Couverture",
         "labels.1": "Smash Burgers",
         "labels.2": "Chicken & Veggie",
@@ -32,8 +32,10 @@ const translations = {
         "labels.7": "Bowls & Salades",
         "labels.8": "Tex-Mex & Sides",
         "labels.9": "Desserts & Kids",
-        "labels.10": "Boissons",
-        "labels.11": "Fin",
+        "labels.10": "Boissons Fraîches",
+        "labels.11": "Cafés & Eaux",
+        "labels.12": "Cocktails",
+        "labels.13": "Fin",
 
         // Bloc Options Burgers & Frites commun (sans emojis)
         "bopt.river.title": "River Cheddar",
@@ -177,7 +179,7 @@ const translations = {
         "des.fondant.name": "Fondant Chocolat",
         "des.fondant.desc": "Crème anglaise, boule de glace vanille, coulis chocolat & caramel, chantilly.",
 
-        // Page 10 : Boissons
+        // Page 10 : Boissons Fraîches
         "sec.drinks": "Boissons & Rafraîchissements",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Virgin Mojito fraise",
@@ -185,19 +187,43 @@ const translations = {
         "drk.tea.name": "Thé glacé hibiscus / maison",
         "drk.tea.desc": "Pêche · Mangue · Melon · Framboise · Banane",
         "drk.limonade.name": "Limonade Artisanale",
-        "drk.limonade.desc": "Citron vert · Orange sanguine · Fruit de la passion",
-        "drk.coca.name": "Coca-Cola / Coca-Cola Zéro",
+        "drk.limonade.desc": "Citron vert · Fruit de la passion",
         "drk.cherry.name": "Coca Cherry",
-        "drk.fanta.name": "Fanta Orange",
         "drk.softs.name": "Orangina / Oasis",
-        "drk.juice.name": "Jus de fruits",
-        "drk.juice.desc": "Pomme · Ananas · Orange · Multifruits · Litchi",
-        "sec.hot": "Boissons Chaudes & Eaux",
-        "drk.cafe.name": "Café / Infusion",
-        "drk.evian.name": "Evian 1L",
+        "sec.cola": "Cola Artisanal",
+        "cola.classic.name": "Cola Classic",
+        "cola.zero.name": "Cola Zéro",
+        "sec.street": "STREET",
+        "street.tropical.name": "Tropical",
+        "street.cherry.name": "Cherry",
+
+        // Page 11 : Cafés, Infusions & Eaux
+        "sec.cafes": "Cafés",
+        "cafe.cafe.name": "Café",
+        "cafe.expresso.name": "Expresso",
+        "cafe.double_expresso.name": "Double Expresso",
+        "cafe.au_lait.name": "Café au lait",
+        "cafe.allonge.name": "Café allongé",
+        "cafe.latte.name": "Latte Macchiato",
+        "cafe.latte.desc": "Caramel · Noisette · Spéculoos · Pop-corn",
+        "sec.infusion": "Infusion",
+        "drk.infusion.name": "Infusion",
+        "sec.waters": "Eaux & Minérales",
+        "drk.badoit.name": "Badoit",
+        "drk.badoit.desc": "Citron vert · Pamplemousse · Fruits rouges",
+        "drk.corola.name": "Corola Pétillante",
+        "drk.mont_roucous.name": "Mont Roucous 1L",
         "drk.cristaline.name": "Cristaline",
 
-        // Page 11 : Clôture
+        // Page 12 : Cocktails
+        "sec.cocktails": "Cocktails",
+        "note.cocktails": "Créations signatures & mélanges rafraîchissants",
+        "cocktail.coconut.name": "Coconut",
+        "cocktail.golden_sunrise.name": "Golden Sunrise",
+        "cocktail.bora_bora.name": "Bora Bora",
+        "cocktail.smooth_avocado.name": "Smooth Avocado",
+
+        // Page 13 : Clôture
         "cl.thanks": "Bon appétit !",
         "cl.sub": "Merci de votre visite",
         "certif.halal": "Viandes certifiées Halal AVS",
@@ -220,7 +246,7 @@ const translations = {
         "nav.next": "Next page",
         "nav.page": "Page",
 
-        // Dynamic labels (12 pages : p0 to p11)
+        // Dynamic labels (14 pages : p0 to p13)
         "labels.0": "Cover",
         "labels.1": "Smash Burgers",
         "labels.2": "Chicken & Veggie",
@@ -231,8 +257,10 @@ const translations = {
         "labels.7": "Bowls & Salads",
         "labels.8": "Tex-Mex & Sides",
         "labels.9": "Desserts & Kids",
-        "labels.10": "Drinks",
-        "labels.11": "Closing",
+        "labels.10": "Cold Drinks",
+        "labels.11": "Coffees & Waters",
+        "labels.12": "Cocktails",
+        "labels.13": "Closing",
 
         // Burger & Fries Options block (no emojis)
         "bopt.river.title": "River Cheddar",
@@ -376,7 +404,7 @@ const translations = {
         "des.fondant.name": "Chocolate Lava Cake",
         "des.fondant.desc": "Warm chocolate fondant, English custard, vanilla ice cream scoop, chocolate & caramel coulis, whipped cream.",
 
-        // Page 10 : Boissons
+        // Page 10 : Boissons Fraîches
         "sec.drinks": "Beverages & Refreshments",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Strawberry Virgin Mojito",
@@ -384,19 +412,43 @@ const translations = {
         "drk.tea.name": "Hibiscus Iced Tea / House Tea",
         "drk.tea.desc": "Peach · Mango · Melon · Raspberry · Banana",
         "drk.limonade.name": "Artisan Lemonade",
-        "drk.limonade.desc": "Lime · Blood orange · Passion fruit",
-        "drk.coca.name": "Coca-Cola / Coca-Cola Zero",
+        "drk.limonade.desc": "Lime · Passion fruit",
         "drk.cherry.name": "Coca Cherry",
-        "drk.fanta.name": "Fanta Orange",
         "drk.softs.name": "Orangina / Oasis",
-        "drk.juice.name": "Fruit Juices",
-        "drk.juice.desc": "Apple · Pineapple · Orange · Multifruit · Lychee",
-        "sec.hot": "Hot Drinks & Mineral Waters",
-        "drk.cafe.name": "Coffee / Herbal Tea",
-        "drk.evian.name": "Evian (1L)",
+        "sec.cola": "Craft Cola",
+        "cola.classic.name": "Cola Classic",
+        "cola.zero.name": "Cola Zero",
+        "sec.street": "STREET",
+        "street.tropical.name": "Tropical",
+        "street.cherry.name": "Cherry",
+
+        // Page 11 : Cafés, Infusions & Eaux
+        "sec.cafes": "Coffees",
+        "cafe.cafe.name": "Coffee",
+        "cafe.expresso.name": "Espresso",
+        "cafe.double_expresso.name": "Double Espresso",
+        "cafe.au_lait.name": "Coffee with milk",
+        "cafe.allonge.name": "Americano",
+        "cafe.latte.name": "Latte Macchiato",
+        "cafe.latte.desc": "Caramel · Hazelnut · Speculoos · Popcorn",
+        "sec.infusion": "Herbal Tea",
+        "drk.infusion.name": "Herbal Tea",
+        "sec.waters": "Waters & Sparkling",
+        "drk.badoit.name": "Badoit",
+        "drk.badoit.desc": "Lime · Grapefruit · Red Berries",
+        "drk.corola.name": "Corola Pétillante",
+        "drk.mont_roucous.name": "Mont Roucous (1L)",
         "drk.cristaline.name": "Cristaline (50cl)",
 
-        // Page 11 : Clôture
+        // Page 12 : Cocktails
+        "sec.cocktails": "Cocktails",
+        "note.cocktails": "Signature creations & refreshing mixes",
+        "cocktail.coconut.name": "Coconut",
+        "cocktail.golden_sunrise.name": "Golden Sunrise",
+        "cocktail.bora_bora.name": "Bora Bora",
+        "cocktail.smooth_avocado.name": "Smooth Avocado",
+
+        // Page 13 : Clôture
         "cl.thanks": "Bon appétit!",
         "cl.sub": "Thank you for dining with us",
         "certif.halal": "AVS Certified Halal meats",
@@ -419,7 +471,7 @@ const translations = {
         "nav.next": "Nächste Seite",
         "nav.page": "Seite",
 
-        // Dynamische Beschriftungen (12 Seiten: p0 bis p11)
+        // Dynamische Beschriftungen (14 Seiten: p0 bis p13)
         "labels.0": "Deckblatt",
         "labels.1": "Smash Burgers",
         "labels.2": "Chicken & Veggie",
@@ -430,8 +482,10 @@ const translations = {
         "labels.7": "Bowls & Salate",
         "labels.8": "Tex-Mex & Beilagen",
         "labels.9": "Desserts & Kinder",
-        "labels.10": "Getränke",
-        "labels.11": "Abschluss",
+        "labels.10": "Kalte Getränke",
+        "labels.11": "Kaffee & Wasser",
+        "labels.12": "Cocktails",
+        "labels.13": "Abschluss",
 
         // Burger & Pommes Optionen (ohne Emojis)
         "bopt.river.title": "River Cheddar",
@@ -575,27 +629,51 @@ const translations = {
         "des.fondant.name": "Schoko-Lava-Kuchen",
         "des.fondant.desc": "Flüssiger Schokokern, Vanillesauce, Kugel Vanilleeis, Schoko- & Karamellcoulis, Schlagsahne.",
 
-        // Page 10 : Boissons
-        "sec.drinks": "Erfrischungsgetränke",
+        // Page 10 : Boissons Fraîches
+        "sec.drinks": "Erfrischungsgetränke & Erfrischungen",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Erdbeer-Virgin-Mojito",
         "drk.lassi.name": "Mango- / Erdbeer-Lassi",
         "drk.tea.name": "Hibiskus-Eistee / Hausgemachter Eistee",
         "drk.tea.desc": "Pfirsich · Mango · Melone · Himbeere · Banane",
         "drk.limonade.name": "Hausgemachte Limonade",
-        "drk.limonade.desc": "Limette · Blutorange · Passionsfrucht",
-        "drk.coca.name": "Coca-Cola / Coca-Cola Zero",
+        "drk.limonade.desc": "Limette · Passionsfrucht",
         "drk.cherry.name": "Coca Cherry",
-        "drk.fanta.name": "Fanta Orange",
         "drk.softs.name": "Orangina / Oasis",
-        "drk.juice.name": "Fruchtsäfte",
-        "drk.juice.desc": "Apfel · Ananas · Orange · Multifrucht · Litschi",
-        "sec.hot": "Heißgetränke & Mineralwasser",
-        "drk.cafe.name": "Kaffee / Kräutertee",
-        "drk.evian.name": "Evian (1L)",
+        "sec.cola": "Artisan Cola",
+        "cola.classic.name": "Cola Classic",
+        "cola.zero.name": "Cola Zero",
+        "sec.street": "STREET",
+        "street.tropical.name": "Tropical",
+        "street.cherry.name": "Cherry",
+
+        // Page 11 : Cafés, Infusions & Eaux
+        "sec.cafes": "Kaffeespezialitäten",
+        "cafe.cafe.name": "Kaffee",
+        "cafe.expresso.name": "Espresso",
+        "cafe.double_expresso.name": "Doppelter Espresso",
+        "cafe.au_lait.name": "Milchkaffee",
+        "cafe.allonge.name": "Verlängerter Kaffee",
+        "cafe.latte.name": "Latte Macchiato",
+        "cafe.latte.desc": "Karamell · Haselnuss · Spekulatius · Popcorn",
+        "sec.infusion": "Kräutertee",
+        "drk.infusion.name": "Kräutertee",
+        "sec.waters": "Wasser & Prickelndes",
+        "drk.badoit.name": "Badoit",
+        "drk.badoit.desc": "Limette · Grapefruit · Rote Beeren",
+        "drk.corola.name": "Corola Pétillante",
+        "drk.mont_roucous.name": "Mont Roucous (1L)",
         "drk.cristaline.name": "Cristaline (50cl)",
 
-        // Page 11 : Clôture
+        // Page 12 : Cocktails
+        "sec.cocktails": "Cocktails",
+        "note.cocktails": "Signatur-Kreationen & erfrischende Mischungen",
+        "cocktail.coconut.name": "Coconut",
+        "cocktail.golden_sunrise.name": "Golden Sunrise",
+        "cocktail.bora_bora.name": "Bora Bora",
+        "cocktail.smooth_avocado.name": "Smooth Avocado",
+
+        // Page 13 : Clôture
         "cl.thanks": "Guten Appetit!",
         "cl.sub": "Vielen Dank für Ihren Besuch",
         "certif.halal": "AVS Halal-zertifiziertes Fleisch",
