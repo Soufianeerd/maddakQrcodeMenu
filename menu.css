@@ -427,19 +427,22 @@ body::after {
 
 /* Icône feuille végétale SVG */
 .veggie-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #2e7d32;
-    vertical-align: -2px;
-    margin-right: 5px;
-}
-
-.veggie-icon svg {
     width: 13px;
     height: 13px;
-    stroke: currentColor;
+    min-width: 13px;
+    max-width: 13px;
+    min-height: 13px;
+    max-height: 13px;
+
     display: inline-block;
+
+    color: #2e7d32;
+    fill: currentColor;
+
+    vertical-align: -2px;
+    margin-right: 5px;
+
+    flex-shrink: 0;
 }
 
 /* Items */
