@@ -26,7 +26,7 @@
                 <!-- ══ COVER (Page 0) ══ -->
                 <div class="page pcov" id="p0">
                     <div class="pface">
-                        <!-- Sélecteur de langue sur la couverture (haut droite) -->
+                        <!-- Sélecteur de langue sur la couverture (haut droite compact) -->
                         <div class="lang-selector" id="langSelector" role="group" aria-label="Sélection de la langue">
                             <button type="button" class="lang-btn active" data-lang="fr"
                                 aria-label="Afficher le menu en français" title="Français" aria-pressed="true"
@@ -59,13 +59,13 @@
                     <div class="pback"></div>
                 </div>
 
-                <!-- ══ PAGE 1 — Smash Burgers & Veggie ══ -->
+                <!-- ══ PAGE 1 — Smash Burgers ══ -->
                 <div class="page pint" id="p1">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">1 / 11</span>
+                                <span class="phd-num">1 / 12</span>
                             </div>
 
                             <div class="ms">
@@ -86,7 +86,21 @@
 
                                 <div class="mi"><span class="mn" data-i18n="smash.gourmand.name">Smash Gourmand</span><span class="md"></span><span class="mp">17,90 €</span></div>
                                 <p class="mi-desc" data-i18n="smash.gourmand.desc">Un cheeseburger et un cheese bacon burger bien savoureux, tranchés en deux et disposés sur notre sauce forestière gourmande pour une expérience unique.</p>
-                                <p class="ms-note" style="margin-top:2px" data-i18n="mention.bacon">« Bacon de bœuf ou dinde fumée »</p>
+                                
+                                <p class="ms-note" style="margin-top:clamp(8px, 1.8vh, 16px)" data-i18n="mention.bacon">« Bacon de bœuf ou dinde fumée »</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pback" onclick="prev()"></div>
+                </div>
+
+                <!-- ══ PAGE 2 — Chicken Smash & Veggie ══ -->
+                <div class="page pint" id="p2">
+                    <div class="pface" onclick="next()">
+                        <div class="pc">
+                            <div class="phd">
+                                <span class="phd-logo">Maddak</span>
+                                <span class="phd-num">2 / 12</span>
                             </div>
 
                             <div class="ms">
@@ -102,7 +116,7 @@
                                 <p class="mi-desc" data-i18n="smash.veggie.desc">Salade, coleslaw, cheddar, tranches d’avocat, tomate.</p>
                                 <p class="mi-desc" style="color:var(--em);font-weight:500" data-i18n="smash.veggie.options">Options (+1,50 €) : Œuf · Galette de pomme de terre · Artichaut ou aubergine confite</p>
 
-                                <div class="info-block" style="margin-bottom:clamp(3px, 0.8vh, 6px)">
+                                <div class="info-block">
                                     <p data-i18n="info.vege">🌿 <strong>T'es plutôt Végé ?</strong> Remplace ton steak par un Beyond Meat <strong>+2,50 €</strong></p>
                                 </div>
                             </div>
@@ -111,7 +125,7 @@
                             <div class="b-options-card">
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.river.title">🧀 River Cheddar</span>
+                                        <span class="b-opt-title" data-i18n="bopt.river.title">River Cheddar</span>
                                         <span class="b-opt-quote" data-i18n="bopt.river.quote">« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »</span>
                                     </div>
                                     <div class="b-opt-line">
@@ -120,7 +134,7 @@
                                 </div>
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.supp.title">➕ Suppléments Burgers</span>
+                                        <span class="b-opt-title" data-i18n="bopt.supp.title">Suppléments Burgers</span>
                                         <span class="b-opt-line"><span data-i18n="bopt.supp.double">Double viande + fromage :</span> <strong>+3,50 €</strong></span>
                                     </div>
                                     <div class="b-opt-line">
@@ -132,7 +146,7 @@
                                 </div>
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.fries.title">🍟 Options Frites</span>
+                                        <span class="b-opt-title" data-i18n="bopt.fries.title">Options Frites</span>
                                     </div>
                                     <div class="b-opt-line">
                                         <span data-i18n="bopt.fries.items">Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong></span>
@@ -144,13 +158,13 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 2 — Burgers Gourmets 1/2 ══ -->
-                <div class="page pint" id="p2">
+                <!-- ══ PAGE 3 — Burgers Gourmets 1/2 ══ -->
+                <div class="page pint" id="p3">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">2 / 11</span>
+                                <span class="phd-num">3 / 12</span>
                             </div>
                             <div class="ms">
                                 <div class="ms-title" data-i18n="sec.gourmets">Burgers Gourmets</div>
@@ -174,51 +188,18 @@
                                 <div class="mi"><span class="mn" data-i18n="bg.auvergnat.name">L’Auvergnat</span><span class="md"></span><span class="mp">16,90 €</span></div>
                                 <p class="mi-desc" data-i18n="bg.auvergnat.desc">Bœuf frais, Fourme d’Ambert AOP, tomates confites, confit de figues, oignons caramélisés, salade, mayonnaise verte.</p>
                             </div>
-
-                            <!-- Bloc Options Burgers -->
-                            <div class="b-options-card">
-                                <div class="b-opt-sec">
-                                    <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.river.title">🧀 River Cheddar</span>
-                                        <span class="b-opt-quote" data-i18n="bopt.river.quote">« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »</span>
-                                    </div>
-                                    <div class="b-opt-line">
-                                        <span data-i18n="bopt.river.items">Persil & oignons crispy : <strong>3,20 €</strong> · Supplément bacon : <strong>+0,50 €</strong></span>
-                                    </div>
-                                </div>
-                                <div class="b-opt-sec">
-                                    <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.supp.title">➕ Suppléments Burgers</span>
-                                        <span class="b-opt-line"><span data-i18n="bopt.supp.double">Double viande + fromage :</span> <strong>+3,50 €</strong></span>
-                                    </div>
-                                    <div class="b-opt-line">
-                                        <span class="b-opt-tag">+1,50 € :</span> <span data-i18n="bopt.supp.150">Fromage · Œuf · Avocat · Bacon</span>
-                                    </div>
-                                    <div class="b-opt-line">
-                                        <span class="b-opt-tag">+1,00 € :</span> <span data-i18n="bopt.supp.100">Tomates confites · Oignons caramélisés · Oignons rouges · Pickles · Oignons frits</span>
-                                    </div>
-                                </div>
-                                <div class="b-opt-sec">
-                                    <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.fries.title">🍟 Options Frites</span>
-                                    </div>
-                                    <div class="b-opt-line">
-                                        <span data-i18n="bopt.fries.items">Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong></span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 3 — Burgers Gourmets 2/2 ══ -->
-                <div class="page pint" id="p3">
+                <!-- ══ PAGE 4 — Burgers Gourmets 2/2 ══ -->
+                <div class="page pint" id="p4">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">3 / 11</span>
+                                <span class="phd-num">4 / 12</span>
                             </div>
                             <div class="ms">
                                 <div class="ms-title" data-i18n="sec.gourmets2">Burgers Gourmets (suite)</div>
@@ -246,7 +227,7 @@
                             <div class="b-options-card">
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.river.title">🧀 River Cheddar</span>
+                                        <span class="b-opt-title" data-i18n="bopt.river.title">River Cheddar</span>
                                         <span class="b-opt-quote" data-i18n="bopt.river.quote">« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »</span>
                                     </div>
                                     <div class="b-opt-line">
@@ -255,7 +236,7 @@
                                 </div>
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.supp.title">➕ Suppléments Burgers</span>
+                                        <span class="b-opt-title" data-i18n="bopt.supp.title">Suppléments Burgers</span>
                                         <span class="b-opt-line"><span data-i18n="bopt.supp.double">Double viande + fromage :</span> <strong>+3,50 €</strong></span>
                                     </div>
                                     <div class="b-opt-line">
@@ -267,7 +248,7 @@
                                 </div>
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.fries.title">🍟 Options Frites</span>
+                                        <span class="b-opt-title" data-i18n="bopt.fries.title">Options Frites</span>
                                     </div>
                                     <div class="b-opt-line">
                                         <span data-i18n="bopt.fries.items">Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong></span>
@@ -279,13 +260,13 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 4 — Philly's & Extras ══ -->
-                <div class="page pint" id="p4">
+                <!-- ══ PAGE 5 — Philly's ══ -->
+                <div class="page pint" id="p5">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">4 / 11</span>
+                                <span class="phd-num">5 / 12</span>
                             </div>
 
                             <div class="ms">
@@ -297,14 +278,14 @@
 
                                 <div class="mi"><span class="mn" data-i18n="philly.fermier.name">Le Fermier</span><span class="md"></span><span class="mp">13,90 €</span></div>
                                 <p class="mi-desc" data-i18n="philly.fermier.desc">Dés de poulet marinés aux épices, salade, confit de poivrons et d’oignons, emmental, sauce Brazil.</p>
-                                <p class="ms-note" style="margin-top:2px" data-i18n="philly.supp">Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €</p>
+                                <p class="ms-note" style="margin-top:clamp(4px, 1vh, 8px)" data-i18n="philly.supp">Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €</p>
                             </div>
 
                             <!-- Bloc Options Burgers & Philly's -->
                             <div class="b-options-card">
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.river.title">🧀 River Cheddar</span>
+                                        <span class="b-opt-title" data-i18n="bopt.river.title">River Cheddar</span>
                                         <span class="b-opt-quote" data-i18n="bopt.river.quote">« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »</span>
                                     </div>
                                     <div class="b-opt-line">
@@ -313,7 +294,7 @@
                                 </div>
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.supp.title">➕ Suppléments Burgers</span>
+                                        <span class="b-opt-title" data-i18n="bopt.supp.title">Suppléments Burgers</span>
                                         <span class="b-opt-line"><span data-i18n="bopt.supp.double">Double viande + fromage :</span> <strong>+3,50 €</strong></span>
                                     </div>
                                     <div class="b-opt-line">
@@ -325,7 +306,7 @@
                                 </div>
                                 <div class="b-opt-sec">
                                     <div class="b-opt-hd">
-                                        <span class="b-opt-title" data-i18n="bopt.fries.title">🍟 Options Frites</span>
+                                        <span class="b-opt-title" data-i18n="bopt.fries.title">Options Frites</span>
                                     </div>
                                     <div class="b-opt-line">
                                         <span data-i18n="bopt.fries.items">Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong></span>
@@ -337,16 +318,16 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 5 — Assiettes ══ -->
-                <div class="page pint" id="p5">
+                <!-- ══ PAGE 6 — Côté Brasserie (Assiettes) ══ -->
+                <div class="page pint" id="p6">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">5 / 11</span>
+                                <span class="phd-num">6 / 12</span>
                             </div>
                             <div class="ms">
-                                <div class="ms-title" data-i18n="sec.assiettes">🍽️ Côté Brasserie — Assiettes</div>
+                                <div class="ms-title" data-i18n="sec.assiettes">Côté Brasserie — Assiettes</div>
 
                                 <div class="mi"><span class="mn" data-i18n="ass.cordonbleu.name">Cordon Bleu Maison</span><span class="md"></span><span class="mp">20,90 €</span></div>
                                 <p class="mi-desc" data-i18n="ass.cordonbleu.desc">Un savoir-faire unique pour un goût unique.</p>
@@ -374,16 +355,16 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 6 — Pasta ══ -->
-                <div class="page pint" id="p6">
+                <!-- ══ PAGE 7 — Pasta ══ -->
+                <div class="page pint" id="p7">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">6 / 11</span>
+                                <span class="phd-num">7 / 12</span>
                             </div>
                             <div class="ms">
-                                <div class="ms-title" data-i18n="sec.pasta">🍝 Pasta</div>
+                                <div class="ms-title" data-i18n="sec.pasta">Pasta</div>
                                 <p class="ms-note" data-i18n="note.pasta">Pâtes crémeuses cuisinées minute avec des ingrédients nobles</p>
 
                                 <div class="mi"><span class="mn" data-i18n="pasta.eggsplosion.name">Eggs’plosion</span><span class="md"></span><span class="mp">18,90 €</span></div>
@@ -406,13 +387,13 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 7 — Bowls + Salades ══ -->
-                <div class="page pint" id="p7">
+                <!-- ══ PAGE 8 — Bowls & Salades ══ -->
+                <div class="page pint" id="p8">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">7 / 11</span>
+                                <span class="phd-num">8 / 12</span>
                             </div>
                             <div class="ms">
                                 <div class="ms-title" data-i18n="sec.bowls">Bowls Signature</div>
@@ -440,13 +421,13 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 8 — Tex-Mex & Sides ══ -->
-                <div class="page pint" id="p8">
+                <!-- ══ PAGE 9 — Tex-Mex & Sides ══ -->
+                <div class="page pint" id="p9">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">8 / 11</span>
+                                <span class="phd-num">9 / 12</span>
                             </div>
 
                             <div class="ms">
@@ -484,13 +465,13 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 9 — Menu Enfant + Desserts ══ -->
-                <div class="page pint" id="p9">
+                <!-- ══ PAGE 10 — Menu Enfant & Desserts ══ -->
+                <div class="page pint" id="p10">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">9 / 11</span>
+                                <span class="phd-num">10 / 12</span>
                             </div>
 
                             <div class="ms">
@@ -522,13 +503,13 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 10 — Boissons ══ -->
-                <div class="page pint" id="p10">
+                <!-- ══ PAGE 11 — Boissons ══ -->
+                <div class="page pint" id="p11">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">10 / 11</span>
+                                <span class="phd-num">11 / 12</span>
                             </div>
 
                             <div class="ms">
@@ -569,13 +550,13 @@
                     <div class="pback" onclick="prev()"></div>
                 </div>
 
-                <!-- ══ PAGE 11 — Fermeture & Certifications ══ -->
-                <div class="page pint" id="p11">
+                <!-- ══ PAGE 12 — Clôture & Certifications ══ -->
+                <div class="page pint" id="p12">
                     <div class="pface" onclick="next()">
                         <div class="pc">
                             <div class="phd">
                                 <span class="phd-logo">Maddak</span>
-                                <span class="phd-num">11 / 11</span>
+                                <span class="phd-num">12 / 12</span>
                             </div>
                             <div class="closing">
                                 <div class="cl-orn">✦ &nbsp; ✦ &nbsp; ✦</div>

@@ -99,6 +99,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /**
+     * Initialise dynamiquement les compteurs de pages intérieurs (ex: 1 / 12 ... 12 / 12).
+     */
+    function initPageNumbers() {
+        const totalInterior = TOTAL - 1;
+        pages.forEach((page, idx) => {
+            if (idx === 0) return;
+            const numEl = page.querySelector('.phd-num');
+            if (numEl) {
+                numEl.textContent = `${idx} / ${totalInterior}`;
+            }
+        });
+    }
+
+    /**
      * Met à jour l'indicateur de page et l'état des boutons.
      */
     function syncUI() {
@@ -230,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialisation
     setLanguage(initialLang);
+    initPageNumbers();
     updateStacking();
     syncUI();
 

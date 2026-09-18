@@ -343,12 +343,12 @@ body::after {
     z-index: 5;
 }
 
-/* Page content */
+/* Page content avec zone de sécurité inférieure */
 .pc {
     position: relative;
     z-index: 2;
     height: 100%;
-    padding: clamp(12px, 3vh, 22px) clamp(12px, 4vw, 20px) clamp(10px, 2.5vh, 18px) clamp(14px, 4.5vw, 24px);
+    padding: clamp(14px, 3vh, 22px) clamp(14px, 4vw, 22px) clamp(16px, 3.5vh, 26px) clamp(16px, 4.5vw, 24px);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -382,38 +382,43 @@ body::after {
 
 /* Section */
 .ms {
-    margin-bottom: clamp(5px, 1.4vh, 11px);
+    margin-bottom: clamp(6px, 1.4vh, 12px);
     flex-shrink: 0;
 }
 
+.ms + .ms {
+    margin-top: clamp(6px, 1.5vh, 12px);
+}
+
+/* Titre de catégorie éditorial haut de gamme */
 .ms-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(.75rem, 2.4vw, .92rem);
+    font-size: clamp(.78rem, 2.5vw, .95rem);
     font-weight: 700;
     color: var(--em);
+    letter-spacing: .02em;
     display: flex;
-    align-items: baseline;
-    gap: 7px;
-    margin-bottom: 1px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: clamp(3px, .8vh, 6px);
 }
 
 .ms-title::after {
     content: '';
     flex: 1;
-    height: .5px;
-    background: rgba(212, 175, 55, .4);
+    height: 1px;
+    background: linear-gradient(90deg, rgba(212, 175, 55, .45), rgba(212, 175, 55, .05));
     display: inline-block;
-    margin-bottom: 2px;
 }
 
 .ms-note {
     font-size: clamp(.42rem, 1.3vw, .52rem);
     font-style: italic;
     color: var(--tm);
-    opacity: .62;
-    margin-bottom: clamp(4px, 1.2vh, 7px);
-    letter-spacing: .03em;
-    line-height: 1.4;
+    opacity: .65;
+    margin-bottom: clamp(4px, 1.1vh, 7px);
+    letter-spacing: .02em;
+    line-height: 1.35;
 }
 
 /* Items */
@@ -421,13 +426,14 @@ body::after {
     display: flex;
     align-items: baseline;
     gap: 3px;
-    margin-bottom: clamp(2px, .8vh, 4px);
+    margin-top: clamp(2px, .6vh, 4px);
+    margin-bottom: clamp(1px, .4vh, 2px);
 }
 
 .mn {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(.68rem, 2.1vw, .84rem);
-    color: #0e0e0e; /* Teinte noire / très foncée pour une visibilité maximale */
+    font-size: clamp(.67rem, 2.1vw, .83rem);
+    color: #0a0a0a; /* Noir franc / très foncé pour une visibilité immédiate */
     font-weight: 700;
     white-space: nowrap;
     flex-shrink: 0;
@@ -436,14 +442,14 @@ body::after {
 
 .md {
     flex: 1;
-    border-bottom: 1px dotted rgba(212, 175, 55, .5);
-    margin-bottom: 3px;
-    min-width: 6px;
+    border-bottom: 1px dotted rgba(212, 175, 55, .45);
+    margin: 0 4px 3px 4px;
+    min-width: 10px;
 }
 
 .mp {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(.66rem, 2vw, .82rem);
+    font-size: clamp(.65rem, 2vw, .8rem);
     color: var(--em);
     font-weight: 700;
     white-space: nowrap;
@@ -459,14 +465,14 @@ body::after {
 }
 
 .mi-desc {
-    font-size: clamp(.46rem, 1.38vw, .56rem);
+    font-size: clamp(.45rem, 1.35vw, .55rem);
     font-style: italic;
-    color: #63584c; /* Plus léger visuellement pour contraster avec le nom */
+    color: #5c5346; /* Teinte plus légère pour contraster nettement avec le nom */
     opacity: .88;
-    line-height: 1.3;
-    margin-bottom: clamp(2px, .6vh, 4px);
-    margin-top: -1px;
-    padding-left: 2px;
+    line-height: 1.35;
+    margin-bottom: clamp(3px, .8vh, 5px);
+    margin-top: 0;
+    padding-left: 1px;
 }
 
 /* Teaser nouveautés sans prix */
@@ -479,22 +485,23 @@ body::after {
     margin-bottom: clamp(4px, .9vh, 7px);
 }
 
-/* ── Carte d'options burgers intégrée sur chaque page ── */
+/* ── Carte d'options burgers éditoriale épurée ── */
 .b-options-card {
-    background: rgba(13, 44, 40, .045);
-    border: .5px solid rgba(212, 175, 55, .32);
+    background: rgba(13, 44, 40, .035);
+    border: 1px solid rgba(212, 175, 55, .28);
     border-radius: 6px;
-    padding: clamp(3px, .8vh, 6px) clamp(5px, 1.5vw, 8px);
+    padding: clamp(5px, 1.2vh, 8px) clamp(7px, 1.8vw, 10px);
     margin-top: auto;
+    margin-bottom: clamp(2px, .6vh, 6px);
     display: flex;
     flex-direction: column;
-    gap: clamp(2px, .5vh, 4px);
+    gap: clamp(3px, .7vh, 5px);
     flex-shrink: 0;
 }
 
 .b-opt-sec {
-    border-bottom: 1px dashed rgba(212, 175, 55, .25);
-    padding-bottom: clamp(1px, .4vh, 3px);
+    border-bottom: 1px dashed rgba(212, 175, 55, .22);
+    padding-bottom: clamp(2px, .5vh, 4px);
 }
 
 .b-opt-sec:last-child {
@@ -506,15 +513,17 @@ body::after {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    gap: 4px;
+    gap: 6px;
     margin-bottom: 1px;
 }
 
 .b-opt-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(.48rem, 1.4vw, .58rem);
+    font-size: clamp(.48rem, 1.45vw, .58rem);
     font-weight: 700;
     color: var(--em);
+    letter-spacing: .04em;
+    text-transform: uppercase;
 }
 
 .b-opt-quote {
@@ -529,7 +538,7 @@ body::after {
 .b-opt-line {
     font-size: clamp(.41rem, 1.22vw, .5rem);
     color: var(--tm);
-    line-height: 1.32;
+    line-height: 1.34;
 }
 
 .b-opt-line strong {

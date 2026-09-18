@@ -1,7 +1,8 @@
 /**
- * 🌐 SYSTÈME DE TRADUCTION DU MENU MADDAK (i18n)
+ * SYSTÈME DE TRADUCTION DU MENU MADDAK (i18n)
  * Langues prises en charge : Français (défaut), English, Deutsch
  * Les prix sont séparés des traductions pour une maintenance propre.
+ * Zéro émoji sauf la feuille végétale 🌿.
  */
 
 const translations = {
@@ -20,35 +21,36 @@ const translations = {
         "nav.next": "Page suivante",
         "nav.page": "Page",
 
-        // Labels pagination dynamique
+        // Labels pagination dynamique (13 pages : Couverture + 12 pages intérieures)
         "labels.0": "Couverture",
-        "labels.1": "Smash & Veggie",
-        "labels.2": "Gourmets 1/2",
-        "labels.3": "Gourmets 2/2",
-        "labels.4": "Philly's & Extras",
-        "labels.5": "Côté Brasserie",
-        "labels.6": "Pasta",
-        "labels.7": "Bowls & Salades",
-        "labels.8": "Tex-Mex & Sides",
-        "labels.9": "Desserts & Kids",
-        "labels.10": "Boissons",
-        "labels.11": "Fin",
+        "labels.1": "Smash Burgers",
+        "labels.2": "Chicken & Veggie",
+        "labels.3": "Gourmets 1/2",
+        "labels.4": "Gourmets 2/2",
+        "labels.5": "Philly's & Extras",
+        "labels.6": "Côté Brasserie",
+        "labels.7": "Pasta",
+        "labels.8": "Bowls & Salades",
+        "labels.9": "Tex-Mex & Sides",
+        "labels.10": "Desserts & Kids",
+        "labels.11": "Boissons",
+        "labels.12": "Fin",
 
-        // Bloc Options Burgers commun
-        "bopt.river.title": "🧀 River Cheddar",
+        // Bloc Options Burgers commun (sans émojis)
+        "bopt.river.title": "River Cheddar",
         "bopt.river.quote": "« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »",
         "bopt.river.items": "Persil & oignons crispy : <strong>3,20 €</strong> · Supplément bacon : <strong>+0,50 €</strong>",
-        "bopt.supp.title": "➕ Suppléments Burgers",
+        "bopt.supp.title": "Suppléments Burgers",
         "bopt.supp.double": "Double viande + fromage :",
         "bopt.supp.150": "Fromage · Œuf · Avocat · Bacon",
         "bopt.supp.100": "Tomates confites · Oignons caramélisés · Oignons rouges · Pickles · Oignons frits",
-        "bopt.fries.title": "🍟 Options Frites",
+        "bopt.fries.title": "Options Frites",
         "bopt.fries.items": "Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong>",
 
         // Teaser nouveaux burgers
         "bg.teaser": "✦ À découvrir très prochainement ✦",
 
-        // Page 1 : Smash Burgers & Veggie
+        // Page 1 : Smash Burgers
         "sec.smash": "Smash Burgers",
         "note.smash": "Tous servis avec frites maison fraîches",
         "smash.cute.name": "Cute Cheeseburger",
@@ -63,6 +65,7 @@ const translations = {
         "smash.gourmand.desc": "Un cheeseburger et un cheese bacon burger bien savoureux, tranchés en deux et disposés sur notre sauce forestière gourmande pour une expérience unique.",
         "mention.bacon": "« Bacon de bœuf ou dinde fumée »",
 
+        // Page 2 : Chicken Smash & Veggie
         "sec.chickensmash": "Chicken Smash & Veggie",
         "smash.doublechicken.name": "Double Chicken’Cheese",
         "smash.doublechicken.desc": "Poulet frais smashé, cheddar, laitue, oignons, pickles, sauce maison. Supplément œuf : +1,50 €.",
@@ -73,7 +76,7 @@ const translations = {
         "smash.veggie.options": "Options (+1,50 €) : Œuf · Galette de pomme de terre · Artichaut ou aubergine confite",
         "info.vege": "🌿 <strong>T'es plutôt Végé ?</strong> Remplace ton steak par un Beyond Meat <strong>+2,50 €</strong>",
 
-        // Page 2 : Burgers Gourmets 1/2
+        // Page 3 : Burgers Gourmets 1/2
         "sec.gourmets": "Burgers Gourmets",
         "note.gourmets": "Pain Farine Label Rouge · Viande hachée fraîche française · Cuits à votre goût",
         "bg.supermaddak.name": "Super Maddak",
@@ -89,7 +92,7 @@ const translations = {
         "bg.auvergnat.name": "L’Auvergnat",
         "bg.auvergnat.desc": "Bœuf frais, Fourme d’Ambert AOP, tomates confites, confit de figues, oignons caramélisés, salade, mayonnaise verte.",
 
-        // Page 3 : Burgers Gourmets 2/2
+        // Page 4 : Burgers Gourmets 2/2
         "sec.gourmets2": "Burgers Gourmets (suite)",
         "bg.montagnard.name": "Montagnard",
         "bg.montagnard.desc": "Bœuf frais, salade, fromage à raclette fumée, marmelade de poivrons et oignons, galette de pomme de terre, oignons crispy, sauce oignons-poivrons.",
@@ -102,7 +105,7 @@ const translations = {
         "bg.kbo.name": "KBO",
         "bg.kbo.desc": "Cabillaud snacké à la plancha, salade, pickles, oignons frits, tomate, cheddar maturé, oignons sautés aux herbes, sauce fish.",
 
-        // Page 4 : Philly's & Extras
+        // Page 5 : Philly's & Extras
         "sec.phillys": "Philly’s",
         "note.phillys": "Pain moelleux garni · servis avec frites fraîches",
         "philly.fondant.name": "Le Fondant",
@@ -111,8 +114,8 @@ const translations = {
         "philly.fermier.desc": "Dés de poulet marinés aux épices, salade, confit de poivrons et d’oignons, emmental, sauce Brazil.",
         "philly.supp": "Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €",
 
-        // Page 5 : Assiettes
-        "sec.assiettes": "🍽️ Côté Brasserie — Assiettes",
+        // Page 6 : Assiettes
+        "sec.assiettes": "Côté Brasserie — Assiettes",
         "ass.cordonbleu.name": "Cordon Bleu Maison",
         "ass.cordonbleu.desc": "Un savoir-faire unique pour un goût unique.",
         "ass.veau.name": "Veau Mariné",
@@ -127,8 +130,8 @@ const translations = {
         "ass.sides.included": "Accompagnements inclus : Salade composée + frites fraîches OU riz basmati",
         "ass.sides.supp": "Supplément +2,00 € : Frites de patate douce · Twister",
 
-        // Page 6 : Pasta
-        "sec.pasta": "🍝 Pasta",
+        // Page 7 : Pasta
+        "sec.pasta": "Pasta",
         "note.pasta": "Pâtes crémeuses cuisinées minute avec des ingrédients nobles",
         "pasta.eggsplosion.name": "Eggs’plosion",
         "pasta.eggsplosion.desc": "Pâtes crémeuses, viande hachée, raclette fondue, bacon croustillant, œuf au plat.",
@@ -141,7 +144,7 @@ const translations = {
         "pasta.azzurro.name": "Rigatoni Azzurro",
         "pasta.azzurro.desc": "Rigatoni à la sauce au bleu, tomates cerises, parmesan.",
 
-        // Page 7 : Bowls & Salades
+        // Page 8 : Bowls & Salades
         "sec.bowls": "Bowls Signature",
         "bowl.poulet.name": "Délice de Poulet",
         "bowl.poulet.desc": "Frites fraîches, émincé de poulet aux poivrons, oignons crispy, purée d’avocat, sauce cheddar.",
@@ -154,7 +157,7 @@ const translations = {
         "sal.chevre.name": "Toasts Chèvre Chaud",
         "sal.chevre.desc": "Salade verte, toast de chèvre chaud, billes de mozzarella, olives, miel, tomates cerises, vinaigrette balsamique.",
 
-        // Page 8 : Tex-Mex & Sides
+        // Page 9 : Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Donuts Poulet Fromage",
         "tm.donuts.desc": "2,50 € / pièce · Beignet croustillant poulet & fromage fondant.",
@@ -174,7 +177,7 @@ const translations = {
         "side.coleslaw.name": "Coleslaw maison",
         "side.coleslaw.desc": "Supplément menu : +1,50 € · Hors menu : 3,00 €",
 
-        // Page 9 : Menu Enfant & Desserts
+        // Page 10 : Menu Enfant & Desserts
         "sec.kids": "Menu Enfant",
         "kids.menu.name": "Menu Enfant — jusqu’à 10 ans",
         "kids.menu.desc": "Burger (steak/cheddar/ketchup) OU Chicken crispy + frites fraîches + boisson + compote.",
@@ -187,7 +190,7 @@ const translations = {
         "des.fondant.name": "Fondant Chocolat",
         "des.fondant.desc": "Crème anglaise, boule de glace vanille, coulis chocolat & caramel, chantilly.",
 
-        // Page 10 : Boissons
+        // Page 11 : Boissons
         "sec.drinks": "Boissons",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Virgin Mojito fraise",
@@ -207,7 +210,7 @@ const translations = {
         "drk.evian.name": "Evian 1L",
         "drk.cristaline.name": "Cristaline",
 
-        // Page 11 : Clôture
+        // Page 12 : Clôture
         "cl.thanks": "Bon appétit !",
         "cl.sub": "Merci de votre visite",
         "certif.halal": "Viandes certifiées Halal AVS",
@@ -230,35 +233,36 @@ const translations = {
         "nav.next": "Next page",
         "nav.page": "Page",
 
-        // Dynamic labels
+        // Dynamic labels (13 pages : Cover + 12 content pages)
         "labels.0": "Cover",
-        "labels.1": "Smash & Veggie",
-        "labels.2": "Gourmets 1/2",
-        "labels.3": "Gourmets 2/2",
-        "labels.4": "Philly's & Extras",
-        "labels.5": "Bistro Plates",
-        "labels.6": "Pasta",
-        "labels.7": "Bowls & Salads",
-        "labels.8": "Tex-Mex & Sides",
-        "labels.9": "Desserts & Kids",
-        "labels.10": "Drinks",
-        "labels.11": "Closing",
+        "labels.1": "Smash Burgers",
+        "labels.2": "Chicken & Veggie",
+        "labels.3": "Gourmets 1/2",
+        "labels.4": "Gourmets 2/2",
+        "labels.5": "Philly's & Extras",
+        "labels.6": "Bistro Plates",
+        "labels.7": "Pasta",
+        "labels.8": "Bowls & Salads",
+        "labels.9": "Tex-Mex & Sides",
+        "labels.10": "Desserts & Kids",
+        "labels.11": "Drinks",
+        "labels.12": "Closing",
 
-        // Common Burger Options block
-        "bopt.river.title": "🧀 River Cheddar",
+        // Common Burger Options block (no emojis)
+        "bopt.river.title": "River Cheddar",
         "bopt.river.quote": "« Pour a waterfall of melted cheddar over your burger! »",
         "bopt.river.items": "Parsley & crispy onions: <strong>€3.20</strong> · Extra bacon: <strong>+€0.50</strong>",
-        "bopt.supp.title": "➕ Burger Extras",
+        "bopt.supp.title": "Burger Extras",
         "bopt.supp.double": "Double meat + cheese:",
         "bopt.supp.150": "Cheese · Egg · Avocado · Bacon",
         "bopt.supp.100": "Candied tomatoes · Caramelized onions · Red onions · Pickles · Fried onions",
-        "bopt.fries.title": "🍟 Fries Options",
+        "bopt.fries.title": "Fries Options",
         "bopt.fries.items": "Sweet potato fries: <strong>+€2.00</strong> · Fries + melted cheddar: <strong>+€2.00</strong> · Fries + cheddar & bacon: <strong>+€2.70</strong>",
 
         // Teaser
         "bg.teaser": "✦ Coming very soon ✦",
 
-        // Page 1 : Smash Burgers & Veggie
+        // Page 1 : Smash Burgers
         "sec.smash": "Smash Burgers",
         "note.smash": "All served with fresh homemade French fries",
         "smash.cute.name": "Cute Cheeseburger",
@@ -273,6 +277,7 @@ const translations = {
         "smash.gourmand.desc": "A flavorful cheeseburger and cheese bacon burger, cut in half and served over our gourmet wild mushroom sauce for a unique experience.",
         "mention.bacon": "« Beef bacon or smoked turkey bacon »",
 
+        // Page 2 : Chicken Smash & Veggie
         "sec.chickensmash": "Chicken Smash & Veggie",
         "smash.doublechicken.name": "Double Chicken’Cheese",
         "smash.doublechicken.desc": "Fresh smashed chicken patty, cheddar, lettuce, onions, pickles, house sauce. Extra egg: +€1.50.",
@@ -283,7 +288,7 @@ const translations = {
         "smash.veggie.options": "Options (+€1.50): Egg · Potato rosti · Candied artichoke or eggplant",
         "info.vege": "🌿 <strong>Prefer Veggie?</strong> Swap your patty for Beyond Meat <strong>+€2.50</strong>",
 
-        // Page 2 : Burgers Gourmets 1/2
+        // Page 3 : Burgers Gourmets 1/2
         "sec.gourmets": "Gourmet Burgers",
         "note.gourmets": "Label Rouge artisan bun · Fresh French beef · Cooked to your liking",
         "bg.supermaddak.name": "Super Maddak",
@@ -299,7 +304,7 @@ const translations = {
         "bg.auvergnat.name": "L’Auvergnat",
         "bg.auvergnat.desc": "Fresh beef, Fourme d’Ambert PDO blue cheese, candied tomatoes, fig confit, caramelized onions, lettuce, green herb mayo.",
 
-        // Page 3 : Burgers Gourmets 2/2
+        // Page 4 : Burgers Gourmets 2/2
         "sec.gourmets2": "Gourmet Burgers (cont.)",
         "bg.montagnard.name": "Montagnard",
         "bg.montagnard.desc": "Fresh beef, lettuce, smoked raclette cheese, sweet pepper & onion marmalade, potato rosti, crispy onions, onion-pepper sauce.",
@@ -312,7 +317,7 @@ const translations = {
         "bg.kbo.name": "KBO",
         "bg.kbo.desc": "Plancha-seared cod, lettuce, pickles, fried onions, tomato, mature cheddar, herb-sautéed onions, fish tartar sauce.",
 
-        // Page 4 : Philly's & Extras
+        // Page 5 : Philly's & Extras
         "sec.phillys": "Philly’s",
         "note.phillys": "Soft brioche sub sandwich · served with fresh fries",
         "philly.fondant.name": "Le Fondant",
@@ -321,8 +326,8 @@ const translations = {
         "philly.fermier.desc": "Spiced diced chicken, salad, sweet pepper & onion confit, melted emmental cheese, Brazil sauce.",
         "philly.supp": "Extra cheddar: +€1.00 · Cheddar + bacon: +€2.00",
 
-        // Page 5 : Assiettes
-        "sec.assiettes": "🍽️ Bistro Plates",
+        // Page 6 : Assiettes
+        "sec.assiettes": "Bistro Plates",
         "ass.cordonbleu.name": "House Cordon Bleu",
         "ass.cordonbleu.desc": "Unique culinary craftsmanship for an incomparable taste.",
         "ass.veau.name": "Marinated Veal",
@@ -337,8 +342,8 @@ const translations = {
         "ass.sides.included": "Included sides: Mixed salad + fresh fries OR basmati rice",
         "ass.sides.supp": "Extra +€2.00: Sweet potato fries · Twister",
 
-        // Page 6 : Pasta
-        "sec.pasta": "🍝 Pasta",
+        // Page 7 : Pasta
+        "sec.pasta": "Pasta",
         "note.pasta": "Creamy gourmet pasta freshly cooked with premium ingredients",
         "pasta.eggsplosion.name": "Eggs’plosion",
         "pasta.eggsplosion.desc": "Creamy pasta, seasoned minced beef, melted raclette cheese, crispy bacon, sunny-side-up egg.",
@@ -351,7 +356,7 @@ const translations = {
         "pasta.azzurro.name": "Rigatoni Azzurro",
         "pasta.azzurro.desc": "Rigatoni in rich blue cheese cream sauce, cherry tomatoes, parmesan.",
 
-        // Page 7 : Bowls & Salades
+        // Page 8 : Bowls & Salades
         "sec.bowls": "Signature Bowls",
         "bowl.poulet.name": "Chicken Delight",
         "bowl.poulet.desc": "Fresh fries, chicken strips sautéed with bell peppers, crispy onions, avocado mash, cheddar sauce.",
@@ -364,7 +369,7 @@ const translations = {
         "sal.chevre.name": "Warm Goat Cheese Toasts",
         "sal.chevre.desc": "Crisp salad, warm goat cheese toasts, mozzarella pearls, olives, honey, cherry tomatoes, balsamic dressing.",
 
-        // Page 8 : Tex-Mex & Sides
+        // Page 9 : Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Chicken & Cheese Donuts",
         "tm.donuts.desc": "€2.50 / piece · Crispy fried chicken donut with molten cheese center.",
@@ -384,7 +389,7 @@ const translations = {
         "side.coleslaw.name": "House Coleslaw",
         "side.coleslaw.desc": "Meal upgrade: +€1.50 · A la carte: €3.00",
 
-        // Page 9 : Menu Enfant & Desserts
+        // Page 10 : Menu Enfant & Desserts
         "sec.kids": "Kids Menu",
         "kids.menu.name": "Kids Menu — up to 10 years old",
         "kids.menu.desc": "Cheeseburger OR Chicken crispy + fresh fries + cold drink + fruit compote.",
@@ -397,7 +402,7 @@ const translations = {
         "des.fondant.name": "Chocolate Lava Cake",
         "des.fondant.desc": "Warm chocolate fondant, English custard, vanilla ice cream scoop, chocolate & caramel coulis, whipped cream.",
 
-        // Page 10 : Boissons
+        // Page 11 : Boissons
         "sec.drinks": "Beverages",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Strawberry Virgin Mojito",
@@ -417,7 +422,7 @@ const translations = {
         "drk.evian.name": "Evian (1L)",
         "drk.cristaline.name": "Cristaline (50cl)",
 
-        // Page 11 : Clôture
+        // Page 12 : Clôture
         "cl.thanks": "Bon appétit!",
         "cl.sub": "Thank you for dining with us",
         "certif.halal": "AVS Certified Halal meats",
@@ -440,35 +445,36 @@ const translations = {
         "nav.next": "Nächste Seite",
         "nav.page": "Seite",
 
-        // Dynamic labels
+        // Dynamic labels (13 pages : Deckblatt + 12 Inhaltsseiten)
         "labels.0": "Deckblatt",
-        "labels.1": "Smash & Veggie",
-        "labels.2": "Gourmets 1/2",
-        "labels.3": "Gourmets 2/2",
-        "labels.4": "Philly's & Extras",
-        "labels.5": "Brasserie-Gerichte",
-        "labels.6": "Pasta",
-        "labels.7": "Bowls & Salate",
-        "labels.8": "Tex-Mex & Beilagen",
-        "labels.9": "Desserts & Kinder",
-        "labels.10": "Getränke",
-        "labels.11": "Abschluss",
+        "labels.1": "Smash Burgers",
+        "labels.2": "Chicken & Veggie",
+        "labels.3": "Gourmets 1/2",
+        "labels.4": "Gourmets 2/2",
+        "labels.5": "Philly's & Extras",
+        "labels.6": "Brasserie-Gerichte",
+        "labels.7": "Pasta",
+        "labels.8": "Bowls & Salate",
+        "labels.9": "Tex-Mex & Beilagen",
+        "labels.10": "Desserts & Kinder",
+        "labels.11": "Getränke",
+        "labels.12": "Abschluss",
 
-        // Gemeinsamer Burger-Optionen Block
-        "bopt.river.title": "🧀 River Cheddar",
+        // Gemeinsamer Burger-Optionen Block (keine Emojis)
+        "bopt.river.title": "River Cheddar",
         "bopt.river.quote": "« Gönn dir einen warmen Cheddar-Fluss über deinen Burger! »",
         "bopt.river.items": "Petersilie & Röstzwiebeln: <strong>3,20 €</strong> · Extra Bacon: <strong>+0,50 €</strong>",
-        "bopt.supp.title": "➕ Burger-Extras",
+        "bopt.supp.title": "Burger-Extras",
         "bopt.supp.double": "Doppelt Fleisch + Käse:",
         "bopt.supp.150": "Käse · Spiegelei · Avocado · Bacon",
         "bopt.supp.100": "Getrocknete Tomaten · Karamellisierte Zwiebeln · Rote Zwiebeln · Pickles · Röstzwiebeln",
-        "bopt.fries.title": "🍟 Pommes-Optionen",
+        "bopt.fries.title": "Pommes-Optionen",
         "bopt.fries.items": "Süßkartoffel-Pommes: <strong>+2,00 €</strong> · Pommes + Cheddar: <strong>+2,00 €</strong> · Pommes + Cheddar Bacon: <strong>+2,70 €</strong>",
 
         // Teaser
         "bg.teaser": "✦ Demnächst verfügbar ✦",
 
-        // Page 1 : Smash Burgers & Veggie
+        // Page 1 : Smash Burgers
         "sec.smash": "Smash Burgers",
         "note.smash": "Alle Burger serviert mit frischen hausgemachten Pommes",
         "smash.cute.name": "Cute Cheeseburger",
@@ -483,6 +489,7 @@ const translations = {
         "smash.gourmand.desc": "Ein köstlicher Cheeseburger und Cheese-Bacon-Burger, halbiert und auf unserer feinen Waldpilzsauce serviert – für ein einzigartiges Geschmackserlebnis.",
         "mention.bacon": "« Rinderbacon oder geräucherter Truthahnbacon »",
 
+        // Page 2 : Chicken Smash & Veggie
         "sec.chickensmash": "Chicken Smash & Veggie",
         "smash.doublechicken.name": "Double Chicken’Cheese",
         "smash.doublechicken.desc": "Frisch gesmashtes Hähnchen-Patty, Cheddar, Blattsalat, Zwiebeln, Pickles, Haussauce. Extra Ei: +1,50 €.",
@@ -493,7 +500,7 @@ const translations = {
         "smash.veggie.options": "Optionen (+1,50 €): Ei · Rösti-Taler · Confitierte Artischocke oder Aubergine",
         "info.vege": "🌿 <strong>Lieber Veggie?</strong> Ersetze dein Patty durch Beyond Meat <strong>+2,50 €</strong>",
 
-        // Page 2 : Burgers Gourmets 1/2
+        // Page 3 : Burgers Gourmets 1/2
         "sec.gourmets": "Gourmet Burgers",
         "note.gourmets": "Label Rouge Brioche-Brötchen · Frisches französisches Fleisch · Nach Wunsch gegart",
         "bg.supermaddak.name": "Super Maddak",
@@ -509,7 +516,7 @@ const translations = {
         "bg.auvergnat.name": "L’Auvergnat",
         "bg.auvergnat.desc": "Frisches Rindfleisch, Fourme d’Ambert AOP Blauschimmelkäse, getrocknete Tomaten, Feigenconfit, karamellisierte Zwiebeln, Salat, grüne Kräutermayonnaise.",
 
-        // Page 3 : Burgers Gourmets 2/2
+        // Page 4 : Burgers Gourmets 2/2
         "sec.gourmets2": "Gourmet Burgers (Forts.)",
         "bg.montagnard.name": "Montagnard",
         "bg.montagnard.desc": "Frisches Rindfleisch, Salat, geräucherter Raclettekäse, Paprika-Zwiebel-Marmelade, Kartoffel-Rösti, Röstzwiebeln, Paprika-Zwiebelsauce.",
@@ -522,7 +529,7 @@ const translations = {
         "bg.kbo.name": "KBO",
         "bg.kbo.desc": "Auf der Plancha gebratener Kabeljau, Salat, Pickles, Röstzwiebeln, Tomate, gereifter Cheddar, kräutergeschmorte Zwiebeln, Fish-Sauce.",
 
-        // Page 4 : Philly's & Extras
+        // Page 5 : Philly's & Extras
         "sec.phillys": "Philly’s",
         "note.phillys": "Fluffiges Sandwichbrot · serviert mit frischen Pommes",
         "philly.fondant.name": "Le Fondant",
@@ -531,8 +538,8 @@ const translations = {
         "philly.fermier.desc": "Gewürfelte marinierte Hähnchenbrust, Salat, Paprika- & Zwiebelconfit, geschmolzener Emmentaler, Brazil-Sauce.",
         "philly.supp": "Extra Cheddar: +1,00 € · Cheddar + Bacon: +2,00 €",
 
-        // Page 5 : Assiettes
-        "sec.assiettes": "🍽️ Brasserie-Gerichte",
+        // Page 6 : Assiettes
+        "sec.assiettes": "Brasserie-Gerichte",
         "ass.cordonbleu.name": "Hausgemachtes Cordon Bleu",
         "ass.cordonbleu.desc": "Einzigartiges Können für einen unvergesslichen Geschmack.",
         "ass.veau.name": "Mariniertes Kalbfleisch",
@@ -547,8 +554,8 @@ const translations = {
         "ass.sides.included": "Inklusive Beilagen: Gemischter Salat + frische Pommes ODER Basmatireis",
         "ass.sides.supp": "Aufpreis +2,00 €: Süßkartoffel-Pommes · Twister",
 
-        // Page 6 : Pasta
-        "sec.pasta": "🍝 Pasta",
+        // Page 7 : Pasta
+        "sec.pasta": "Pasta",
         "note.pasta": "Cremige Gourmet-Pasta, frisch zubereitet mit edlen Zutaten",
         "pasta.eggsplosion.name": "Eggs’plosion",
         "pasta.eggsplosion.desc": "Cremige Pasta, würziges Hackfleisch, geschmolzener Raclettekäse, knuspriger Bacon, Spiegelei.",
@@ -561,7 +568,7 @@ const translations = {
         "pasta.azzurro.name": "Rigatoni Azzurro",
         "pasta.azzurro.desc": "Rigatoni in delikater Blauschimmelkäsesauce, Kirschtomaten, Parmesan.",
 
-        // Page 7 : Bowls & Salades
+        // Page 8 : Bowls & Salades
         "sec.bowls": "Signature Bowls",
         "bowl.poulet.name": "Délice de Poulet",
         "bowl.poulet.desc": "Frische Pommes, Hähnchenstreifen mit Paprika, Röstzwiebeln, Avocadopüree, Cheddarsauce.",
@@ -574,7 +581,7 @@ const translations = {
         "sal.chevre.name": "Warmer Ziegenkäse-Toast",
         "sal.chevre.desc": "Blattsalat, warmes Ziegenkäsebrot, Mozzarellaperlen, Oliven, Honig, Kirschtomaten, Balsamico-Dressing.",
 
-        // Page 8 : Tex-Mex & Sides
+        // Page 9 : Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Hähnchen-Käse-Donuts",
         "tm.donuts.desc": "2,50 € / Stück · Knuspriger Hähnchendonut mit schmelzendem Käsekern.",
@@ -594,7 +601,7 @@ const translations = {
         "side.coleslaw.name": "Hausgemachter Coleslaw",
         "side.coleslaw.desc": "Menü-Aufpreis: +1,50 € · Einzeln: 3,00 €",
 
-        // Page 9 : Menu Enfant & Desserts
+        // Page 10 : Menu Enfant & Desserts
         "sec.kids": "Kindermenü",
         "kids.menu.name": "Kindermenü — bis 10 Jahre",
         "kids.menu.desc": "Kinder-Burger ODER Chicken Crispy + frische Pommes + Erfrischungsgetränk + Fruchtkompott.",
@@ -607,7 +614,7 @@ const translations = {
         "des.fondant.name": "Schoko-Lava-Kuchen",
         "des.fondant.desc": "Flüssiger Schokokern, Vanillesauce, Kugel Vanilleeis, Schoko- & Karamellcoulis, Schlagsahne.",
 
-        // Page 10 : Boissons
+        // Page 11 : Boissons
         "sec.drinks": "Erfrischungsgetränke",
         "drk.virgin_mojito.name": "Virgin Mojito",
         "drk.virgin_mojito_fraise.name": "Erdbeer-Virgin-Mojito",
@@ -627,7 +634,7 @@ const translations = {
         "drk.evian.name": "Evian (1L)",
         "drk.cristaline.name": "Cristaline (50cl)",
 
-        // Page 11 : Clôture
+        // Page 12 : Clôture
         "cl.thanks": "Guten Appetit!",
         "cl.sub": "Vielen Dank für Ihren Besuch",
         "certif.halal": "AVS Halal-zertifiziertes Fleisch",
