@@ -57,6 +57,7 @@ const translations = {
         "link.supplements": "Suppléments",
         "protein.beef": "Bœuf",
         "protein.chicken": "Poulet",
+        "protein.fish": "Poisson",
 
         // Bloc Options Burgers & Frites commun
         "bopt.river.title": "River Cheddar",
@@ -324,6 +325,7 @@ const translations = {
         "link.supplements": "Extras",
         "protein.beef": "Beef",
         "protein.chicken": "Chicken",
+        "protein.fish": "Fish",
 
         // Burger & Fries Options block
         "bopt.river.title": "River Cheddar",
@@ -591,6 +593,7 @@ const translations = {
         "link.supplements": "Extras",
         "protein.beef": "Rind",
         "protein.chicken": "Hähnchen",
+        "protein.fish": "Fisch",
 
         // Burger & Pommes Optionen
         "bopt.river.title": "River Cheddar",
@@ -858,6 +861,7 @@ const translations = {
         "link.supplements": "الإضافات",
         "protein.beef": "لحم بقري",
         "protein.chicken": "دجاج",
+        "protein.fish": "سمك",
 
         // Burger & Fries Options block
         "bopt.river.title": "شلال جبن الشيدر",

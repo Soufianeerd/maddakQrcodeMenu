@@ -633,30 +633,40 @@ body {
     color: var(--em);
 }
 
+.prod-name-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.protein-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    flex: 0 0 auto;
+}
+
 .protein-icon {
-    display: inline-block;
-    vertical-align: middle;
-    width: 14px;
-    height: 14px;
-    margin-left: 6px;
-    opacity: 0.85;
-    transition: opacity var(--transition-fast);
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    object-position: center;
+    flex: 0 0 auto;
+}
+
+@media (max-width: 380px) {
+    .protein-icon {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 @media (min-width: 900px) {
     .protein-icon {
-        width: 15px;
-        height: 15px;
+        width: 19px;
+        height: 19px;
     }
-}
-
-.product-card:hover .protein-icon {
-    opacity: 1;
-}
-
-[dir="rtl"] .protein-icon {
-    margin-left: 0;
-    margin-right: 6px;
 }
 
 .prod-price {
