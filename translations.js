@@ -1,6 +1,6 @@
 /**
  * 🌐 SYSTÈME DE TRADUCTION DU MENU MADDAK (i18n)
- * Langues prises en charge : Français (défaut), English, Deutsch
+ * Langues prises en charge : Français (défaut), English, Deutsch, Arabe (العربية)
  * Les prix sont rigoureusement séparés des traductions.
  * Rendu éditorial haut de gamme sans emojis système.
  */
@@ -9,35 +9,42 @@ const translations = {
     fr: {
         // UI & Navigation
         "meta.title": "Notre Carte • Maddak — Nancy",
-        "cover.openBtn": "Ouvrir la Carte &nbsp;✦",
-        "cover.swipeHint": "← glisser pour feuilleter →",
         "lang.fr": "Français",
         "lang.en": "English",
         "lang.de": "Deutsch",
+        "lang.ar": "العربية",
         "lang.aria.fr": "Afficher le menu en français",
         "lang.aria.en": "Afficher le menu en anglais",
         "lang.aria.de": "Afficher le menu en allemand",
-        "nav.prev": "Page précédente",
-        "nav.next": "Page suivante",
-        "nav.page": "Page",
+        "lang.aria.ar": "عرض القائمة باللغة العربية",
 
-        // Labels pagination dynamique (14 pages : p0 à p13)
-        "labels.0": "Couverture",
-        "labels.1": "Smash Burgers",
-        "labels.2": "Chicken & Veggie",
-        "labels.3": "Gourmets 1/2",
-        "labels.4": "Gourmets 2/2",
-        "labels.5": "Philly's",
-        "labels.6": "Assiettes",
-        "labels.7": "Bowls & Salades",
-        "labels.8": "Tex-Mex & Sides",
-        "labels.9": "Menu Enfant & Desserts",
-        "labels.10": "Cocktails",
-        "labels.11": "Boissons Fraîches",
-        "labels.12": "Cafés & Eaux",
-        "labels.13": "Fin",
+        // Quick Navigation
+        "nav.burgers": "Burgers",
+        "nav.assiettes": "Assiettes",
+        "nav.desserts": "Desserts",
+        "nav.cocktails": "Cocktails",
+        "nav.boissons": "Boissons",
 
-        // Bloc Options Burgers & Frites commun (sans emojis)
+        // Toast de bienvenue (3s)
+        "toast.welcome": "Bienvenue chers amis",
+
+        // Hero Cover
+        "cover.tagline": "L’Art du Burger Gourmet & Cuisine Raffinée",
+        "cover.subtitle": "LA CARTE",
+        "cover.scrollHint": "Faire défiler pour découvrir la carte",
+
+        // Séparateurs de grandes familles
+        "div.smash": "SMASH BURGERS",
+        "div.gourmets": "BURGERS GOURMETS & PHILLY’S",
+        "div.assiettes": "NOS ASSIETTES",
+        "div.bowls_salades": "BOWLS & SALADES",
+        "div.texmex_sides": "TEX-MEX & SIDES",
+        "div.kids_desserts": "MENU ENFANT & DESSERTS",
+        "div.cocktails": "NOS COCKTAILS",
+        "div.boissons": "BOISSONS & RAFRAÎCHISSEMENTS",
+        "div.cafes": "CAFÉS & INFUSIONS",
+
+        // Bloc Options Burgers & Frites commun
         "bopt.river.title": "River Cheddar",
         "bopt.river.quote": "« Opte pour une coulée de cheddar sur ton burger, un vrai régal ! »",
         "bopt.river.items": "Persil & oignons crispy : <strong>3,20 €</strong> · Supplément bacon : <strong>+0,50 €</strong>",
@@ -48,10 +55,13 @@ const translations = {
         "bopt.fries.title": "Options Frites",
         "bopt.fries.items": "Frites de patates douces : <strong>+2,00 €</strong> · Frites + cheddar : <strong>+2,00 €</strong> · Frites + cheddar bacon : <strong>+2,70 €</strong>",
 
+        // Option Végétarienne
+        "info.vege": "Option VG disponible : remplace ton steak par un Beyond Meat (+2,50 €).",
+
         // Teaser nouveautés sans prix
         "bg.teaser": "✦ À découvrir très prochainement ✦",
 
-        // Page 1 : Smash Burgers (Bœuf)
+        // Smash Burgers (Bœuf)
         "sec.smash": "Smash Burgers",
         "note.smash": "Viande fraîche smashée minute · Servis avec frites fraîches",
         "smash.cute.name": "Cute Cheeseburger",
@@ -59,26 +69,25 @@ const translations = {
         "smash.double.name": "Double Cheeseburger",
         "smash.double.desc": "Bœuf frais smashé ×2, cheddar, laitue, oignons, pickles, sauce maison. Supplément œuf : +1,50 €.",
         "smash.doublebacon.name": "Double Cheeseburger Bacon",
-        "smash.doublebacon.desc": "Bœuf frais smashé x2, double cheddar, salade, pickles, oignons caramélisés, bacon, sauce maison.",
+        "smash.doublebacon.desc": "Bœuf frais smashé ×2, double cheddar, salade, pickles, oignons caramélisés, bacon, sauce maison.",
         "smash.triplex.name": "Triple X Bacon",
-        "smash.triplex.desc": "Bœuf frais smashé x3, triple cheddar, œuf, salade, pickles, oignons caramélisés, bacon, sauce maison.",
+        "smash.triplex.desc": "Bœuf frais smashé ×3, triple cheddar, œuf, salade, pickles, oignons caramélisés, bacon, sauce maison.",
         "smash.gourmand.name": "Smash Gourmand",
         "smash.gourmand.desc": "Un cheeseburger et un cheese bacon burger bien savoureux, tranchés en deux et disposés sur notre sauce forestière gourmande pour une expérience unique.",
         "mention.bacon": "« Bacon de bœuf ou dinde fumée »",
 
-        // Page 2 : Chicken Smash & Veggie
+        // Chicken Smash & Veggie
         "sec.chickensmash": "Chicken Smash & Veggie",
         "note.chickensmash": "Recettes signatures croustillantes et végétales",
         "smash.doublechicken.name": "Double Chicken’Cheese",
         "smash.doublechicken.desc": "Poulet frais smashé ×2, cheddar, laitue, oignons, pickles, sauce maison. Supplément œuf : +1,50 €.",
         "smash.doublechickenbacon.name": "Double Chicken’Cheese Bacon",
-        "smash.doublechickenbacon.desc": "Poulet frais smashé x2, double cheddar, salade, pickles, oignons caramélisés, bacon, sauce maison.",
+        "smash.doublechickenbacon.desc": "Poulet frais smashé ×2, double cheddar, salade, pickles, oignons caramélisés, bacon, sauce maison.",
         "smash.veggie.name": "Smash Veggie",
-        "smash.veggie.desc": "Salade, coleslaw, cheddar, tranches d’avocat, tomate fraîche.",
+        "smash.veggie.desc": "Salade, coleslaw, cheddar, tranches d’avocat, tomate.",
         "smash.veggie.options": "Options (+1,50 €) : Œuf · Galette de pomme de terre · Artichaut ou aubergine confite",
-        "info.vege": "<strong>Option Végétarienne :</strong> Remplace ton steak par un Beyond Meat <strong>+2,50 €</strong>",
 
-        // Page 3 : Burgers Gourmets 1/2
+        // Burgers Gourmets
         "sec.gourmets": "Burgers Gourmets",
         "note.gourmets": "Pain Farine Label Rouge · Viande hachée fraîche française · Cuits à votre goût",
         "bg.supermaddak.name": "Super Maddak",
@@ -91,10 +100,6 @@ const translations = {
         "bg.groundchicken.desc": "Steak haché de blanc de poulet maison, salade, tomate, cheddar, pickles, oignons caramélisés, tranches d’avocat, sauce Brazil.",
         "bg.masterchevre.name": "Master Chèvre",
         "bg.masterchevre.desc": "Bœuf frais, salade, tomates confites, chèvre frais, miel, noix, sauce Brazil.",
-
-        // Page 4 : Burgers Gourmets 2/2
-        "sec.gourmets2": "Burgers Gourmets (suite)",
-        "note.gourmets2": "Créations généreuses et recettes du terroir",
         "bg.auvergnat.name": "L’Auvergnat",
         "bg.auvergnat.desc": "Bœuf frais, Fourme d’Ambert AOP, tomates confites, confit de figues, oignons caramélisés, salade, mayonnaise verte.",
         "bg.montagnard.name": "Montagnard",
@@ -104,14 +109,16 @@ const translations = {
         "bg.kbo.name": "KBO",
         "bg.kbo.desc": "Cabillaud snacké à la plancha, salade, pickles, oignons frits, tomate, cheddar maturé, oignons caramélisés, sauce fish.",
         "bg.vabene.name": "Va Béné",
+        "bg.vabene.desc": "Délicieuse escalope de poulet, mozzarella fraîche, sauce pesto, salade, tomate, oignon caramélisé, sauce maison.",
         "bg.legrecque.name": "Le Grecque",
+        "bg.legrecque.desc": "Bœuf frais, feta, saveur tomate romarin, salade, concombre, tomate, sauce maison.",
         "bg.lerosso.name": "Le Rosso",
+        "bg.lerosso.desc": "Bœuf frais, tranche de mozzarella, pesto rosso, salade, oignon caramélisé, tomate, sauce oignon poivron.",
         "bg.tartiff.name": "Tartiff’",
-        "bg.tartiff.desc": "Bœuf frais, tartiflette et lardons fumés, mozzarella, oignons caramélisés, salade.",
         "bg.honeysmokkey.name": "Honey Smokkey Beef",
         "bg.carciotta.name": "Carciotta",
 
-        // Page 5 : Philly's
+        // Philly's
         "sec.phillys": "Philly’s Sandwiches",
         "note.phillys": "Pain moelleux artisanal garni minute · Servis avec frites fraîches",
         "philly.fondant.name": "Le Fondant",
@@ -120,7 +127,7 @@ const translations = {
         "philly.fermier.desc": "Dés de poulet marinés aux épices, salade, confit de poivrons et d’oignons, sauce Brazil.",
         "philly.supp": "Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €",
 
-        // Page 6 : Assiettes
+        // Assiettes
         "sec.assiettes": "Assiettes",
         "ass.cordonbleu.name": "Cordon Bleu Maison",
         "ass.cordonbleu.desc": "Poulet pané, fondu de raclette, mozzarella, bacon.",
@@ -138,9 +145,9 @@ const translations = {
         "ass.sides.included": "Accompagnements inclus : Salade composée + frites fraîches OU riz basmati",
         "ass.sides.supp": "Supplément +2,00 € : Frites de patate douce · Twister",
 
-        // Page 7 : Bowls & Salades
+        // Bowls & Salades
         "sec.bowls": "Bowls Signature",
-        "bowl.poulet.name": "Délice de Poulet",
+        "bowl.poulet.name": "Délice de poulet",
         "bowl.poulet.desc": "Frites fraîches, émincé de poulet aux poivrons, oignons crispy, purée d'avocat, sauce cheddar.",
         "bowl.ny.name": "New Yorkaise",
         "bowl.ny.desc": "Frites fraîches, viande hachée marinée maison, oignons crispy, tomate, emmental, sauce cheddar.",
@@ -148,10 +155,10 @@ const translations = {
         "sec.salades": "Salades Gourmandes",
         "sal.cesar.name": "Suprême César",
         "sal.cesar.desc": "Salade verte, poulet, billes de mozzarella, croûtons, parmesan, tomates cerises, sauce césar.",
-        "sal.chevre.name": "Toasts Chèvre Chaud",
+        "sal.chevre.name": "Toasts chèvre chaud",
         "sal.chevre.desc": "Salade verte, toast de chèvre chaud, billes de mozzarella, olives, miel, tomates cerises, vinaigrette balsamique.",
 
-        // Page 8 : Tex-Mex & Sides
+        // Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Donuts Poulet Fromage",
         "tm.donuts.desc": "2,50 € / pièce · Beignet croustillant poulet & fromage fondant.",
@@ -171,7 +178,7 @@ const translations = {
         "side.coleslaw.name": "Coleslaw maison",
         "side.coleslaw.desc": "Supplément menu : +1,50 € · Hors menu : 3,00 €",
 
-        // Page 9 : Menu Enfant & Desserts
+        // Menu Enfant & Desserts
         "sec.kids": "Menu Enfant",
         "kids.menu.name": "Menu Enfant — jusqu’à 10 ans",
         "kids.menu.desc": "Burger (steak / cheddar / ketchup / mayo) OU Chicken crispy + frites fraîches + boisson + compote.",
@@ -186,36 +193,44 @@ const translations = {
         "des.fondant.desc": "Crème anglaise, boule de glace vanille, coulis chocolat & caramel, chantilly.",
         "des.fondant_caramel.name": "Fondant Caramel",
 
-        // Page 10 : Cocktails (Déplacé après Desserts)
+        // Cocktails (Déplacé après Desserts)
         "sec.cocktails": "Cocktails",
         "note.cocktails": "Créations signatures & mélanges rafraîchissants",
         "cocktail.bora_bora.name": "Bora Bora",
+        "cocktail.bora_bora.desc": "Jus d’orange, jus d’ananas, jus de citron, sirop de grenadine.",
         "cocktail.golden_sunrise.name": "Golden Sunrise",
+        "cocktail.golden_sunrise.desc": "Jus d’orange, sirop de fraise, sirop de grenadine.",
         "cocktail.mojito_fraise.name": "Mojito Fraise",
         "cocktail.mojito_menthe.name": "Mojito Menthe",
         "cocktail.coconut.name": "Coconut",
-        "cocktail.smooth_avocado.name": "Smooth Avocado",
-        "cocktail.smooth_avocado.desc": "Deux goûts disponibles",
+        "cocktail.coconut.desc": "Jus d’ananas, purée de coco, lait de coco, sirop de fraise.",
+        "cocktail.smooth_avocado.name": "Smoothie Avocat",
+        "cocktail.smooth_avocado.desc": "Avocat, lait sans lactose, datte, banane bio, amande.",
 
-        // Page 11 : Boissons Fraîches
+        // Boissons Fraîches
         "sec.drinks": "Boissons & Rafraîchissements",
-        "drk.lassi.name": "Lassi mangue / fraise",
+        "drk.smoothie_mangue.name": "Smoothie Lassi Mangue",
+        "drk.smoothie_fraise.name": "Smoothie Fraise",
         "drk.tea.name": "Thé",
         "drk.tea.desc": "Pêche · Hibiscus · Matcha",
-        "drk.limonade.name": "Limonade Artisanale",
-        "drk.limonade.desc": "Citron vert · Fruit de la passion",
+        "drk.limonade.name": "Limonades Artisanales",
+        "drk.limonade.citron": "Citron vert",
+        "drk.limonade.orange": "Orange sanguine",
+        "drk.limonade.passion": "Fruits de la passion",
+        "drk.limonade.classique": "Limonade classique",
         "drk.softs.name": "Orangina / Oasis",
         "drk.diabolo.name": "Diabolo / Sirop",
         "drk.diabolo.desc": "Ananas · Hibiscus · Melon · Mangue · Framboise · Coco · Cerise · Grenadine · Fraise · Violette · Cassis · Mûre · Menthe · Kiwi",
         "drk.juice.name": "Jus de fruits",
         "drk.juice.desc": "Multifruits · Ananas · Pomme",
         "drk.street.name": "Street",
-        "drk.street.desc": "Tropical · Cherry",
+        "drk.street.tropical": "Tropical",
+        "drk.street.cherry": "Cherry",
         "sec.cola": "Cola Artisanal",
         "cola.classic.name": "Classic",
         "cola.zero.name": "Zéro",
 
-        // Page 12 : Cafés, Infusions & Eaux
+        // Cafés, Infusions & Eaux
         "sec.cafes": "Cafés",
         "cafe.cafe.name": "Café",
         "cafe.expresso.name": "Expresso",
@@ -230,10 +245,10 @@ const translations = {
         "drk.badoit.name": "Badoit",
         "drk.badoit.desc": "Citron vert · Pamplemousse · Fruits rouges",
         "drk.carola.name": "Carola Pétillante",
-        "drk.mont_roucous.name": "Mont Roucous 1L",
-        "drk.cristaline.name": "Cristaline",
+        "drk.eau_plate_50": "Eau plate 50 cl (Cristaline)",
+        "drk.eau_plate_1l": "Eau plate 1 L (Mont Roucous)",
 
-        // Page 13 : Clôture
+        // Clôture
         "cl.thanks": "Bon appétit !",
         "cl.sub": "Merci de votre visite",
         "certif.halal": "Viandes certifiées Halal AVS",
@@ -244,35 +259,42 @@ const translations = {
     en: {
         // UI & Navigation
         "meta.title": "Our Menu • Maddak — Nancy",
-        "cover.openBtn": "Open the Menu &nbsp;✦",
-        "cover.swipeHint": "← swipe to browse →",
         "lang.fr": "Français",
         "lang.en": "English",
         "lang.de": "Deutsch",
+        "lang.ar": "العربية",
         "lang.aria.fr": "Display menu in French",
         "lang.aria.en": "Display menu in English",
         "lang.aria.de": "Display menu in German",
-        "nav.prev": "Previous page",
-        "nav.next": "Next page",
-        "nav.page": "Page",
+        "lang.aria.ar": "Display menu in Arabic",
 
-        // Dynamic labels (14 pages : p0 to p13)
-        "labels.0": "Cover",
-        "labels.1": "Smash Burgers",
-        "labels.2": "Chicken & Veggie",
-        "labels.3": "Gourmets 1/2",
-        "labels.4": "Gourmets 2/2",
-        "labels.5": "Philly's",
-        "labels.6": "Plates",
-        "labels.7": "Bowls & Salads",
-        "labels.8": "Tex-Mex & Sides",
-        "labels.9": "Kids & Desserts",
-        "labels.10": "Cocktails",
-        "labels.11": "Cold Drinks",
-        "labels.12": "Coffees & Waters",
-        "labels.13": "Closing",
+        // Quick Navigation
+        "nav.burgers": "Burgers",
+        "nav.assiettes": "Plates",
+        "nav.desserts": "Desserts",
+        "nav.cocktails": "Cocktails",
+        "nav.boissons": "Drinks",
 
-        // Burger & Fries Options block (no emojis)
+        // Toast welcome (3s)
+        "toast.welcome": "Welcome dear friends",
+
+        // Hero Cover
+        "cover.tagline": "The Art of Gourmet Burgers & Fine Cuisine",
+        "cover.subtitle": "THE MENU",
+        "cover.scrollHint": "Scroll down to discover the menu",
+
+        // Section Dividers
+        "div.smash": "SMASH BURGERS",
+        "div.gourmets": "GOURMET BURGERS & PHILLY’S",
+        "div.assiettes": "OUR PLATES",
+        "div.bowls_salades": "BOWLS & SALADS",
+        "div.texmex_sides": "TEX-MEX & SIDES",
+        "div.kids_desserts": "KIDS MENU & DESSERTS",
+        "div.cocktails": "OUR COCKTAILS",
+        "div.boissons": "DRINKS & REFRESHMENTS",
+        "div.cafes": "COFFEES & TEAS",
+
+        // Burger & Fries Options block
         "bopt.river.title": "River Cheddar",
         "bopt.river.quote": "« Pour a waterfall of melted cheddar over your burger! »",
         "bopt.river.items": "Parsley & crispy onions: <strong>€3.20</strong> · Extra bacon: <strong>+€0.50</strong>",
@@ -283,10 +305,13 @@ const translations = {
         "bopt.fries.title": "Fries Options",
         "bopt.fries.items": "Sweet potato fries: <strong>+€2.00</strong> · Fries + melted cheddar: <strong>+€2.00</strong> · Fries + cheddar & bacon: <strong>+€2.70</strong>",
 
+        // Vegetarian Option
+        "info.vege": "VG option available: replace your patty with Beyond Meat (+€2.50).",
+
         // Teaser
         "bg.teaser": "✦ Coming very soon ✦",
 
-        // Page 1 : Smash Burgers (Beef)
+        // Smash Burgers (Beef)
         "sec.smash": "Smash Burgers",
         "note.smash": "Fresh beef smashed to order · Served with fresh French fries",
         "smash.cute.name": "Cute Cheeseburger",
@@ -294,26 +319,25 @@ const translations = {
         "smash.double.name": "Double Cheeseburger",
         "smash.double.desc": "Fresh smashed beef ×2, cheddar, lettuce, onions, pickles, house sauce. Extra egg: +€1.50.",
         "smash.doublebacon.name": "Double Cheeseburger Bacon",
-        "smash.doublebacon.desc": "Double smashed beef, double cheddar, lettuce, pickles, caramelized onions, bacon, house sauce.",
+        "smash.doublebacon.desc": "Fresh smashed beef ×2, double cheddar, lettuce, pickles, caramelized onions, bacon, house sauce.",
         "smash.triplex.name": "Triple X Bacon",
-        "smash.triplex.desc": "Triple smashed beef, triple cheddar, egg, lettuce, pickles, caramelized onions, bacon, house sauce.",
+        "smash.triplex.desc": "Fresh smashed beef ×3, triple cheddar, egg, lettuce, pickles, caramelized onions, bacon, house sauce.",
         "smash.gourmand.name": "Smash Gourmand",
         "smash.gourmand.desc": "A flavorful cheeseburger and cheese bacon burger, cut in half and served over our gourmet wild mushroom sauce for a unique experience.",
         "mention.bacon": "« Beef bacon or smoked turkey bacon »",
 
-        // Page 2 : Chicken Smash & Veggie
+        // Chicken Smash & Veggie
         "sec.chickensmash": "Chicken Smash & Veggie",
         "note.chickensmash": "Signature crispy chicken and plant-based recipes",
         "smash.doublechicken.name": "Double Chicken’Cheese",
         "smash.doublechicken.desc": "Fresh smashed chicken patty ×2, cheddar, lettuce, onions, pickles, house sauce. Extra egg: +€1.50.",
         "smash.doublechickenbacon.name": "Double Chicken’Cheese Bacon",
-        "smash.doublechickenbacon.desc": "Double smashed chicken, double cheddar, lettuce, pickles, caramelized onions, bacon, house sauce.",
+        "smash.doublechickenbacon.desc": "Fresh smashed chicken patty ×2, double cheddar, lettuce, pickles, caramelized onions, bacon, house sauce.",
         "smash.veggie.name": "Smash Veggie",
         "smash.veggie.desc": "Crisp lettuce, coleslaw, cheddar, fresh avocado slices, ripe tomato.",
         "smash.veggie.options": "Options (+€1.50): Egg · Potato rosti · Candied artichoke or eggplant",
-        "info.vege": "<strong>Vegetarian Option:</strong> Swap your patty for Beyond Meat <strong>+€2.50</strong>",
 
-        // Page 3 : Burgers Gourmets 1/2
+        // Gourmet Burgers
         "sec.gourmets": "Gourmet Burgers",
         "note.gourmets": "Label Rouge artisan bun · Fresh French beef · Cooked to your liking",
         "bg.supermaddak.name": "Super Maddak",
@@ -326,10 +350,6 @@ const translations = {
         "bg.groundchicken.desc": "House minced chicken breast steak, lettuce, tomato, cheddar, pickles, caramelized onions, avocado slices, Brazil sauce.",
         "bg.masterchevre.name": "Master Chèvre",
         "bg.masterchevre.desc": "Fresh French beef, lettuce, sun-ripened candied tomatoes, fresh goat cheese, honey, walnuts, Brazil sauce.",
-
-        // Page 4 : Burgers Gourmets 2/2
-        "sec.gourmets2": "Gourmet Burgers (cont.)",
-        "note.gourmets2": "Artisan creations and French regional specialties",
         "bg.auvergnat.name": "L’Auvergnat",
         "bg.auvergnat.desc": "Fresh beef, Fourme d’Ambert PDO blue cheese, candied tomatoes, fig confit, caramelized onions, lettuce, green herb mayo.",
         "bg.montagnard.name": "Montagnard",
@@ -339,14 +359,16 @@ const translations = {
         "bg.kbo.name": "KBO",
         "bg.kbo.desc": "Plancha-seared cod, lettuce, pickles, fried onions, tomato, mature cheddar, caramelized onions, fish tartar sauce.",
         "bg.vabene.name": "Va Béné",
+        "bg.vabene.desc": "Delicious chicken escalope, fresh mozzarella, pesto sauce, salad, tomato, caramelized onion, house sauce.",
         "bg.legrecque.name": "Le Grecque",
+        "bg.legrecque.desc": "Fresh beef, feta, tomato-rosemary flavor, salad, cucumber, tomato, house sauce.",
         "bg.lerosso.name": "Le Rosso",
+        "bg.lerosso.desc": "Fresh beef, mozzarella slice, pesto rosso, salad, caramelized onion, tomato, onion-pepper sauce.",
         "bg.tartiff.name": "Tartiff’",
-        "bg.tartiff.desc": "Fresh beef, tartiflette potatoes with smoked bacon lardons, mozzarella, caramelized onions, lettuce.",
         "bg.honeysmokkey.name": "Honey Smokkey Beef",
         "bg.carciotta.name": "Carciotta",
 
-        // Page 5 : Philly's
+        // Philly's
         "sec.phillys": "Philly’s Sandwiches",
         "note.phillys": "Soft brioche sub sandwich · Served with fresh fries",
         "philly.fondant.name": "Le Fondant",
@@ -355,7 +377,7 @@ const translations = {
         "philly.fermier.desc": "Spiced diced chicken, salad, sweet pepper & onion confit, Brazil sauce.",
         "philly.supp": "Extra cheddar: +€1.00 · Cheddar + bacon: +€2.00",
 
-        // Page 6 : Assiettes
+        // Assiettes
         "sec.assiettes": "Plates",
         "ass.cordonbleu.name": "House Cordon Bleu",
         "ass.cordonbleu.desc": "Breaded chicken, melted raclette cheese, mozzarella, bacon.",
@@ -373,7 +395,7 @@ const translations = {
         "ass.sides.included": "Included sides: Mixed salad + fresh fries OR basmati rice",
         "ass.sides.supp": "Extra +€2.00: Sweet potato fries · Twister",
 
-        // Page 7 : Bowls & Salades
+        // Bowls & Salads
         "sec.bowls": "Signature Bowls",
         "bowl.poulet.name": "Chicken Delight",
         "bowl.poulet.desc": "Fresh fries, chicken strips sautéed with bell peppers, crispy onions, avocado mash, cheddar sauce.",
@@ -386,7 +408,7 @@ const translations = {
         "sal.chevre.name": "Warm Goat Cheese Toasts",
         "sal.chevre.desc": "Crisp salad, warm goat cheese toasts, mozzarella pearls, olives, honey, cherry tomatoes, balsamic dressing.",
 
-        // Page 8 : Tex-Mex & Sides
+        // Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Chicken & Cheese Donuts",
         "tm.donuts.desc": "€2.50 / piece · Crispy fried chicken donut with molten cheese center.",
@@ -406,7 +428,7 @@ const translations = {
         "side.coleslaw.name": "House Coleslaw",
         "side.coleslaw.desc": "Meal upgrade: +€1.50 · A la carte: €3.00",
 
-        // Page 9 : Menu Enfant & Desserts
+        // Kids Menu & Desserts
         "sec.kids": "Kids Menu",
         "kids.menu.name": "Kids Menu — up to 10 years old",
         "kids.menu.desc": "Burger (beef / cheddar / ketchup / mayo) OR Chicken crispy + fresh fries + cold drink + fruit compote.",
@@ -421,36 +443,44 @@ const translations = {
         "des.fondant.desc": "Warm chocolate fondant, English custard, vanilla ice cream scoop, chocolate & caramel coulis, whipped cream.",
         "des.fondant_caramel.name": "Caramel Lava Cake",
 
-        // Page 10 : Cocktails
+        // Cocktails
         "sec.cocktails": "Cocktails",
         "note.cocktails": "Signature creations & refreshing mixes",
         "cocktail.bora_bora.name": "Bora Bora",
+        "cocktail.bora_bora.desc": "Orange juice, pineapple juice, lemon juice, grenadine syrup.",
         "cocktail.golden_sunrise.name": "Golden Sunrise",
+        "cocktail.golden_sunrise.desc": "Orange juice, strawberry syrup, grenadine syrup.",
         "cocktail.mojito_fraise.name": "Strawberry Mojito",
         "cocktail.mojito_menthe.name": "Mint Mojito",
         "cocktail.coconut.name": "Coconut",
-        "cocktail.smooth_avocado.name": "Smooth Avocado",
-        "cocktail.smooth_avocado.desc": "Two flavors available",
+        "cocktail.coconut.desc": "Pineapple juice, coconut purée, coconut milk, strawberry syrup.",
+        "cocktail.smooth_avocado.name": "Avocado Smoothie",
+        "cocktail.smooth_avocado.desc": "Avocado, lactose-free milk, date, organic banana, almond.",
 
-        // Page 11 : Boissons Fraîches
+        // Cold Drinks
         "sec.drinks": "Beverages & Refreshments",
-        "drk.lassi.name": "Mango / Strawberry Lassi",
+        "drk.smoothie_mangue.name": "Mango Lassi Smoothie",
+        "drk.smoothie_fraise.name": "Strawberry Smoothie",
         "drk.tea.name": "Tea",
         "drk.tea.desc": "Peach · Hibiscus · Matcha",
-        "drk.limonade.name": "Artisan Lemonade",
-        "drk.limonade.desc": "Lime · Passion fruit",
+        "drk.limonade.name": "Artisan Lemonades",
+        "drk.limonade.citron": "Lime",
+        "drk.limonade.orange": "Blood orange",
+        "drk.limonade.passion": "Passion fruit",
+        "drk.limonade.classique": "Classic lemonade",
         "drk.softs.name": "Orangina / Oasis",
         "drk.diabolo.name": "Diabolo / Flavored Syrup",
         "drk.diabolo.desc": "Pineapple · Hibiscus · Melon · Mango · Raspberry · Coconut · Cherry · Grenadine · Strawberry · Violet · Blackcurrant · Blackberry · Mint · Kiwi",
         "drk.juice.name": "Fruit Juice",
         "drk.juice.desc": "Multifruit · Pineapple · Apple",
         "drk.street.name": "Street",
-        "drk.street.desc": "Tropical · Cherry",
+        "drk.street.tropical": "Tropical",
+        "drk.street.cherry": "Cherry",
         "sec.cola": "Craft Cola",
         "cola.classic.name": "Classic",
         "cola.zero.name": "Zero",
 
-        // Page 12 : Cafés, Infusions & Eaux
+        // Coffees, Herbal Teas & Waters
         "sec.cafes": "Coffees",
         "cafe.cafe.name": "Coffee",
         "cafe.expresso.name": "Espresso",
@@ -464,11 +494,11 @@ const translations = {
         "sec.waters": "Waters & Sparkling",
         "drk.badoit.name": "Badoit",
         "drk.badoit.desc": "Lime · Grapefruit · Red Berries",
-        "drk.carola.name": "Carola Pétillante",
-        "drk.mont_roucous.name": "Mont Roucous (1L)",
-        "drk.cristaline.name": "Cristaline (50cl)",
+        "drk.carola.name": "Carola Sparkling",
+        "drk.eau_plate_50": "Still Water 50 cl (Cristaline)",
+        "drk.eau_plate_1l": "Still Water 1 L (Mont Roucous)",
 
-        // Page 13 : Clôture
+        // Closing
         "cl.thanks": "Bon appétit!",
         "cl.sub": "Thank you for dining with us",
         "certif.halal": "AVS Certified Halal meats",
@@ -479,35 +509,42 @@ const translations = {
     de: {
         // UI & Navigation
         "meta.title": "Unsere Speisekarte • Maddak — Nancy",
-        "cover.openBtn": "Speisekarte öffnen &nbsp;✦",
-        "cover.swipeHint": "← wischen zum Blättern →",
         "lang.fr": "Français",
         "lang.en": "English",
         "lang.de": "Deutsch",
+        "lang.ar": "العربية",
         "lang.aria.fr": "Speisekarte auf Französisch anzeigen",
         "lang.aria.en": "Speisekarte auf Englisch anzeigen",
         "lang.aria.de": "Speisekarte auf Deutsch anzeigen",
-        "nav.prev": "Vorherige Seite",
-        "nav.next": "Nächste Seite",
-        "nav.page": "Seite",
+        "lang.aria.ar": "Speisekarte auf Arabisch anzeigen",
 
-        // Dynamische Beschriftungen (14 Seiten: p0 bis p13)
-        "labels.0": "Deckblatt",
-        "labels.1": "Smash Burgers",
-        "labels.2": "Chicken & Veggie",
-        "labels.3": "Gourmets 1/2",
-        "labels.4": "Gourmets 2/2",
-        "labels.5": "Philly's",
-        "labels.6": "Tellergerichte",
-        "labels.7": "Bowls & Salate",
-        "labels.8": "Tex-Mex & Beilagen",
-        "labels.9": "Kinder & Desserts",
-        "labels.10": "Cocktails",
-        "labels.11": "Kalte Getränke",
-        "labels.12": "Kaffee & Wasser",
-        "labels.13": "Abschluss",
+        // Quick Navigation
+        "nav.burgers": "Burgers",
+        "nav.assiettes": "Tellergerichte",
+        "nav.desserts": "Desserts",
+        "nav.cocktails": "Cocktails",
+        "nav.boissons": "Getränke",
 
-        // Burger & Pommes Optionen (ohne Emojis)
+        // Toast welcome (3s)
+        "toast.welcome": "Willkommen, liebe Freunde",
+
+        // Hero Cover
+        "cover.tagline": "Die Kunst des Gourmet-Burgers & Feine Küche",
+        "cover.subtitle": "SPEISEKARTE",
+        "cover.scrollHint": "Scrollen, um die Speisekarte zu entdecken",
+
+        // Section Dividers
+        "div.smash": "SMASH BURGERS",
+        "div.gourmets": "GOURMET BURGERS & PHILLY’S",
+        "div.assiettes": "UNSERE TELLERGERICHTE",
+        "div.bowls_salades": "BOWLS & SALATE",
+        "div.texmex_sides": "TEX-MEX & BEILAGEN",
+        "div.kids_desserts": "KINDERMENÜ & DESSERTS",
+        "div.cocktails": "UNSERE COCKTAILS",
+        "div.boissons": "GETRÄNKE & ERFRISCHUNGEN",
+        "div.cafes": "KAFFEE & KRÄUTERTEE",
+
+        // Burger & Pommes Optionen
         "bopt.river.title": "River Cheddar",
         "bopt.river.quote": "« Gönn dir einen warmen Cheddar-Fluss über deinen Burger! »",
         "bopt.river.items": "Petersilie & Röstzwiebeln: <strong>3,20 €</strong> · Extra Bacon: <strong>+0,50 €</strong>",
@@ -518,10 +555,13 @@ const translations = {
         "bopt.fries.title": "Pommes-Optionen",
         "bopt.fries.items": "Süßkartoffel-Pommes: <strong>+2,00 €</strong> · Pommes + Cheddar: <strong>+2,00 €</strong> · Pommes + Cheddar Bacon: <strong>+2,70 €</strong>",
 
+        // Vegetarian Option
+        "info.vege": "VG-Option verfügbar: Ersetze dein Patty durch Beyond Meat (+2,50 €).",
+
         // Teaser
         "bg.teaser": "✦ Demnächst verfügbar ✦",
 
-        // Page 1 : Smash Burgers (Rind)
+        // Smash Burgers (Rind)
         "sec.smash": "Smash Burgers",
         "note.smash": "Frisch gesmashtes Rindfleisch · Serviert mit frischen Pommes",
         "smash.cute.name": "Cute Cheeseburger",
@@ -529,26 +569,25 @@ const translations = {
         "smash.double.name": "Double Cheeseburger",
         "smash.double.desc": "Frisch gesmashtes Rindfleisch ×2, Cheddar, Blattsalat, Zwiebeln, Pickles, Haussauce. Extra Spiegelei: +1,50 €.",
         "smash.doublebacon.name": "Double Cheeseburger Bacon",
-        "smash.doublebacon.desc": "Doppelt frisch gesmashtes Rindfleisch, doppelter Cheddar, Salat, Pickles, karamellisierte Zwiebeln, Bacon, Haussauce.",
+        "smash.doublebacon.desc": "Frisch gesmashtes Rindfleisch ×2, doppelter Cheddar, Salat, Pickles, karamellisierte Zwiebeln, Bacon, Haussauce.",
         "smash.triplex.name": "Triple X Bacon",
-        "smash.triplex.desc": "Dreifach frisch gesmashtes Rindfleisch, dreifacher Cheddar, Spiegelei, Salat, Pickles, karamellisierte Zwiebeln, Bacon, Haussauce.",
+        "smash.triplex.desc": "Frisch gesmashtes Rindfleisch ×3, dreifacher Cheddar, Spiegelei, Salat, Pickles, karamellisierte Zwiebeln, Bacon, Haussauce.",
         "smash.gourmand.name": "Smash Gourmand",
         "smash.gourmand.desc": "Ein köstlicher Cheeseburger und Cheese-Bacon-Burger, halbiert und auf unserer feinen Waldpilzsauce serviert – für ein einzigartiges Geschmackserlebnis.",
         "mention.bacon": "« Rinderbacon oder geräucherter Truthahnbacon »",
 
-        // Page 2 : Chicken Smash & Veggie
+        // Chicken Smash & Veggie
         "sec.chickensmash": "Chicken Smash & Veggie",
         "note.chickensmash": "Knuspriges Hähnchen und pflanzliche Spezialitäten",
         "smash.doublechicken.name": "Double Chicken’Cheese",
         "smash.doublechicken.desc": "Frisch gesmashtes Hähnchen-Patty ×2, Cheddar, Blattsalat, Zwiebeln, Pickles, Haussauce. Extra Ei: +1,50 €.",
         "smash.doublechickenbacon.name": "Double Chicken’Cheese Bacon",
-        "smash.doublechickenbacon.desc": "Doppelt gesmashtes Hähnchen-Patty, doppelter Cheddar, Salat, Pickles, karamellisierte Zwiebeln, Bacon, Haussauce.",
+        "smash.doublechickenbacon.desc": "Frisch gesmashtes Hähnchen-Patty ×2, doppelter Cheddar, Salat, Pickles, karamellisierte Zwiebeln, Bacon, Haussauce.",
         "smash.veggie.name": "Smash Veggie",
         "smash.veggie.desc": "Knackiger Salat, Coleslaw, Cheddar, frische Avocadoscheiben, Tomate.",
         "smash.veggie.options": "Optionen (+1,50 €): Ei · Rösti-Taler · Confitierte Artischocke oder Aubergine",
-        "info.vege": "<strong>Vegetarische Option:</strong> Ersetze dein Patty durch Beyond Meat <strong>+2,50 €</strong>",
 
-        // Page 3 : Burgers Gourmets 1/2
+        // Gourmet Burgers
         "sec.gourmets": "Gourmet Burgers",
         "note.gourmets": "Label Rouge Brioche-Brötchen · Frisches französisches Fleisch · Nach Wunsch gegart",
         "bg.supermaddak.name": "Super Maddak",
@@ -561,10 +600,6 @@ const translations = {
         "bg.groundchicken.desc": "Hausgemachtes Hähnchenbrust-Hacksteak, Salat, Tomate, Cheddar, Pickles, karamellisierte Zwiebeln, Avocadoscheiben, Brazil-Sauce.",
         "bg.masterchevre.name": "Master Chèvre",
         "bg.masterchevre.desc": "Frisches Rindfleisch, Salat, sonnengetrocknete Tomaten, frischer Ziegenkäse, Honig, Walnüsse, Brazil-Sauce.",
-
-        // Page 4 : Burgers Gourmets 2/2
-        "sec.gourmets2": "Gourmet Burgers (Forts.)",
-        "note.gourmets2": "Handwerkliche Burger-Kreationen und regionale Spezialitäten",
         "bg.auvergnat.name": "L’Auvergnat",
         "bg.auvergnat.desc": "Frisches Rindfleisch, Fourme d’Ambert AOP Blauschimmelkäse, getrocknete Tomaten, Feigenconfit, karamellisierte Zwiebeln, Salat, grüne Kräutermayonnaise.",
         "bg.montagnard.name": "Montagnard",
@@ -574,14 +609,16 @@ const translations = {
         "bg.kbo.name": "KBO",
         "bg.kbo.desc": "Auf der Plancha gebratener Kabeljau, Salat, Pickles, Röstzwiebeln, Tomate, gereifter Cheddar, karamellisierte Zwiebeln, Fish-Sauce.",
         "bg.vabene.name": "Va Béné",
+        "bg.vabene.desc": "Köstliches Hähnchenschnitzel, frischer Mozzarella, Pestosauce, Salat, Tomate, karamellisierte Zwiebel, Haussauce.",
         "bg.legrecque.name": "Le Grecque",
+        "bg.legrecque.desc": "Frisches Rindfleisch, Feta, Tomaten-Rosmarin-Geschmack, Salat, Gurke, Tomate, Haussauce.",
         "bg.lerosso.name": "Le Rosso",
+        "bg.lerosso.desc": "Frisches Rindfleisch, Mozzarellascheibe, Pesto Rosso, Salat, karamellisierte Zwiebel, Tomate, Zwiebel-Paprikasauce.",
         "bg.tartiff.name": "Tartiff’",
-        "bg.tartiff.desc": "Frisches Rindfleisch, Kartoffel-Tartiflette mit geräucherten Schinkenstreifen, Mozzarella, karamellisierte Zwiebeln, Salat.",
         "bg.honeysmokkey.name": "Honey Smokkey Beef",
         "bg.carciotta.name": "Carciotta",
 
-        // Page 5 : Philly's
+        // Philly's
         "sec.phillys": "Philly’s Sandwiches",
         "note.phillys": "Fluffiges Sandwichbrot · Frisch zubereitet mit Pommes",
         "philly.fondant.name": "Le Fondant",
@@ -590,7 +627,7 @@ const translations = {
         "philly.fermier.desc": "Gewürfelte marinierte Hähnchenbrust, Salat, Paprika- & Zwiebelconfit, Brazil-Sauce.",
         "philly.supp": "Extra Cheddar: +1,00 € · Cheddar + Bacon: +2,00 €",
 
-        // Page 6 : Assiettes
+        // Assiettes
         "sec.assiettes": "Tellergerichte",
         "ass.cordonbleu.name": "Hausgemachtes Cordon Bleu",
         "ass.cordonbleu.desc": "Paniertes Hähnchen, geschmolzener Raclettekäse, Mozzarella, Bacon.",
@@ -608,7 +645,7 @@ const translations = {
         "ass.sides.included": "Inklusive Beilagen: Gemischter Salat + frische Pommes ODER Basmatireis",
         "ass.sides.supp": "Aufpreis +2,00 €: Süßkartoffel-Pommes · Twister",
 
-        // Page 7 : Bowls & Salades
+        // Bowls & Salads
         "sec.bowls": "Signature Bowls",
         "bowl.poulet.name": "Délice de Poulet",
         "bowl.poulet.desc": "Frische Pommes, Hähnchenstreifen mit Paprika, Röstzwiebeln, Avocadopüree, Cheddarsauce.",
@@ -621,7 +658,7 @@ const translations = {
         "sal.chevre.name": "Warmer Ziegenkäse-Toast",
         "sal.chevre.desc": "Blattsalat, warmes Ziegenkäsebrot, Mozzarellaperlen, Oliven, Honig, Kirschtomaten, Balsamico-Dressing.",
 
-        // Page 8 : Tex-Mex & Sides
+        // Tex-Mex & Sides
         "sec.texmex": "Tex-Mex",
         "tm.donuts.name": "Hähnchen-Käse-Donuts",
         "tm.donuts.desc": "2,50 € / Stück · Knuspriger Hähnchendonut mit schmelzendem Käsekern.",
@@ -641,7 +678,7 @@ const translations = {
         "side.coleslaw.name": "Hausgemachter Coleslaw",
         "side.coleslaw.desc": "Menü-Aufpreis: +1,50 € · Einzeln: 3,00 €",
 
-        // Page 9 : Menu Enfant & Desserts
+        // Kids Menu & Desserts
         "sec.kids": "Kindermenü",
         "kids.menu.name": "Kindermenü — bis 10 Jahre",
         "kids.menu.desc": "Kinder-Burger (Rind / Cheddar / Ketchup / Mayo) ODER Chicken Crispy + frische Pommes + Erfrischungsgetränk + Fruchtkompott.",
@@ -656,36 +693,44 @@ const translations = {
         "des.fondant.desc": "Flüssiger Schokokern, Vanillesauce, Kugel Vanilleeis, Schoko- & Karamellcoulis, Schlagsahne.",
         "des.fondant_caramel.name": "Karamell-Lava-Kuchen",
 
-        // Page 10 : Cocktails
+        // Cocktails
         "sec.cocktails": "Cocktails",
         "note.cocktails": "Signatur-Kreationen & erfrischende Mischungen",
         "cocktail.bora_bora.name": "Bora Bora",
+        "cocktail.bora_bora.desc": "Orangensaft, Ananassaft, Zitronensaft, Grenadinesirup.",
         "cocktail.golden_sunrise.name": "Golden Sunrise",
+        "cocktail.golden_sunrise.desc": "Orangensaft, Erdbeersirup, Grenadinesirup.",
         "cocktail.mojito_fraise.name": "Erdbeer-Mojito",
         "cocktail.mojito_menthe.name": "Minz-Mojito",
         "cocktail.coconut.name": "Coconut",
-        "cocktail.smooth_avocado.name": "Smooth Avocado",
-        "cocktail.smooth_avocado.desc": "Zwei Geschmacksrichtungen verfügbar",
+        "cocktail.coconut.desc": "Ananassaft, Kokospüree, Kokosmilch, Erdbeersirup.",
+        "cocktail.smooth_avocado.name": "Avocado-Smoothie",
+        "cocktail.smooth_avocado.desc": "Avocado, laktosefreie Milch, Dattel, Bio-Banane, Mandel.",
 
-        // Page 11 : Boissons Fraîches
+        // Cold Drinks
         "sec.drinks": "Erfrischungsgetränke & Erfrischungen",
-        "drk.lassi.name": "Mango- / Erdbeer-Lassi",
+        "drk.smoothie_mangue.name": "Mango Lassi Smoothie",
+        "drk.smoothie_fraise.name": "Erdbeer Smoothie",
         "drk.tea.name": "Tee",
         "drk.tea.desc": "Pfirsich · Hibiskus · Matcha",
-        "drk.limonade.name": "Hausgemachte Limonade",
-        "drk.limonade.desc": "Limette · Passionsfrucht",
+        "drk.limonade.name": "Hausgemachte Limonaden",
+        "drk.limonade.citron": "Limette",
+        "drk.limonade.orange": "Blutorange",
+        "drk.limonade.passion": "Passionsfrucht",
+        "drk.limonade.classique": "Klassische Limonade",
         "drk.softs.name": "Orangina / Oasis",
         "drk.diabolo.name": "Diabolo / Sirup",
         "drk.diabolo.desc": "Ananas · Hibiskus · Melone · Mango · Himbeere · Kokos · Kirsche · Grenadine · Erdbeere · Veilchen · Johannisbeere · Brombeere · Minze · Kiwi",
         "drk.juice.name": "Fruchtsaft",
         "drk.juice.desc": "Multifrucht · Ananas · Apfel",
         "drk.street.name": "Street",
-        "drk.street.desc": "Tropical · Cherry",
+        "drk.street.tropical": "Tropical",
+        "drk.street.cherry": "Cherry",
         "sec.cola": "Artisan Cola",
         "cola.classic.name": "Classic",
         "cola.zero.name": "Zero",
 
-        // Page 12 : Cafés, Infusions & Eaux
+        // Coffees, Herbal Teas & Waters
         "sec.cafes": "Kaffeespezialitäten",
         "cafe.cafe.name": "Kaffee",
         "cafe.expresso.name": "Espresso",
@@ -699,16 +744,266 @@ const translations = {
         "sec.waters": "Wasser & Prickelndes",
         "drk.badoit.name": "Badoit",
         "drk.badoit.desc": "Limette · Grapefruit · Rote Beeren",
-        "drk.carola.name": "Carola Pétillante",
-        "drk.mont_roucous.name": "Mont Roucous (1L)",
-        "drk.cristaline.name": "Cristaline (50cl)",
+        "drk.carola.name": "Carola Sprudel",
+        "drk.eau_plate_50": "Stilles Wasser 50 cl (Cristaline)",
+        "drk.eau_plate_1l": "Stilles Wasser 1 L (Mont Roucous)",
 
-        // Page 13 : Clôture
+        // Closing
         "cl.thanks": "Guten Appetit!",
         "cl.sub": "Vielen Dank für Ihren Besuch",
         "certif.halal": "AVS Halal-zertifiziertes Fleisch",
         "certif.fresh": "Frisches französisches Hackfleisch — ungeniert",
         "certif.bread": "Brioche-Brote mit Label Rouge Mehl"
+    },
+
+    ar: {
+        // UI & Navigation
+        "meta.title": "قائمتنا • مادّاك — نانسي",
+        "lang.fr": "Français",
+        "lang.en": "English",
+        "lang.de": "Deutsch",
+        "lang.ar": "العربية",
+        "lang.aria.fr": "عرض القائمة بالفرنسية",
+        "lang.aria.en": "عرض القائمة بالإنجليزية",
+        "lang.aria.de": "عرض القائمة بالألمانية",
+        "lang.aria.ar": "عرض القائمة بالعربية",
+
+        // Quick Navigation
+        "nav.burgers": "البرغر",
+        "nav.assiettes": "الأطباق",
+        "nav.desserts": "الحلويات",
+        "nav.cocktails": "الكوكتيلات",
+        "nav.boissons": "المشروبات",
+
+        // Toast welcome (3s)
+        "toast.welcome": "أهلاً وسهلاً بكم أصدقاؤنا",
+
+        // Hero Cover
+        "cover.tagline": "فن البرغر الفاخر والمأكولات الراقية",
+        "cover.subtitle": "قائمة الطعام",
+        "cover.scrollHint": "مرر لأسفل لاكتشاف القائمة",
+
+        // Section Dividers
+        "div.smash": "سماش برغر",
+        "div.gourmets": "برغر غورميه وفيليز",
+        "div.assiettes": "أطباقنا الشهية",
+        "div.bowls_salades": "البول والسلطات",
+        "div.texmex_sides": "تكس مكس والمقبلات",
+        "div.kids_desserts": "وجبات الأطفال والحلويات",
+        "div.cocktails": "كوكتيلاتنا الحصرية",
+        "div.boissons": "المشروبات والمرطبات",
+        "div.cafes": "القهوة والمشروبات الساخنة",
+
+        // Burger & Fries Options block
+        "bopt.river.title": "شلال جبن الشيدر",
+        "bopt.river.quote": "« استمتع بانسكاب جبن الشيدر الذائب الساخن فوق برغرك المفضل! »",
+        "bopt.river.items": "بقدونس وبصل مقرمش: <strong>3,20 €</strong> · إضافة لحم مقدد: <strong>+0,50 €</strong>",
+        "bopt.supp.title": "إضافات البرغر",
+        "bopt.supp.double": "لحم مضاعف + جبن:",
+        "bopt.supp.150": "جبن · بيض · أفوكادو · لحم مقدد",
+        "bopt.supp.100": "طماطم مجففة · بصل مكرمل · بصل أحمر · مخلل · بصل مقلي",
+        "bopt.fries.title": "خيارات البطاطس",
+        "bopt.fries.items": "بطاطا حلوة: <strong>+2,00 €</strong> · بطاطس مع شيدر: <strong>+2,00 €</strong> · بطاطس مع شيدر وبيكون: <strong>+2,70 €</strong>",
+
+        // Vegetarian Option
+        "info.vege": "خيار نباتي متاح: استبدل قطعة اللحم بـ Beyond Meat (+2,50 €).",
+
+        // Teaser
+        "bg.teaser": "✦ قريباً جداً ✦",
+
+        // Smash Burgers (Beef)
+        "sec.smash": "سماش برغر",
+        "note.smash": "لحم بقري طازج يُحضر على الصاج فور الطلب · يُقدم مع بطاطس مقلية طازجة",
+        "smash.cute.name": "كيوت تشيز برغر",
+        "smash.cute.desc": "لحم بقري طازج مسحوق، شيدر، خس، بصل، مخلل، صلصة الدار الخاصة.",
+        "smash.double.name": "دوبل تشيز برغر",
+        "smash.double.desc": "لحم بقري طازج مسحوق ×2، شيدر، خس، بصل، مخلل، صلصة الدار الخاصة. إضافة بيض: +1,50 €.",
+        "smash.doublebacon.name": "دوبل تشيز بيكون",
+        "smash.doublebacon.desc": "لحم بقري طازج مسحوق ×2، جبن شيدر مضاعف، سلطة، مخلل، بصل مكرمل، لحم مقدد، صلصة الدار.",
+        "smash.triplex.name": "تريبل إكس بيكون",
+        "smash.triplex.desc": "لحم بقري طازج مسحوق ×3، جبن شيدر ثلاثي، بيض، سلطة، مخلل، بصل مكرمل، لحم مقدد، صلصة الدار.",
+        "smash.gourmand.name": "سماش غورماند",
+        "smash.gourmand.desc": "برغر تشيز وبرغر بيكون مشهي مقطعان إلى نصفين ومقدمان فوق صلصة الفطر البري الغنية لتجربة استثنائية فريدة.",
+        "mention.bacon": "« لحم مقدد بقري أو ديك رومي مدخن »",
+
+        // Chicken Smash & Veggie
+        "sec.chickensmash": "سماش دجاج ونباتي",
+        "note.chickensmash": "وصفات دجاج مقرمشة حصرية ووصفات نباتية لذيذة",
+        "smash.doublechicken.name": "دوبل تشيكن تشيز",
+        "smash.doublechicken.desc": "دجاج طازج مسحوق ×2، شيدر، خس، بصل، مخلل، صلصة الدار. إضافة بيض: +1,50 €.",
+        "smash.doublechickenbacon.name": "دوبل تشيكن تشيز بيكون",
+        "smash.doublechickenbacon.desc": "دجاج طازج مسحوق ×2، جبن شيدر مضاعف، سلطة، مخلل، بصل مكرمل، لحم مقدد، صلصة الدار.",
+        "smash.veggie.name": "سماش فيجي",
+        "smash.veggie.desc": "سلطة، كولسلو، شيدر، شرائح أفوكادو طازجة، طماطم.",
+        "smash.veggie.options": "خيارات إضافية (+1,50 €): بيض · فطيرة بطاطس · خرشوف أو باذنجان متبل",
+
+        // Gourmet Burgers
+        "sec.gourmets": "برغر غورميه فاخر",
+        "note.gourmets": "خبز بريوش بدقيق Label Rouge · لحم مفروم فرنسي طازج · طهي حسب رغبتكم",
+        "bg.supermaddak.name": "سوبر مادّاك",
+        "bg.supermaddak.desc": "لحم بقري طازج، شيدر معتق، مخلل، بيكون، بصل مكرمل، كولسلو، بيض عيون عضوي، بصل مقلي، صلصة الدار.",
+        "bg.nashville.name": "ناشفيل تشيكن",
+        "bg.nashville.desc": "دجاج مقرمش محضر منزلياً، كولسلو، شيدر، مخلل، بصل مقرمش، صلصة الأعشاب، صلصة باربيكيو، عسل. (حار عند الطلب).",
+        "bg.cheesy.name": "تشيزي سويت",
+        "bg.cheesy.desc": "لحم بقري طازج، جبن كونتيه معتق، سلطة، بصل مكرمل، صلصة برازيل.",
+        "bg.groundchicken.name": "غراوند تشيكن أفوكادو",
+        "bg.groundchicken.desc": "ستيك صدر دجاج مفروم طازج، سلطة، طماطم، شيدر، مخلل، بصل مكرمل، شرائح أفوكادو، صلصة برازيل.",
+        "bg.masterchevre.name": "ماستر شيفغ",
+        "bg.masterchevre.desc": "لحم بقري طازج، سلطة، طماطم مجففة، جبن ماعز طازج، عسل، جوز، صلصة برازيل.",
+        "bg.auvergnat.name": "لوفيرنيا",
+        "bg.auvergnat.desc": "لحم بقري طازج، جبن أزرق فورمي دامبيرت، طماطم مجففة، معجون التين، بصل مكرمل، سلطة، مايونيز الأعشاب الخضراء.",
+        "bg.montagnard.name": "مونتانيار",
+        "bg.montagnard.desc": "لحم بقري طازج، سلطة، جبن راكليت مدخن، مربى البصل والفلفل، فطيرة بطاطس، بصل مقرمش، صلصة البصل والفلفل.",
+        "bg.superchicbeef.name": "سوبر تشيكن & بيف",
+        "bg.superchicbeef.desc": "قطعتان لحم بقري سماش، شيدر مضاعف، بيكون مدخن مضاعف، فيليه دجاج مقرمش، مخلل، بصل مكرمل، سلطة، صلصة بيكونيز.",
+        "bg.kbo.name": "كيه بي أو (KBO)",
+        "bg.kbo.desc": "سمك القد المحمر على الصاج، سلطة، مخلل، بصل مقلي، طماطم، شيدر معتق، بصل مكرمل، صلصة سمك شهية.",
+        "bg.vabene.name": "فا بيني (Va Béné)",
+        "bg.vabene.desc": "إسكالوب دجاج لذيذ، جبن موزاريلا طازج، صلصة بيستو، سلطة، طماطم، بصل مكرمل، صلصة الدار الخاصة.",
+        "bg.legrecque.name": "لو غريك (Le Grecque)",
+        "bg.legrecque.desc": "لحم بقري طازج، جبن فيتا، نكهة الطماطم وإكليل الجبل، سلطة، خيار، طماطم، صلصة الدار.",
+        "bg.lerosso.name": "لو روسو (Le Rosso)",
+        "bg.lerosso.desc": "لحم بقري طازج، شريحة موزاريلا، بيستو روسو، سلطة، بصل مكرمل، طماطم، صلصة البصل والفلفل.",
+        "bg.tartiff.name": "تارتيف (Tartiff’)",
+        "bg.honeysmokkey.name": "هاني سموكي بيف",
+        "bg.carciotta.name": "كارشيوتا",
+
+        // Philly's
+        "sec.phillys": "سندويشات فيليز",
+        "note.phillys": "خبز بريوش طري محشو طازجاً · يُقدم مع بطاطس مقلية طازجة",
+        "philly.fondant.name": "لو فوندون",
+        "philly.fondant.desc": "لحم مفروم طازج متبل بالبهارات، سلطة، فلفل وبصل مكرمل، صلصة برغر.",
+        "philly.fermier.name": "لو فيرمييه",
+        "philly.fermier.desc": "مكعبات دجاج متبلة بالبهارات، سلطة، فلفل وبصل مكرمل، صلصة برازيل.",
+        "philly.supp": "إضافة شيدر: +1,00 € · شيدر + بيكون: +2,00 €",
+
+        // Assiettes
+        "sec.assiettes": "الأطباق",
+        "ass.cordonbleu.name": "كوردون بلو الدار",
+        "ass.cordonbleu.desc": "دجاج مقرمش، جبن راكليت ذائب، موزاريلا، بيكون.",
+        "ass.milanaise.name": "ميلانيز",
+        "ass.milanaise.desc": "إسكالوب لحم عجل مقرمش متبل.",
+        "ass.veau.name": "عجل متبل",
+        "ass.veau.desc": "إسكالوب عجل متبل بثوم الدببة البري.",
+        "ass.poulet.name": "دجاج متبل",
+        "ass.poulet.desc": "إسكالوب دجاج متبل لنعومة وطراوة قصوى.",
+        "ass.gratin": "نسخة غراتان بالفرن (+2,00 €): ماعز وعسل · موزاريلا · راكليت",
+        "ass.cheval.name": "ستيك أ شوفال",
+        "ass.cheval.desc": "قطعتان لحم مفروم متبل تعلوهما شريحة شيدر وبيض مقلي عيون. شرائح بيكون: +2,00 €.",
+        "ass.rumsteak.name": "ستيك رومستيك بقري",
+        "ass.fauxfilet.name": "فو-فيليه أنتركوت",
+        "ass.sides.included": "المقبلات المشمولة: سلطة مشكلة + بطاطس مقلية طازجة أو أرز بسمتي",
+        "ass.sides.supp": "إضافة +2,00 €: بطاطا حلوة مقلية · تويستر مقرمشة",
+
+        // Bowls & Salads
+        "sec.bowls": "أطباق البول الحصرية",
+        "bowl.poulet.name": "ديليس دجاج",
+        "bowl.poulet.desc": "بطاطس مقلية، شرائح دجاج بالفلفل، بصل مقرمش، مهروس الأفوكادو، صلصة شيدر.",
+        "bowl.ny.name": "نيويوركيز",
+        "bowl.ny.desc": "بطاطس مقلية، لحم مفروم متبل بالدار، بصل مقرمش، طماطم، جبن إيمنتال، صلصة شيدر.",
+        "bowl.supp": "إضافة مكون +1,50 €: بيكون، بيض، بصل مقلي، راكليت، ماعز، كونتيه، شيدر، أفوكادو.",
+        "sec.salades": "السلطات الفاخرة",
+        "sal.cesar.name": "سوبريم سيزر",
+        "sal.cesar.desc": "سلطة خضراء، دجاج، كرات موزاريلا، خبز محمص، بارميزان، طماطم كرزية، صلصة سيزر.",
+        "sal.chevre.name": "توست الماعز الساخن",
+        "sal.chevre.desc": "سلطة خضراء، توست جبن ماعز ساخن، كرات موزاريلا، زيتون، عسل، طماطم كرزية، صلصة بلسميك.",
+
+        // Tex-Mex & Sides
+        "sec.texmex": "تكس مكس",
+        "tm.donuts.name": "دونات الدجاج والجبن",
+        "tm.donuts.desc": "2,50 € / قطعة · دونات مقرمش محشو بالدجاج وجبن ذائب.",
+        "tm.crispy.name": "تشيكن كريسبي — تندرز الدار",
+        "tm.crispy.x4": "تشيكن كريسبي ×4",
+        "tm.crispy.x6": "تشيكن كريسبي ×6",
+        "tm.crispy.x10": "تشيكن كريسبي ×10",
+        "tm.assort.name": "تشكيلة مشكلة (4 قطع من اختيارك)",
+        "tm.assort.desc": "أصابع موزاريلا، ميني كاممبر مقلي، تشيلي تشيز، حلقات بصل، هالبينو مقرمش.",
+        "sec.sides": "المقبلات والبطاطس",
+        "side.frites.name": "بطاطس مقلية طازجة",
+        "side.frites.desc": "مشمولة مع الوجبات · فردية: 3,50 €",
+        "side.patates.name": "بطاطا حلوة مقلية",
+        "side.patates.desc": "إضافة مع الوجبة: +2,20 € · فردية: 4,00 €",
+        "side.twister.name": "كريزي تويستر",
+        "side.twister.desc": "إضافة مع الوجبة: +2,20 € · فردية: 4,00 €",
+        "side.coleslaw.name": "كولسلو منزلي",
+        "side.coleslaw.desc": "إضافة مع الوجبة: +1,50 € · فردية: 3,00 €",
+
+        // Kids Menu & Desserts
+        "sec.kids": "وجبة الأطفال",
+        "kids.menu.name": "وجبة الأطفال — حتى 10 سنوات",
+        "kids.menu.desc": "برغر (لحم / شيدر / كاتشب / مايونيز) أو دجاج كريسبي + بطاطس مقلية + مشروب + كمبوت تفاح.",
+        "sec.desserts": "حلويات الدار",
+        "des.creme.name": "كريم بروليه",
+        "des.creme.desc": "فستق حلبي · فانيليا",
+        "des.tiramisu.name": "تيراميسو",
+        "des.tiramisu.desc": "قهوة · سنيكرز · بوينو · فستق حلبي",
+        "des.cheesecake.name": "تشيز كيك",
+        "des.cheesecake.desc": "حسب التوفر اليومي",
+        "des.fondant.name": "فوندان الشوكولاتة الذائبة",
+        "des.fondant.desc": "كريمة إنجليزية، كرة آيس كريم فانيليا، صوص شوكولاتة وكراميل، كريمة مخفوقة.",
+        "des.fondant_caramel.name": "فوندان الكراميل",
+
+        // Cocktails
+        "sec.cocktails": "الكوكتيلات",
+        "note.cocktails": "إبداعات حصرية وخلطات منعشة طبيعية",
+        "cocktail.bora_bora.name": "بورا بورا",
+        "cocktail.bora_bora.desc": "عصير برتقال، عصير أناناس، عصير ليمون، شراب الغرينادين.",
+        "cocktail.golden_sunrise.name": "غولدن صن رايز",
+        "cocktail.golden_sunrise.desc": "عصير برتقال، شراب الفراولة، شراب الغرينادين.",
+        "cocktail.mojito_fraise.name": "موهيتو فراولة",
+        "cocktail.mojito_menthe.name": "موهيتو نعناع",
+        "cocktail.coconut.name": "كوكونات جوز الهند",
+        "cocktail.coconut.desc": "عصير أناناس، مهروس جوز الهند، حليب جوز الهند، شراب الفراولة.",
+        "cocktail.smooth_avocado.name": "سموذي الأفوكادو",
+        "cocktail.smooth_avocado.desc": "أفوكادو، حليب خالي من اللاكتوز، تمر، موز عضوي، لوز.",
+
+        // Cold Drinks
+        "sec.drinks": "المشروبات والمرطبات",
+        "drk.smoothie_mangue.name": "سموذي لاسي المانجو",
+        "drk.smoothie_fraise.name": "سموذي الفراولة",
+        "drk.tea.name": "شاي مثلج",
+        "drk.tea.desc": "خوخ · كركديه · ماتشا",
+        "drk.limonade.name": "ليموناضة حرفية",
+        "drk.limonade.citron": "ليمون أخضر",
+        "drk.limonade.orange": "برتقال دموي",
+        "drk.limonade.passion": "فاكهة العاطفة (باشن)",
+        "drk.limonade.classique": "ليموناضة كلاسيكية",
+        "drk.softs.name": "أورانجينا / أوازيس",
+        "drk.diabolo.name": "ديابولو / سيروب",
+        "drk.diabolo.desc": "أناناس · كركديه · شمام · مانجو · توت العليق · جوز الهند · كرز · غرينادين · فراولة · بنفسج · كشمش · توت شوكي · نعناع · كيوي",
+        "drk.juice.name": "عصائر طبيعية",
+        "drk.juice.desc": "فواكه مشكلة · أناناس · تفاح",
+        "drk.street.name": "ستريت",
+        "drk.street.tropical": "تروبيكال",
+        "drk.street.cherry": "كرز",
+        "sec.cola": "كولا حرفي",
+        "cola.classic.name": "كلاسيك",
+        "cola.zero.name": "زيرو بدون سكر",
+
+        // Coffees, Herbal Teas & Waters
+        "sec.cafes": "القهوة",
+        "cafe.cafe.name": "قهوة عادية",
+        "cafe.expresso.name": "إسبريسو",
+        "cafe.double_expresso.name": "دوبل إسبريسو",
+        "cafe.au_lait.name": "قهوة بالحليب",
+        "cafe.allonge.name": "قهوة أمريكانو",
+        "cafe.latte.name": "لاتيه ماكياتو",
+        "cafe.latte.desc": "كراميل · بندق · سبيكولوس · فشار",
+        "sec.infusion": "شاي أعشاب مهدئ",
+        "drk.infusion.name": "زهورات وأعشاب",
+        "sec.waters": "المياه المعدنية والغازية",
+        "drk.badoit.name": "بادوا غازية",
+        "drk.badoit.desc": "ليمون أخضر · غريب فروت · فواكه حمراء",
+        "drk.carola.name": "كارولا فوارة",
+        "drk.eau_plate_50": "مياه معدنية 50 مل (كريستالين)",
+        "drk.eau_plate_1l": "مياه معدنية 1 لتر (مون روكوس)",
+
+        // Closing
+        "cl.thanks": "بالهناء والشفاء!",
+        "cl.sub": "شكراً لزيارتكم الكريمة",
+        "certif.halal": "لحوم معتمدة حلال من هيئة AVS",
+        "certif.fresh": "لحم مفروم فرنسي طازج وغير مجمد",
+        "certif.bread": "خبز بريوش بدقيق فاخر معتمد Label Rouge"
     }
 };
 
