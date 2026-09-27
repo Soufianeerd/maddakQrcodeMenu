@@ -524,6 +524,17 @@ body {
     margin: 0 auto 0.75rem;
 }
 
+.divider-subtitle {
+    font-family: var(--font-heading);
+    font-size: clamp(1.1rem, 3.2vw, 1.6rem);
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    color: var(--cream);
+    text-transform: uppercase;
+    margin: 0.25rem auto 0.75rem;
+    opacity: 0.95;
+}
+
 .divider-orn {
     color: var(--gold);
     opacity: 0.55;
@@ -622,6 +633,32 @@ body {
     color: var(--em);
 }
 
+.protein-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+    opacity: 0.85;
+    transition: opacity var(--transition-fast);
+}
+
+@media (min-width: 900px) {
+    .protein-icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.product-card:hover .protein-icon {
+    opacity: 1;
+}
+
+[dir="rtl"] .protein-icon {
+    margin-left: 0;
+    margin-right: 6px;
+}
+
 .prod-price {
     font-family: var(--font-heading);
     font-size: clamp(1.05rem, 2.2vw, 1.25rem);
@@ -658,6 +695,25 @@ body {
     color: var(--gold-dark);
     margin-top: 0.4rem;
     font-weight: 500;
+}
+
+.supp-link {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 0.45rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gold-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: color var(--transition-fast), opacity var(--transition-fast);
+}
+
+.supp-link:hover {
+    color: var(--gold);
+    opacity: 0.85;
 }
 
 .prod-teaser-text {
@@ -729,6 +785,16 @@ body {
     width: 100%;
     box-shadow: 0 4px 18px rgba(13, 44, 40, 0.06);
     margin-top: 0.75rem;
+}
+
+#burger-supplements {
+    scroll-margin-top: calc(var(--nav-height, 60px) + 24px);
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+#burger-supplements.highlight-pulse {
+    border-color: var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.45);
 }
 
 .b-opt-sec {

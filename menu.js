@@ -23,13 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownItems = document.querySelectorAll('.category-dropdown-item');
 
     let currentLang = 'fr';
-    let currentCategoryKey = 'nav.burgers';
+    let currentCategoryKey = 'nav.smash';
     let toastTimeout = null;
 
     // Correspondance entre les IDs de sections et les clés de traduction des catégories
     const sectionCatMap = {
-        'hero': 'nav.burgers',
-        'burgers': 'nav.burgers',
+        'hero': 'nav.smash',
+        'smash-burgers': 'nav.smash',
+        'burgers-gourmets': 'nav.gourmets',
+        'phillys': 'nav.phillys',
         'assiettes': 'nav.assiettes',
         'sides-bowls': 'nav.bowls',
         'desserts': 'nav.desserts',
@@ -113,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            const itemKey = this.querySelector('[data-i18n]')?.getAttribute('data-i18n') || 'nav.burgers';
+            const itemKey = this.querySelector('[data-i18n]')?.getAttribute('data-i18n') || 'nav.smash';
 
             setActiveCategory(itemKey);
             toggleDropdown(false);
@@ -259,12 +261,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     e.preventDefault();
                     const navHeight = document.querySelector('.floating-nav')?.offsetHeight || 60;
                     const elementPosition = targetElement.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+                    const offsetPosition = elementPosition + window.pageYOffset - navHeight - 12;
 
                     window.scrollTo({
                         top: offsetPosition,
                         behavior: 'smooth'
                     });
+
+                    // Légère mise en évidence optionnelle (~1s) à l'arrivée pour le bloc suppléments
+                    if (targetId === '#burger-supplements') {
+                        targetElement.classList.add('highlight-pulse');
+                        setTimeout(() => {
+                            targetElement.classList.remove('highlight-pulse');
+                        }, 1200);
+                    }
                 }
             }
         });

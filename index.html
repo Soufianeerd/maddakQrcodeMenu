@@ -29,14 +29,20 @@
             <!-- Menu déroulant des catégories : [ Burgers ▾ ] -->
             <div class="category-dropdown" id="categoryDropdown">
                 <button type="button" class="category-dropdown-btn" id="categoryDropdownBtn" aria-expanded="false" aria-haspopup="listbox" aria-label="Choisir une catégorie">
-                    <span class="category-dropdown-label" id="currentCategoryLabel" data-i18n="nav.burgers">Burgers</span>
+                    <span class="category-dropdown-label" id="currentCategoryLabel" data-i18n="nav.smash">Smash Burgers</span>
                     <span class="category-dropdown-arrow" aria-hidden="true">▾</span>
                 </button>
 
                 <!-- Liste déroulante des catégories -->
                 <div class="category-dropdown-menu" id="categoryDropdownMenu" role="listbox" aria-label="Catégories">
-                    <a href="#burgers" class="category-dropdown-item active" data-category="burgers" role="option">
-                        <span data-i18n="nav.burgers">Burgers</span>
+                    <a href="#smash-burgers" class="category-dropdown-item active" data-category="smash-burgers" role="option">
+                        <span data-i18n="nav.smash">Smash Burgers</span>
+                    </a>
+                    <a href="#burgers-gourmets" class="category-dropdown-item" data-category="burgers-gourmets" role="option">
+                        <span data-i18n="nav.gourmets">Burgers Gourmets</span>
+                    </a>
+                    <a href="#phillys" class="category-dropdown-item" data-category="phillys" role="option">
+                        <span data-i18n="nav.phillys">Philly’s</span>
                     </a>
                     <a href="#assiettes" class="category-dropdown-item" data-category="assiettes" role="option">
                         <span data-i18n="nav.assiettes">Assiettes</span>
@@ -103,15 +109,15 @@
                 <p class="hero-subtitle" data-i18n="cover.subtitle">LA CARTE</p>
                 <p class="hero-tagline" data-i18n="cover.tagline">L’Art du Burger Gourmet & Cuisine Raffinée</p>
 
-                <a href="#burgers" class="hero-scroll-btn" aria-label="Défiler vers le menu">
+                <a href="#smash-burgers" class="hero-scroll-btn" aria-label="Défiler vers le menu">
                     <span class="hero-scroll-text" data-i18n="cover.scrollHint">Faire défiler pour découvrir la carte</span>
                     <span class="hero-arrow">↓</span>
                 </a>
             </div>
         </section>
 
-        <!-- ══ SECTION 1 : BURGERS (SMASH + GOURMETS + PHILLY'S) ══ -->
-        <section id="burgers" class="menu-section">
+        <!-- ══ SECTION 1 : SMASH BURGERS ══ -->
+        <section id="smash-burgers" class="menu-section">
 
             <!-- Séparateur plein écran : SMASH BURGERS -->
             <div class="section-divider">
@@ -132,65 +138,93 @@
                     <!-- Cute Cheeseburger -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="smash.cute.name">Cute Cheeseburger</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="smash.cute.name">Cute Cheeseburger</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">10,90 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="smash.cute.desc">Bœuf frais smashé, cheddar, laitue, oignons, pickles, sauce maison.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                     <!-- Double Cheeseburger -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="smash.double.name">Double Cheeseburger</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="smash.double.name">Double Cheeseburger</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">12,00 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="smash.double.desc">Bœuf frais smashé ×2, cheddar, laitue, oignons, pickles, sauce maison. Supplément œuf : +1,50 €.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                     <!-- Double Cheeseburger Bacon -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="smash.doublebacon.name">Double Cheeseburger Bacon</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="smash.doublebacon.name">Double Cheeseburger Bacon</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">13,50 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="smash.doublebacon.desc">Bœuf frais smashé ×2, double cheddar, salade, pickles, oignons caramélisés, bacon, sauce maison.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                     <!-- Triple X Bacon -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="smash.triplex.name">Triple X Bacon</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="smash.triplex.name">Triple X Bacon</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">15,90 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="smash.triplex.desc">Bœuf frais smashé ×3, triple cheddar, œuf, salade, pickles, oignons caramélisés, bacon, sauce maison.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                     <!-- Smash Gourmand -->
                     <article class="product-card product-card-highlight">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="smash.gourmand.name">Smash Gourmand</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="smash.gourmand.name">Smash Gourmand</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">17,90 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="smash.gourmand.desc">Un cheeseburger et un cheese bacon burger bien savoureux, tranchés en deux et disposés sur notre sauce forestière gourmande pour une expérience unique.</p>
                         <p class="prod-note" data-i18n="mention.bacon">« Bacon de bœuf ou dinde fumée »</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                     <!-- Double Chicken’Cheese -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="smash.doublechicken.name">Double Chicken’Cheese</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="smash.doublechicken.name">Double Chicken’Cheese</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
                             <span class="prod-price">12,50 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="smash.doublechicken.desc">Poulet frais smashé ×2, cheddar, laitue, oignons, pickles, sauce maison. Supplément œuf : +1,50 €.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                     <!-- Double Chicken’Cheese Bacon -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="smash.doublechickenbacon.name">Double Chicken’Cheese Bacon</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="smash.doublechickenbacon.name">Double Chicken’Cheese Bacon</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
                             <span class="prod-price">13,90 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="smash.doublechickenbacon.desc">Poulet frais smashé ×2, double cheddar, salade, pickles, oignons caramélisés, bacon, sauce maison.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                     <!-- Smash Veggie -->
@@ -201,6 +235,7 @@
                         </div>
                         <p class="prod-desc" data-i18n="smash.veggie.desc">Salade, coleslaw, cheddar, tranches d’avocat, tomate.</p>
                         <p class="prod-options" data-i18n="smash.veggie.options">Options (+1,50 €) : Œuf · Galette de pomme de terre · Artichaut ou aubergine confite</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
                     </article>
 
                 </div>
@@ -213,8 +248,269 @@
                     <span data-i18n="info.vege">Option VG disponible : remplace ton steak par un Beyond Meat (+2,50 €).</span>
                 </div>
 
-                <!-- Bloc Options Burgers & Frites commun -->
-                <div class="b-options-card">
+            </div>
+        </section>
+
+        <!-- ══ SECTION 2 : BURGERS GOURMETS ══ -->
+        <section id="burgers-gourmets" class="menu-section">
+
+            <!-- Séparateur plein écran : BURGERS GOURMETS -->
+            <div class="section-divider">
+                <div class="divider-bg" style="background-image: url('asset/couverture.png');"></div>
+                <div class="divider-overlay"></div>
+                <div class="divider-inner">
+                    <span class="divider-brand">MADDAK</span>
+                    <h2 class="divider-title" data-i18n="div.gourmets">BURGERS GOURMETS</h2>
+                    <p class="divider-note" data-i18n="note.gourmets">Pain Farine Label Rouge · Viande hachée fraîche française · Cuits à votre goût</p>
+                    <div class="divider-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+                </div>
+            </div>
+
+            <!-- Contenu Burgers Gourmets -->
+            <div class="menu-content">
+                <div class="product-grid">
+
+                    <!-- Super Maddak -->
+                    <article class="product-card product-card-highlight">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.supermaddak.name">Super Maddak</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">17,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.supermaddak.desc">Bœuf frais, cheddar mature, pickles, bacon, oignons caramélisés, coleslaw, œuf au plat bio, oignons frits, sauce maison.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Nashville Chicken -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.nashville.name">Nashville Chicken</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">15,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.nashville.desc">Poulet pané maison tendrement croustillant, coleslaw, cheddar, pickles, oignons crispy, sauce fines herbes, sauce barbecue, miel. (Version spicy sur demande).</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Cheesy Sweet -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.cheesy.name">Cheesy Sweet</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">15,50 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.cheesy.desc">Bœuf frais, comté affiné AOP, salade, oignons caramélisés, sauce Brazil.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Ground Chicken Avocado -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.groundchicken.name">Ground Chicken Avocado</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">14,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.groundchicken.desc">Steak haché de blanc de poulet maison, salade, tomate, cheddar, pickles, oignons caramélisés, tranches d’avocat, sauce Brazil.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Master Chèvre -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.masterchevre.name">Master Chèvre</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">13,95 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.masterchevre.desc">Bœuf frais, salade, tomates confites, chèvre frais, miel, noix, sauce Brazil.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- L’Auvergnat -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.auvergnat.name">L’Auvergnat</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">16,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.auvergnat.desc">Bœuf frais, Fourme d’Ambert AOP, tomates confites, confit de figues, oignons caramélisés, salade, mayonnaise verte.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Montagnard -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.montagnard.name">Montagnard</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">16,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.montagnard.desc">Bœuf frais, salade, fromage à raclette fumée, marmelade de poivrons et oignons, galette de pomme de terre, oignons crispy, sauce oignons-poivrons.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Super Chicken & Beef -->
+                    <article class="product-card product-card-highlight">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.superchicbeef.name">Super Chicken & Beef</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">20,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.superchicbeef.desc">Double steak smashé, double cheddar, double bacon fumé, filet de poulet pané, pickles, oignons caramélisés, salade, sauce baconaise.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- KBO -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name" data-i18n="bg.kbo.name">KBO</h3>
+                            <span class="prod-price">16,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.kbo.desc">Cabillaud snacké à la plancha, salade, pickles, oignons frits, tomate, cheddar maturé, oignons caramélisés, sauce fish.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Va Béné (Nouveau) -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.vabene.name">Va Béné</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">16,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.vabene.desc">Délicieuse escalope de poulet, mozzarella fraîche, sauce pesto, salade, tomate, oignon caramélisé, sauce maison.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Le Grecque (Nouveau) -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.legrecque.name">Le Grecque</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">14,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.legrecque.desc">Bœuf frais, feta, saveur tomate romarin, salade, concombre, tomate, sauce maison.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Le Rosso (Nouveau) -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="bg.lerosso.name">Le Rosso</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">14,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="bg.lerosso.desc">Bœuf frais, tranche de mozzarella, pesto rosso, salade, oignon caramélisé, tomate, sauce oignon poivron.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Tartiff’ (Teaser) -->
+                    <article class="product-card product-card-teaser">
+                        <div class="prod-header">
+                            <h3 class="prod-name" data-i18n="bg.tartiff.name">Tartiff’</h3>
+                        </div>
+                        <p class="prod-desc prod-teaser-text" data-i18n="bg.teaser">✦ À découvrir très prochainement ✦</p>
+                    </article>
+
+                    <!-- Honey Smokkey Beef (Teaser) -->
+                    <article class="product-card product-card-teaser">
+                        <div class="prod-header">
+                            <h3 class="prod-name" data-i18n="bg.honeysmokkey.name">Honey Smokkey Beef</h3>
+                        </div>
+                        <p class="prod-desc prod-teaser-text" data-i18n="bg.teaser">✦ À découvrir très prochainement ✦</p>
+                    </article>
+
+                    <!-- Carciotta (Teaser) -->
+                    <article class="product-card product-card-teaser">
+                        <div class="prod-header">
+                            <h3 class="prod-name" data-i18n="bg.carciotta.name">Carciotta</h3>
+                        </div>
+                        <p class="prod-desc prod-teaser-text" data-i18n="bg.teaser">✦ À découvrir très prochainement ✦</p>
+                    </article>
+
+                </div>
+
+                <!-- Note VG obligatoire sur la section Burgers Gourmets également -->
+                <div class="vg-banner">
+                    <svg class="vg-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
+                    </svg>
+                    <span data-i18n="info.vege">Option VG disponible : remplace ton steak par un Beyond Meat (+2,50 €).</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══ SECTION 3 : PHILLY'S ══ -->
+        <section id="phillys" class="menu-section">
+
+            <!-- Séparateur plein écran : PHILLY'S -->
+            <div class="section-divider">
+                <div class="divider-bg" style="background-image: url('asset/couverture.png');"></div>
+                <div class="divider-overlay"></div>
+                <div class="divider-inner">
+                    <span class="divider-brand">MADDAK</span>
+                    <h2 class="divider-title" data-i18n="div.phillys">PHILLY’S</h2>
+                    <p class="divider-note" data-i18n="note.phillys">Pain artisanal croustillant · Garniture généreuse cuisinée minute</p>
+                    <div class="divider-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+                </div>
+            </div>
+
+            <!-- Contenu Philly's -->
+            <div class="menu-content">
+                <div class="product-grid">
+
+                    <!-- Philly's : Le Fondant -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="philly.fondant.name">Le Fondant</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">13,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="philly.fondant.desc">Viande hachée fraîche marinée aux épices, salade, confit de poivrons et d’oignons, sauce burger.</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                    <!-- Philly's : Le Fermier -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name">
+                                <span data-i18n="philly.fermier.name">Le Fermier</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">13,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="philly.fermier.desc">Dés de poulet marinés aux épices, salade, confit de poivrons et d’oignons, sauce Brazil.</p>
+                        <p class="prod-note" data-i18n="philly.supp">Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €</p>
+                        <a href="#burger-supplements" class="supp-link" data-i18n="link.supplements">Suppléments</a>
+                    </article>
+
+                </div>
+
+                <!-- Bloc Options Burgers & Frites commun : id="burger-supplements" -->
+                <div class="b-options-card" id="burger-supplements">
                     <div class="b-opt-sec">
                         <div class="b-opt-hd">
                             <span class="b-opt-title" data-i18n="bopt.river.title">River Cheddar</span>
@@ -247,198 +543,19 @@
                 </div>
 
             </div>
-
-            <!-- Séparateur plein écran : BURGERS GOURMETS & PHILLY'S -->
-            <div class="section-divider">
-                <div class="divider-bg" style="background-image: url('asset/couverture.png');"></div>
-                <div class="divider-overlay"></div>
-                <div class="divider-inner">
-                    <span class="divider-brand">MADDAK</span>
-                    <h2 class="divider-title" data-i18n="div.gourmets">BURGERS GOURMETS & PHILLY’S</h2>
-                    <p class="divider-note" data-i18n="note.gourmets">Pain Farine Label Rouge · Viande hachée fraîche française · Cuits à votre goût</p>
-                    <div class="divider-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
-                </div>
-            </div>
-
-            <!-- Contenu Burgers Gourmets & Philly's -->
-            <div class="menu-content">
-                <div class="product-grid">
-
-                    <!-- Super Maddak -->
-                    <article class="product-card product-card-highlight">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.supermaddak.name">Super Maddak</h3>
-                            <span class="prod-price">17,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.supermaddak.desc">Bœuf frais, cheddar mature, pickles, bacon, oignons caramélisés, coleslaw, œuf au plat bio, oignons frits, sauce maison.</p>
-                    </article>
-
-                    <!-- Nashville Chicken -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.nashville.name">Nashville Chicken</h3>
-                            <span class="prod-price">15,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.nashville.desc">Poulet pané maison tendrement croustillant, coleslaw, cheddar, pickles, oignons crispy, sauce fines herbes, sauce barbecue, miel. (Version spicy sur demande).</p>
-                    </article>
-
-                    <!-- Cheesy Sweet -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.cheesy.name">Cheesy Sweet</h3>
-                            <span class="prod-price">15,50 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.cheesy.desc">Bœuf frais, comté affiné AOP, salade, oignons caramélisés, sauce Brazil.</p>
-                    </article>
-
-                    <!-- Ground Chicken Avocado -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.groundchicken.name">Ground Chicken Avocado</h3>
-                            <span class="prod-price">14,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.groundchicken.desc">Steak haché de blanc de poulet maison, salade, tomate, cheddar, pickles, oignons caramélisés, tranches d’avocat, sauce Brazil.</p>
-                    </article>
-
-                    <!-- Master Chèvre -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.masterchevre.name">Master Chèvre</h3>
-                            <span class="prod-price">13,95 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.masterchevre.desc">Bœuf frais, salade, tomates confites, chèvre frais, miel, noix, sauce Brazil.</p>
-                    </article>
-
-                    <!-- L’Auvergnat -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.auvergnat.name">L’Auvergnat</h3>
-                            <span class="prod-price">16,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.auvergnat.desc">Bœuf frais, Fourme d’Ambert AOP, tomates confites, confit de figues, oignons caramélisés, salade, mayonnaise verte.</p>
-                    </article>
-
-                    <!-- Montagnard -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.montagnard.name">Montagnard</h3>
-                            <span class="prod-price">16,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.montagnard.desc">Bœuf frais, salade, fromage à raclette fumée, marmelade de poivrons et oignons, galette de pomme de terre, oignons crispy, sauce oignons-poivrons.</p>
-                    </article>
-
-                    <!-- Super Chicken & Beef -->
-                    <article class="product-card product-card-highlight">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.superchicbeef.name">Super Chicken & Beef</h3>
-                            <span class="prod-price">20,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.superchicbeef.desc">Double steak smashé, double cheddar, double bacon fumé, filet de poulet pané, pickles, oignons caramélisés, salade, sauce baconaise.</p>
-                    </article>
-
-                    <!-- KBO -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.kbo.name">KBO</h3>
-                            <span class="prod-price">16,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.kbo.desc">Cabillaud snacké à la plancha, salade, pickles, oignons frits, tomate, cheddar maturé, oignons caramélisés, sauce fish.</p>
-                    </article>
-
-                    <!-- Va Béné (Nouveau) -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.vabene.name">Va Béné</h3>
-                            <span class="prod-price">16,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.vabene.desc">Délicieuse escalope de poulet, mozzarella fraîche, sauce pesto, salade, tomate, oignon caramélisé, sauce maison.</p>
-                    </article>
-
-                    <!-- Le Grecque (Nouveau) -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.legrecque.name">Le Grecque</h3>
-                            <span class="prod-price">14,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.legrecque.desc">Bœuf frais, feta, saveur tomate romarin, salade, concombre, tomate, sauce maison.</p>
-                    </article>
-
-                    <!-- Le Rosso (Nouveau) -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.lerosso.name">Le Rosso</h3>
-                            <span class="prod-price">14,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="bg.lerosso.desc">Bœuf frais, tranche de mozzarella, pesto rosso, salade, oignon caramélisé, tomate, sauce oignon poivron.</p>
-                    </article>
-
-                    <!-- Tartiff’ (Teaser) -->
-                    <article class="product-card product-card-teaser">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.tartiff.name">Tartiff’</h3>
-                        </div>
-                        <p class="prod-desc prod-teaser-text" data-i18n="bg.teaser">✦ À découvrir très prochainement ✦</p>
-                    </article>
-
-                    <!-- Honey Smokkey Beef (Teaser) -->
-                    <article class="product-card product-card-teaser">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.honeysmokkey.name">Honey Smokkey Beef</h3>
-                        </div>
-                        <p class="prod-desc prod-teaser-text" data-i18n="bg.teaser">✦ À découvrir très prochainement ✦</p>
-                    </article>
-
-                    <!-- Carciotta (Teaser) -->
-                    <article class="product-card product-card-teaser">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bg.carciotta.name">Carciotta</h3>
-                        </div>
-                        <p class="prod-desc prod-teaser-text" data-i18n="bg.teaser">✦ À découvrir très prochainement ✦</p>
-                    </article>
-
-                    <!-- Philly's : Le Fondant -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="philly.fondant.name">Le Fondant</h3>
-                            <span class="prod-price">13,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="philly.fondant.desc">Viande hachée fraîche marinée aux épices, salade, confit de poivrons et d’oignons, sauce burger.</p>
-                    </article>
-
-                    <!-- Philly's : Le Fermier -->
-                    <article class="product-card">
-                        <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="philly.fermier.name">Le Fermier</h3>
-                            <span class="prod-price">13,90 €</span>
-                        </div>
-                        <p class="prod-desc" data-i18n="philly.fermier.desc">Dés de poulet marinés aux épices, salade, confit de poivrons et d’oignons, sauce Brazil.</p>
-                        <p class="prod-note" data-i18n="philly.supp">Supplément cheddar : +1,00 € · Cheddar + bacon : +2,00 €</p>
-                    </article>
-
-                </div>
-
-                <!-- Note VG obligatoire sur la section Burgers Gourmets également -->
-                <div class="vg-banner">
-                    <svg class="vg-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
-                    </svg>
-                    <span data-i18n="info.vege">Option VG disponible : remplace ton steak par un Beyond Meat (+2,50 €).</span>
-                </div>
-
-            </div>
         </section>
 
-        <!-- ══ SECTION 2 : ASSIETTES ══ -->
+        <!-- ══ SECTION 4 : CÔTÉ BRASSERIE / ASSIETTES ══ -->
         <section id="assiettes" class="menu-section">
 
-            <!-- Séparateur plein écran : ASSIETTES -->
+            <!-- Séparateur plein écran : CÔTÉ BRASSERIE / ASSIETTES -->
             <div class="section-divider">
                 <div class="divider-bg" style="background-image: url('asset/couverture.png');"></div>
                 <div class="divider-overlay"></div>
                 <div class="divider-inner">
                     <span class="divider-brand">MADDAK</span>
-                    <h2 class="divider-title" data-i18n="div.assiettes">NOS ASSIETTES</h2>
-                    <p class="divider-note" data-i18n="sec.assiettes">Assiettes généreuses cuisinées minute</p>
+                    <h2 class="divider-title" data-i18n="div.brasserie">CÔTÉ BRASSERIE</h2>
+                    <p class="divider-subtitle" data-i18n="div.assiettes_sub">ASSIETTES</p>
                     <div class="divider-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
                 </div>
             </div>
@@ -450,8 +567,11 @@
                     <!-- Cordon Bleu Maison -->
                     <article class="product-card product-card-highlight">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="ass.cordonbleu.name">Cordon Bleu Maison</h3>
-                            <span class="prod-price">20,90 €</span>
+                            <h3 class="prod-name">
+                                <span data-i18n="ass.cordonbleu.name">Cordon Bleu Maison</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
+                            <span class="prod-price">21,90 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="ass.cordonbleu.desc">Poulet pané, fondu de raclette, mozzarella, bacon.</p>
                     </article>
@@ -476,7 +596,10 @@
                     <!-- Poulet Mariné -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="ass.poulet.name">Poulet Mariné</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="ass.poulet.name">Poulet Mariné</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
                             <span class="prod-price">17,90 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="ass.poulet.desc">Escalope de poulet marinée pour un maximum de tendresse.</p>
@@ -486,7 +609,10 @@
                     <!-- Steak à Cheval -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="ass.cheval.name">Steak à Cheval</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="ass.cheval.name">Steak à Cheval</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">18,90 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="ass.cheval.desc">Deux steaks hachés marinés surmontés d’une tranche de cheddar et d’un œuf au plat. Tranches de bacon : +2,00 €.</p>
@@ -495,7 +621,10 @@
                     <!-- Pavé de Rumsteak -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="ass.rumsteak.name">Pavé de Rumsteak</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="ass.rumsteak.name">Pavé de Rumsteak</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">24,90 €</span>
                         </div>
                     </article>
@@ -503,7 +632,10 @@
                     <!-- Faux-Filet -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="ass.fauxfilet.name">Faux-Filet</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="ass.fauxfilet.name">Faux-Filet</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">26,90 €</span>
                         </div>
                     </article>
@@ -518,7 +650,7 @@
             </div>
         </section>
 
-        <!-- ══ SECTION 3 : BOWLS, SALADES, TEX-MEX & SIDES ══ -->
+        <!-- ══ SECTION 5 : BOWLS, SALADES, TEX-MEX & SIDES ══ -->
         <section id="sides-bowls" class="menu-section">
 
             <!-- Séparateur plein écran : BOWLS & SALADES -->
@@ -539,7 +671,10 @@
                     <!-- Délice de Poulet -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bowl.poulet.name">Délice de poulet</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="bowl.poulet.name">Délice de poulet</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
                             <span class="prod-price">13,50 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="bowl.poulet.desc">Frites fraîches, émincé de poulet aux poivrons, oignons crispy, purée d'avocat, sauce cheddar.</p>
@@ -548,7 +683,10 @@
                     <!-- New Yorkaise -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="bowl.ny.name">New Yorkaise</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="bowl.ny.name">New Yorkaise</span>
+                                <img src="asset/icon-beef.svg" class="protein-icon" alt="Bœuf" title="Bœuf" data-i18n-attr="title:protein.beef | alt:protein.beef | aria-label:protein.beef" aria-label="Bœuf" width="14" height="14">
+                            </h3>
                             <span class="prod-price">13,50 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="bowl.ny.desc">Frites fraîches, viande hachée marinée maison, oignons crispy, tomate, emmental, sauce cheddar.</p>
@@ -558,7 +696,10 @@
                     <!-- Suprême César -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="sal.cesar.name">Suprême César</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="sal.cesar.name">Suprême César</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
                             <span class="prod-price">14,50 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="sal.cesar.desc">Salade verte, poulet, billes de mozzarella, croûtons, parmesan, tomates cerises, sauce césar.</p>
@@ -594,7 +735,10 @@
                     <!-- Donuts Poulet Fromage -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="tm.donuts.name">Donuts Poulet Fromage</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="tm.donuts.name">Donuts Poulet Fromage</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
                             <span class="prod-price">2,50 €</span>
                         </div>
                         <p class="prod-desc" data-i18n="tm.donuts.desc">2,50 € / pièce · Beignet croustillant poulet & fromage fondant.</p>
@@ -603,7 +747,10 @@
                     <!-- Chicken Crispy -->
                     <article class="product-card">
                         <div class="prod-header">
-                            <h3 class="prod-name" data-i18n="tm.crispy.name">Chicken Crispy — tenders maison</h3>
+                            <h3 class="prod-name">
+                                <span data-i18n="tm.crispy.name">Chicken Crispy — tenders maison</span>
+                                <img src="asset/icon-chicken.svg" class="protein-icon" alt="Poulet" title="Poulet" data-i18n-attr="title:protein.chicken | alt:protein.chicken | aria-label:protein.chicken" aria-label="Poulet" width="14" height="14">
+                            </h3>
                         </div>
                         <div class="sup-list">
                             <div class="sup-item"><span data-i18n="tm.crispy.x4">Chicken crispy x4</span><span class="sup-pr">6,00 €</span></div>
@@ -770,10 +917,27 @@
                         <p class="prod-desc" data-i18n="cocktail.golden_sunrise.desc">Jus d’orange, sirop de fraise, sirop de grenadine.</p>
                     </article>
 
+                    <!-- Pink Dynasty (Nouveau) -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name" data-i18n="cocktail.pink_dynasty.name">PINK DYNASTY</h3>
+                            <span class="prod-price">6,90 €</span>
+                        </div>
+                        <p class="prod-desc" data-i18n="cocktail.pink_dynasty.desc">Purée de litchi, fruit du dragon et limonade.</p>
+                    </article>
+
                     <!-- Mojito Fraise -->
                     <article class="product-card">
                         <div class="prod-header">
                             <h3 class="prod-name" data-i18n="cocktail.mojito_fraise.name">Mojito Fraise</h3>
+                            <span class="prod-price">6,90 €</span>
+                        </div>
+                    </article>
+
+                    <!-- Mojito Mangue (Nouveau) -->
+                    <article class="product-card">
+                        <div class="prod-header">
+                            <h3 class="prod-name" data-i18n="cocktail.mojito_mangue.name">Mojito Mangue</h3>
                             <span class="prod-price">6,90 €</span>
                         </div>
                     </article>

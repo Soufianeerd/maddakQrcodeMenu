@@ -20,6 +20,9 @@ const translations = {
 
         // Quick Navigation
         "nav.burgers": "Burgers",
+        "nav.smash": "Smash Burgers",
+        "nav.gourmets": "Burgers Gourmets",
+        "nav.phillys": "Philly’s",
         "nav.assiettes": "Assiettes",
         "nav.bowls": "Bowls & Salades",
         "nav.desserts": "Desserts",
@@ -37,7 +40,11 @@ const translations = {
 
         // Séparateurs de grandes familles
         "div.smash": "SMASH BURGERS",
-        "div.gourmets": "BURGERS GOURMETS & PHILLY’S",
+        "div.gourmets": "BURGERS GOURMETS",
+        "div.phillys": "PHILLY’S",
+        "note.phillys": "Pain artisanal croustillant · Garniture généreuse cuisinée minute",
+        "div.brasserie": "CÔTÉ BRASSERIE",
+        "div.assiettes_sub": "ASSIETTES",
         "div.assiettes": "NOS ASSIETTES",
         "div.bowls_salades": "BOWLS & SALADES",
         "div.texmex_sides": "TEX-MEX & SIDES",
@@ -45,6 +52,11 @@ const translations = {
         "div.cocktails": "NOS COCKTAILS",
         "div.boissons": "BOISSONS & RAFRAÎCHISSEMENTS",
         "div.cafes": "CAFÉS & INFUSIONS",
+
+        // Liens & Accessibilité
+        "link.supplements": "Suppléments",
+        "protein.beef": "Bœuf",
+        "protein.chicken": "Poulet",
 
         // Bloc Options Burgers & Frites commun
         "bopt.river.title": "River Cheddar",
@@ -202,7 +214,10 @@ const translations = {
         "cocktail.bora_bora.desc": "Jus d’orange, jus d’ananas, jus de citron, sirop de grenadine.",
         "cocktail.golden_sunrise.name": "Golden Sunrise",
         "cocktail.golden_sunrise.desc": "Jus d’orange, sirop de fraise, sirop de grenadine.",
+        "cocktail.pink_dynasty.name": "PINK DYNASTY",
+        "cocktail.pink_dynasty.desc": "Purée de litchi, fruit du dragon et limonade.",
         "cocktail.mojito_fraise.name": "Mojito Fraise",
+        "cocktail.mojito_mangue.name": "Mojito Mangue",
         "cocktail.mojito_menthe.name": "Mojito Menthe",
         "cocktail.coconut.name": "Coconut",
         "cocktail.coconut.desc": "Jus d’ananas, purée de coco, lait de coco, sirop de fraise.",
@@ -272,6 +287,9 @@ const translations = {
 
         // Quick Navigation
         "nav.burgers": "Burgers",
+        "nav.smash": "Smash Burgers",
+        "nav.gourmets": "Gourmet Burgers",
+        "nav.phillys": "Philly’s",
         "nav.assiettes": "Plates",
         "nav.bowls": "Bowls & Salads",
         "nav.desserts": "Desserts",
@@ -289,7 +307,11 @@ const translations = {
 
         // Section Dividers
         "div.smash": "SMASH BURGERS",
-        "div.gourmets": "GOURMET BURGERS & PHILLY’S",
+        "div.gourmets": "GOURMET BURGERS",
+        "div.phillys": "PHILLY’S",
+        "note.phillys": "Crispy artisanal bread · Generous fillings made to order",
+        "div.brasserie": "BRASSERIE",
+        "div.assiettes_sub": "PLATES",
         "div.assiettes": "OUR PLATES",
         "div.bowls_salades": "BOWLS & SALADS",
         "div.texmex_sides": "TEX-MEX & SIDES",
@@ -297,6 +319,11 @@ const translations = {
         "div.cocktails": "OUR COCKTAILS",
         "div.boissons": "DRINKS & REFRESHMENTS",
         "div.cafes": "COFFEES & TEAS",
+
+        // Links & Accessibility
+        "link.supplements": "Extras",
+        "protein.beef": "Beef",
+        "protein.chicken": "Chicken",
 
         // Burger & Fries Options block
         "bopt.river.title": "River Cheddar",
@@ -454,7 +481,10 @@ const translations = {
         "cocktail.bora_bora.desc": "Orange juice, pineapple juice, lemon juice, grenadine syrup.",
         "cocktail.golden_sunrise.name": "Golden Sunrise",
         "cocktail.golden_sunrise.desc": "Orange juice, strawberry syrup, grenadine syrup.",
+        "cocktail.pink_dynasty.name": "PINK DYNASTY",
+        "cocktail.pink_dynasty.desc": "Lychee puree, dragon fruit, and lemonade.",
         "cocktail.mojito_fraise.name": "Strawberry Mojito",
+        "cocktail.mojito_mangue.name": "Mango Mojito",
         "cocktail.mojito_menthe.name": "Mint Mojito",
         "cocktail.coconut.name": "Coconut",
         "cocktail.coconut.desc": "Pineapple juice, coconut purée, coconut milk, strawberry syrup.",
@@ -524,6 +554,9 @@ const translations = {
 
         // Quick Navigation
         "nav.burgers": "Burgers",
+        "nav.smash": "Smash Burgers",
+        "nav.gourmets": "Gourmet Burgers",
+        "nav.phillys": "Philly’s",
         "nav.assiettes": "Tellergerichte",
         "nav.bowls": "Bowls & Salate",
         "nav.desserts": "Desserts",
@@ -541,7 +574,11 @@ const translations = {
 
         // Section Dividers
         "div.smash": "SMASH BURGERS",
-        "div.gourmets": "GOURMET BURGERS & PHILLY’S",
+        "div.gourmets": "GOURMET BURGERS",
+        "div.phillys": "PHILLY’S",
+        "note.phillys": "Knuspriges handwerkliches Brot · Großzügige frische Füllung",
+        "div.brasserie": "BRASSERIE",
+        "div.assiettes_sub": "TELLERGERICHTE",
         "div.assiettes": "UNSERE TELLERGERICHTE",
         "div.bowls_salades": "BOWLS & SALATE",
         "div.texmex_sides": "TEX-MEX & BEILAGEN",
@@ -549,6 +586,11 @@ const translations = {
         "div.cocktails": "UNSERE COCKTAILS",
         "div.boissons": "GETRÄNKE & ERFRISCHUNGEN",
         "div.cafes": "KAFFEE & KRÄUTERTEE",
+
+        // Links & Accessibility
+        "link.supplements": "Extras",
+        "protein.beef": "Rind",
+        "protein.chicken": "Hähnchen",
 
         // Burger & Pommes Optionen
         "bopt.river.title": "River Cheddar",
@@ -706,7 +748,10 @@ const translations = {
         "cocktail.bora_bora.desc": "Orangensaft, Ananassaft, Zitronensaft, Grenadinesirup.",
         "cocktail.golden_sunrise.name": "Golden Sunrise",
         "cocktail.golden_sunrise.desc": "Orangensaft, Erdbeersirup, Grenadinesirup.",
+        "cocktail.pink_dynasty.name": "PINK DYNASTY",
+        "cocktail.pink_dynasty.desc": "Litschipüree, Drachenfrucht und Limonade.",
         "cocktail.mojito_fraise.name": "Erdbeer-Mojito",
+        "cocktail.mojito_mangue.name": "Mango Mojito",
         "cocktail.mojito_menthe.name": "Minz-Mojito",
         "cocktail.coconut.name": "Coconut",
         "cocktail.coconut.desc": "Ananassaft, Kokospüree, Kokosmilch, Erdbeersirup.",
@@ -776,6 +821,9 @@ const translations = {
 
         // Quick Navigation
         "nav.burgers": "البرغر",
+        "nav.smash": "سماش برغر",
+        "nav.gourmets": "برغر غورميه",
+        "nav.phillys": "فيليز",
         "nav.assiettes": "الأطباق",
         "nav.bowls": "البول والسلطات",
         "nav.desserts": "الحلويات",
@@ -793,7 +841,11 @@ const translations = {
 
         // Section Dividers
         "div.smash": "سماش برغر",
-        "div.gourmets": "برغر غورميه وفيليز",
+        "div.gourmets": "برغر غورميه",
+        "div.phillys": "فيليز",
+        "note.phillys": "خبز تقليدي مقرمش · حشوات طازجة سخية تحضر حسب الطلب",
+        "div.brasserie": "جانب البراسيري",
+        "div.assiettes_sub": "الأطباق",
         "div.assiettes": "أطباقنا الشهية",
         "div.bowls_salades": "البول والسلطات",
         "div.texmex_sides": "تكس مكس والمقبلات",
@@ -801,6 +853,11 @@ const translations = {
         "div.cocktails": "كوكتيلاتنا الحصرية",
         "div.boissons": "المشروبات والمرطبات",
         "div.cafes": "القهوة والمشروبات الساخنة",
+
+        // Links & Accessibility
+        "link.supplements": "الإضافات",
+        "protein.beef": "لحم بقري",
+        "protein.chicken": "دجاج",
 
         // Burger & Fries Options block
         "bopt.river.title": "شلال جبن الشيدر",
@@ -958,7 +1015,10 @@ const translations = {
         "cocktail.bora_bora.desc": "عصير برتقال، عصير أناناس، عصير ليمون، شراب الغرينادين.",
         "cocktail.golden_sunrise.name": "غولدن صن رايز",
         "cocktail.golden_sunrise.desc": "عصير برتقال، شراب الفراولة، شراب الغرينادين.",
+        "cocktail.pink_dynasty.name": "PINK DYNASTY",
+        "cocktail.pink_dynasty.desc": "بيوريه ليتشي، دراغون فروت وليموناضة.",
         "cocktail.mojito_fraise.name": "موهيتو فراولة",
+        "cocktail.mojito_mangue.name": "موهيتو مانجو",
         "cocktail.mojito_menthe.name": "موهيتو نعناع",
         "cocktail.coconut.name": "كوكونات جوز الهند",
         "cocktail.coconut.desc": "عصير أناناس، مهروس جوز الهند، حليب جوز الهند، شراب الفراولة.",
