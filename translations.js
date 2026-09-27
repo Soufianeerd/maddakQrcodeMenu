@@ -21,9 +21,11 @@ const translations = {
         // Quick Navigation
         "nav.burgers": "Burgers",
         "nav.assiettes": "Assiettes",
+        "nav.bowls": "Bowls & Salades",
         "nav.desserts": "Desserts",
         "nav.cocktails": "Cocktails",
         "nav.boissons": "Boissons",
+        "nav.cafes": "Cafés",
 
         // Toast de bienvenue (3s)
         "toast.welcome": "Bienvenue chers amis",
@@ -271,9 +273,11 @@ const translations = {
         // Quick Navigation
         "nav.burgers": "Burgers",
         "nav.assiettes": "Plates",
+        "nav.bowls": "Bowls & Salads",
         "nav.desserts": "Desserts",
         "nav.cocktails": "Cocktails",
         "nav.boissons": "Drinks",
+        "nav.cafes": "Coffees",
 
         // Toast welcome (3s)
         "toast.welcome": "Welcome dear friends",
@@ -521,9 +525,11 @@ const translations = {
         // Quick Navigation
         "nav.burgers": "Burgers",
         "nav.assiettes": "Tellergerichte",
+        "nav.bowls": "Bowls & Salate",
         "nav.desserts": "Desserts",
         "nav.cocktails": "Cocktails",
         "nav.boissons": "Getränke",
+        "nav.cafes": "Kaffee",
 
         // Toast welcome (3s)
         "toast.welcome": "Willkommen, liebe Freunde",
@@ -771,9 +777,11 @@ const translations = {
         // Quick Navigation
         "nav.burgers": "البرغر",
         "nav.assiettes": "الأطباق",
+        "nav.bowls": "البول والسلطات",
         "nav.desserts": "الحلويات",
         "nav.cocktails": "الكوكتيلات",
         "nav.boissons": "المشروبات",
+        "nav.cafes": "القهوة",
 
         // Toast welcome (3s)
         "toast.welcome": "أهلاً وسهلاً بكم أصدقاؤنا",

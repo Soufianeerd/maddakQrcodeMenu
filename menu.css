@@ -1,9 +1,12 @@
 /* 
  * 🎨 FEUILLE DE STYLE DU MENU VERTICAL CONTINU (Maddak)
  * ────────────────────────────────────────────────────────────────
- * Design 100% Full Screen, Émeraude Profond & Or Impérial.
- * Scroll vertical naturel, mobile-first, grilles dynamiques desktop.
- * Support multilingue complet (FR, EN, DE, AR) avec mode RTL.
+ * Design hybride signature Maddak :
+ * - Couvertures & Grands Séparateurs : Émeraude Profond & Or Impérial
+ * - Sections de lecture & Fiches Produits : FOND CLAIR / CRÈME ÉLÉGANT
+ * - Navigation fixe à 2 niveaux : Marque + Langues en haut, Catégories défilables en pleine largeur
+ * - 100% Full-Screen, mobile-first et grille desktop responsive
+ * - Support multilingue complet (FR, EN, DE, AR) avec mode RTL
  */
 
 *,
@@ -20,32 +23,34 @@
     --em: #0D2C28;
     --em2: #0A2420;
     --em3: #16463E;
-    --em-card: rgba(13, 44, 40, 0.65);
-    --em-card-hover: rgba(22, 70, 62, 0.85);
 
     --gold: #D4AF37;
     --gold-light: #F3E099;
-    --gold-dark: #9E7E1A;
+    --gold-dark: #8C6D1F;
     --gold-glow: rgba(212, 175, 55, 0.22);
     --gold-border: rgba(212, 175, 55, 0.28);
 
+    /* Fonds clairs pour les pages de produits */
+    --bg-light: #F7F4EC;
+    --bg-card: #FFFFFF;
+    --text-dark: #08201B;
+    --text-body: #4A4036;
+    --text-muted: #6B5E50;
+
     --cream: #F5F1E8;
     --cream-soft: #EDE8D8;
-    --cream-muted: rgba(245, 241, 232, 0.72);
-    --cream-dim: rgba(245, 241, 232, 0.50);
 
     /* Polices */
     --font-heading: 'Playfair Display', Georgia, serif;
     --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-arabic: 'Amiri', 'Playfair Display', serif;
 
-    /* Tailles & transitions */
-    --nav-height: 60px;
-    --transition-fast: 0.25s ease;
-    --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    /* Transitions */
+    --transition-fast: 0.22s ease;
+    --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ══ DOCUMENT ET SCROLL ══ */
+/* ══ DOCUMENT ET SCROLL VERTICAL CONTINU ══ */
 html {
     width: 100%;
     min-height: 100%;
@@ -59,8 +64,8 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background: var(--em-deep);
-    color: var(--cream);
+    background: var(--bg-light);
+    color: var(--text-dark);
     font-family: var(--font-body);
     font-weight: 400;
     line-height: 1.6;
@@ -70,120 +75,58 @@ body {
     position: relative;
 }
 
-/* Texture de fond subtile Maddak à très faible opacité */
-body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url('asset/couverture.png');
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.035;
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* Dégradés d'ambiance émeraude profonds */
-body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background:
-        radial-gradient(ellipse at 25% 15%, rgba(22, 70, 62, 0.4) 0%, transparent 65%),
-        radial-gradient(ellipse at 75% 75%, rgba(22, 70, 62, 0.3) 0%, transparent 65%),
-        linear-gradient(180deg, rgba(6, 26, 21, 0.85) 0%, rgba(10, 36, 32, 0.95) 50%, rgba(6, 26, 21, 0.98) 100%);
-    pointer-events: none;
-    z-index: 0;
-}
-
-/* ══ BARRE FIXE TRANSLUCIDE (STICKY TOP) ══ */
+/* ══ BARRE FIXE TRANSLUCIDE (STICKY TOP À 2 NIVEAUX) ══ */
 .floating-nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: var(--nav-height);
-    background: rgba(6, 26, 21, 0.88);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(6, 26, 21, 0.95);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--gold-border);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
     z-index: 1000;
     display: flex;
-    align-items: center;
-    padding: 0 env(safe-area-inset-right, 16px) 0 env(safe-area-inset-left, 16px);
-    transition: transform var(--transition-smooth), background-color var(--transition-fast);
+    flex-direction: column;
+    padding-top: max(env(safe-area-inset-top), 8px);
+    padding-left: max(env(safe-area-inset-left), 12px);
+    padding-right: max(env(safe-area-inset-right), 12px);
+    padding-bottom: 6px;
+    gap: 4px;
+    transition: transform var(--transition-smooth);
 }
 
-.nav-inner {
+/* Niveau 1 : Logo Maddak + Sélecteur de Langue */
+.nav-top {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    padding: 0 12px;
+    padding: 2px 4px 4px 4px;
 }
 
 .nav-brand {
     text-decoration: none;
     display: flex;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .nav-brand-text {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.16em;
     color: var(--gold);
     text-shadow: 0 1px 8px var(--gold-glow);
-}
-
-/* Navigation rapide horizontale */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    padding: 4px 0;
-}
-
-.nav-links::-webkit-scrollbar {
-    display: none;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: var(--cream-soft);
-    font-size: 0.82rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    padding: 6px 12px;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    transition: all var(--transition-fast);
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: var(--gold-light);
-    background: rgba(212, 175, 55, 0.16);
-    border-color: var(--gold);
-    box-shadow: 0 0 12px var(--gold-glow);
 }
 
 /* Sélecteur de langue 4 boutons */
 .lang-selector {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 3px;
     background: rgba(13, 44, 40, 0.7);
     padding: 3px;
     border-radius: 20px;
@@ -194,12 +137,12 @@ body::after {
 .lang-btn {
     background: transparent;
     border: none;
-    color: var(--cream-muted);
+    color: var(--cream-soft);
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
     padding: 4px 8px;
-    border-radius: 14px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all var(--transition-fast);
 }
@@ -212,13 +155,56 @@ body::after {
     background: var(--gold);
     color: var(--em-deep);
     font-weight: 700;
-    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 2px 6px rgba(212, 175, 55, 0.4);
+}
+
+/* Niveau 2 : Barre de Catégories Pleine Largeur Défilable */
+.nav-categories {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 2px 2px 4px 2px;
+}
+
+.nav-categories::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--cream-soft);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(13, 44, 40, 0.85);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: all var(--transition-fast);
+    flex-shrink: 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--em-deep);
+    background: var(--gold);
+    border-color: var(--gold);
+    font-weight: 700;
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.45);
 }
 
 /* ══ TOAST NOTIFICATION BIENVENUE (3 SECONDES) ══ */
 .toast {
     position: fixed;
-    top: calc(var(--nav-height) + 16px);
+    top: calc(max(env(safe-area-inset-top), 8px) + 95px);
     left: 50%;
     transform: translate(-50%, -24px);
     background: rgba(10, 36, 32, 0.96);
@@ -263,9 +249,10 @@ body::after {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: calc(var(--nav-height) + 2rem) 1.5rem 3rem;
+    padding: calc(max(env(safe-area-inset-top), 8px) + 100px) 1.5rem 3.5rem;
     overflow: hidden;
     box-sizing: border-box;
+    background: var(--em-deep);
 }
 
 .hero-bg-layer {
@@ -295,7 +282,6 @@ body::after {
     animation: fadeIn 1s ease-out;
 }
 
-
 .hero-title {
     font-family: var(--font-heading);
     font-size: clamp(2.6rem, 8vw, 4.5rem);
@@ -305,7 +291,7 @@ body::after {
     text-shadow: 0 4px 24px rgba(0, 0, 0, 0.8), 0 0 20px var(--gold-glow);
     margin-bottom: 0.5rem;
     line-height: 1.1;
-    margin-right: -0.22em; /* Compenser le letter-spacing */
+    margin-right: -0.22em;
 }
 
 .hero-divider-line {
@@ -339,7 +325,7 @@ body::after {
 
 .hero-tagline {
     font-size: clamp(0.85rem, 2.2vw, 1.05rem);
-    color: var(--cream-muted);
+    color: var(--cream-soft);
     font-weight: 300;
     letter-spacing: 0.05em;
     margin-bottom: 2.5rem;
@@ -357,7 +343,7 @@ body::after {
     letter-spacing: 0.08em;
     padding: 10px 24px;
     border-radius: 30px;
-    background: rgba(13, 44, 40, 0.6);
+    background: rgba(13, 44, 40, 0.65);
     border: 1px solid var(--gold-border);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -365,7 +351,7 @@ body::after {
 }
 
 .hero-scroll-btn:hover {
-    background: rgba(212, 175, 55, 0.2);
+    background: rgba(212, 175, 55, 0.25);
     border-color: var(--gold);
     transform: translateY(2px);
     box-shadow: 0 4px 20px var(--gold-glow);
@@ -399,20 +385,21 @@ body::after {
     }
 }
 
-/* ══ SÉPARATEURS DE SECTION PLEIN ÉCRAN ══ */
+/* ══ SÉPARATEURS DE SECTION PLEIN ÉCRAN (ÉMERAUDE & OR) ══ */
 .section-divider {
     position: relative;
     width: 100vw;
-    min-height: clamp(240px, 35vh, 380px);
+    min-height: clamp(220px, 30vh, 340px);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    margin: 2rem 0 0;
+    margin: 0;
     border-top: 1px solid var(--gold-border);
     border-bottom: 1px solid var(--gold-border);
     box-sizing: border-box;
+    background: var(--em-deep);
 }
 
 .divider-bg {
@@ -446,18 +433,18 @@ body::after {
     letter-spacing: 0.35em;
     color: var(--gold);
     text-transform: uppercase;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     opacity: 0.9;
 }
 
 .divider-title {
     font-family: var(--font-heading);
-    font-size: clamp(1.8rem, 5.5vw, 3rem);
+    font-size: clamp(1.8rem, 5.5vw, 2.9rem);
     font-weight: 700;
     letter-spacing: 0.16em;
     color: var(--gold-light);
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 16px var(--gold-glow);
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     line-height: 1.2;
 }
 
@@ -477,20 +464,22 @@ body::after {
     letter-spacing: 0.35em;
 }
 
-/* ══ ZONE DE CONTENU PRODUITS (FULL SCREEN ÉTENDU) ══ */
+/* ══ ZONE DE CONTENU PRODUITS (FOND CLAIR / CRÈME ÉLÉGANT) ══ */
 .menu-section {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    background: var(--bg-light);
 }
 
 .menu-content {
     width: 100vw;
+    background: var(--bg-light);
     box-sizing: border-box;
     padding: clamp(1.5rem, 3.5vw, 3.5rem) clamp(1rem, 4vw, 4.5rem);
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 1.5rem;
 }
 
 /* Grille de produits responsive : 1 colonne mobile, 2 colonnes desktop large */
@@ -513,37 +502,36 @@ body::after {
     }
 }
 
-/* Fiche produit haut de gamme */
+/* Fiche produit sur fond clair : Blanc pur avec bordure dorée raffinée */
 .product-card {
-    background: var(--em-card);
-    border: 1px solid var(--gold-border);
+    background: var(--bg-card);
+    border: 1px solid rgba(212, 175, 55, 0.32);
     border-radius: 12px;
-    padding: clamp(1rem, 2vw, 1.4rem);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+    padding: clamp(1.1rem, 2vw, 1.4rem);
+    box-shadow: 0 3px 14px rgba(13, 44, 40, 0.06);
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    overflow: hidden;
 }
 
 .product-card:hover {
-    background: var(--em-card-hover);
+    background: #FFFFFF;
     border-color: var(--gold);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 14px var(--gold-glow);
+    box-shadow: 0 8px 22px rgba(13, 44, 40, 0.12), 0 0 10px rgba(212, 175, 55, 0.25);
 }
 
 .product-card-highlight {
-    border-left: 3px solid var(--gold);
-    background: linear-gradient(135deg, rgba(22, 70, 62, 0.75), rgba(13, 44, 40, 0.65));
+    border-left: 3.5px solid var(--gold);
+    background: #FAF8F2;
 }
 
 .product-card-teaser {
-    border: 1px dashed var(--gold-border);
-    opacity: 0.85;
+    border: 1.5px dashed rgba(212, 175, 55, 0.45);
+    background: #FAF7F0;
+    opacity: 0.95;
 }
 
 .prod-header {
@@ -557,62 +545,62 @@ body::after {
 .prod-name {
     font-family: var(--font-heading);
     font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-    font-weight: 600;
-    color: var(--cream);
-    letter-spacing: 0.02em;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: 0.01em;
     line-height: 1.3;
 }
 
 .product-card:hover .prod-name {
-    color: var(--gold-light);
+    color: var(--em);
 }
 
 .prod-price {
     font-family: var(--font-heading);
     font-size: clamp(1.05rem, 2.2vw, 1.25rem);
     font-weight: 700;
-    color: var(--gold);
+    color: var(--em);
     white-space: nowrap;
-    letter-spacing: 0.04em;
-    text-shadow: 0 1px 6px var(--gold-glow);
+    letter-spacing: 0.02em;
     flex-shrink: 0;
 }
 
 .prod-desc {
-    font-size: clamp(0.82rem, 1.6vw, 0.92rem);
-    color: var(--cream-muted);
-    font-weight: 300;
+    font-size: clamp(0.84rem, 1.6vw, 0.94rem);
+    color: var(--text-body);
+    font-weight: 400;
     line-height: 1.55;
 }
 
 .prod-flavors {
     font-style: italic;
-    color: var(--gold-light);
-    opacity: 0.88;
+    color: var(--gold-dark);
+    font-weight: 500;
 }
 
 .prod-options {
-    font-size: 0.82rem;
-    color: var(--gold-light);
-    font-weight: 500;
+    font-size: 0.84rem;
+    color: var(--em);
+    font-weight: 600;
     margin-top: 0.4rem;
 }
 
 .prod-note {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     font-style: italic;
-    color: var(--gold);
+    color: var(--gold-dark);
     margin-top: 0.4rem;
-    opacity: 0.9;
+    font-weight: 500;
 }
 
 .prod-teaser-text {
     font-style: italic;
-    color: var(--gold);
-    letter-spacing: 0.06em;
+    color: var(--gold-dark);
+    letter-spacing: 0.05em;
+    font-weight: 600;
 }
 
-/* Liste de sous-variantes (ex: Chicken Crispy x4, x6, x10 ou Limonades) */
+/* Liste de sous-variantes sur fond clair */
 .sup-list {
     display: flex;
     flex-direction: column;
@@ -625,9 +613,9 @@ body::after {
     justify-content: space-between;
     align-items: center;
     font-size: 0.88rem;
-    color: var(--cream-soft);
+    color: #2D2D2D;
     padding: 3px 0;
-    border-bottom: 1px dashed rgba(212, 175, 55, 0.15);
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.32);
 }
 
 .sup-item:last-child {
@@ -636,47 +624,43 @@ body::after {
 
 .sup-pr {
     font-family: var(--font-heading);
-    font-weight: 600;
-    color: var(--gold);
+    font-weight: 700;
+    color: var(--em);
 }
 
-/* ══ BANNIÈRE VG OBLIGATOIRE ══ */
+/* ══ BANNIÈRE VG SUR FOND CLAIR ══ */
 .vg-banner {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: rgba(22, 70, 62, 0.5);
-    border: 1px solid rgba(80, 180, 120, 0.4);
+    background: #EDF7F0;
+    border: 1px solid rgba(46, 125, 50, 0.35);
     border-radius: 10px;
     padding: 12px 18px;
-    color: #9FE4B2;
+    color: #1B5E20;
     font-size: 0.88rem;
-    font-weight: 400;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(46, 125, 50, 0.08);
     width: 100%;
     margin-top: 0.5rem;
 }
 
 .vg-icon {
     flex-shrink: 0;
-    color: #55D480;
+    color: #2E7D32;
 }
 
-/* ══ BLOC OPTIONS BURGERS & FRITES ══ */
+/* ══ BLOC OPTIONS BURGERS SUR FOND CLAIR ══ */
 .b-options-card {
-    background: rgba(10, 36, 32, 0.8);
-    border: 1px solid var(--gold-border);
+    background: #FFFFFF;
+    border: 1.5px solid rgba(212, 175, 55, 0.38);
     border-radius: 14px;
     padding: clamp(1.2rem, 2.5vw, 1.8rem);
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
     width: 100%;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 18px rgba(13, 44, 40, 0.06);
     margin-top: 0.75rem;
 }
 
@@ -685,7 +669,7 @@ body::after {
     flex-direction: column;
     gap: 6px;
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.14);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.22);
 }
 
 .b-opt-sec:last-child {
@@ -703,52 +687,57 @@ body::after {
 .b-opt-title {
     font-family: var(--font-heading);
     font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--gold);
-    letter-spacing: 0.04em;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: 0.03em;
 }
 
 .b-opt-quote {
     font-size: 0.82rem;
     font-style: italic;
-    color: var(--cream-dim);
+    color: var(--text-muted);
 }
 
 .b-opt-line {
-    font-size: 0.85rem;
-    color: var(--cream-soft);
+    font-size: 0.86rem;
+    color: #332E27;
     line-height: 1.5;
 }
 
 .b-opt-line strong {
-    color: var(--gold-light);
+    color: var(--em);
+    font-weight: 700;
 }
 
 .b-opt-tag {
-    color: var(--gold);
-    font-weight: 600;
+    color: var(--gold-dark);
+    font-weight: 700;
 }
 
-/* Bloc Info Accompagnements */
+/* Bloc Info Accompagnements sur fond clair */
 .info-block {
-    background: rgba(13, 44, 40, 0.75);
-    border-left: 3px solid var(--gold);
+    background: #FFFFFF;
+    border-left: 3.5px solid var(--gold);
+    border-right: 1px solid rgba(212, 175, 55, 0.25);
+    border-top: 1px solid rgba(212, 175, 55, 0.25);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
     border-radius: 8px;
-    padding: 12px 18px;
+    padding: 14px 18px;
     font-size: 0.88rem;
-    color: var(--cream-soft);
+    color: #332E27;
     display: flex;
     flex-direction: column;
     gap: 4px;
     margin-top: 0.75rem;
     width: 100%;
+    box-shadow: 0 2px 10px rgba(13, 44, 40, 0.05);
 }
 
 .info-block strong {
-    color: var(--gold-light);
+    color: var(--text-dark);
 }
 
-/* ══ PAGE FINALE PLEIN ÉCRAN (CLOSING) ══ */
+/* ══ PAGE FINALE PLEIN ÉCRAN (ÉMERAUDE & OR) ══ */
 .closing-cover {
     position: relative;
     width: 100vw;
@@ -761,6 +750,7 @@ body::after {
     overflow: hidden;
     border-top: 1px solid var(--gold-border);
     box-sizing: border-box;
+    background: var(--em-deep);
 }
 
 .closing-bg-layer {
@@ -856,7 +846,7 @@ body::after {
 }
 
 .cl-insta a:hover {
-    background: rgba(212, 175, 55, 0.2);
+    background: rgba(212, 175, 55, 0.25);
     border-color: var(--gold);
     box-shadow: 0 0 16px var(--gold-glow);
 }
@@ -938,20 +928,20 @@ html[dir="rtl"] .cl-thanks {
 }
 
 html[dir="rtl"] .product-card-highlight {
-    border-left: 1px solid var(--gold-border);
-    border-right: 3px solid var(--gold);
+    border-left: 1px solid rgba(212, 175, 55, 0.32);
+    border-right: 3.5px solid var(--gold);
 }
 
 html[dir="rtl"] .info-block {
-    border-left: none;
-    border-right: 3px solid var(--gold);
+    border-left: 1px solid rgba(212, 175, 55, 0.25);
+    border-right: 3.5px solid var(--gold);
 }
 
 html[dir="rtl"] .certif-item {
     text-align: right;
 }
 
-/* ══ ACCESSIBILITÉ & FLUIDITÉ ══ */
+/* ══ ACCESSIBILITÉ ══ */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

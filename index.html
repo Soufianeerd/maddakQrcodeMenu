@@ -21,19 +21,10 @@
 
     <!-- ══ BARRE FIXE TRANSLUCIDE (STICKY TOP) ══ -->
     <header class="floating-nav" id="mainHeader">
-        <div class="nav-inner">
+        <div class="nav-top">
             <a href="#hero" class="nav-brand" aria-label="Maddak Nancy - Haut de page">
                 <span class="nav-brand-text">MADDAK</span>
             </a>
-
-            <!-- Liens de défilement rapide -->
-            <nav class="nav-links" aria-label="Navigation rapide">
-                <a href="#burgers" class="nav-link" data-i18n="nav.burgers">Burgers</a>
-                <a href="#assiettes" class="nav-link" data-i18n="nav.assiettes">Assiettes</a>
-                <a href="#desserts" class="nav-link" data-i18n="nav.desserts">Desserts</a>
-                <a href="#cocktails" class="nav-link" data-i18n="nav.cocktails">Cocktails</a>
-                <a href="#boissons" class="nav-link" data-i18n="nav.boissons">Boissons</a>
-            </nav>
 
             <!-- Sélecteur de langue 4 langues (FR, EN, DE, AR) -->
             <div class="lang-selector" id="langSelector" role="group" aria-label="Sélection de la langue">
@@ -59,6 +50,18 @@
                 </button>
             </div>
         </div>
+
+        <!-- Rangée Catégories Défilables (pleine largeur sur mobile et desktop) -->
+        <nav class="nav-categories" aria-label="Catégories du menu">
+            <div class="nav-links">
+                <a href="#burgers" class="nav-link" data-i18n="nav.burgers">Burgers</a>
+                <a href="#assiettes" class="nav-link" data-i18n="nav.assiettes">Assiettes</a>
+                <a href="#sides-bowls" class="nav-link" data-i18n="nav.bowls">Bowls & Salades</a>
+                <a href="#desserts" class="nav-link" data-i18n="nav.desserts">Desserts</a>
+                <a href="#cocktails" class="nav-link" data-i18n="nav.cocktails">Cocktails</a>
+                <a href="#boissons" class="nav-link" data-i18n="nav.boissons">Boissons</a>
+            </div>
+        </nav>
     </header>
 
     <!-- ══ TOAST NOTIFICATION BIENVENUE (3 SECONDES) ══ -->

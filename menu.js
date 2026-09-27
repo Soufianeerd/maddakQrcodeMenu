@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             const href = link.getAttribute('href');
                             if (href === `#${id}`) {
                                 link.classList.add('active');
+                                link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
                             } else {
                                 link.classList.remove('active');
                             }
