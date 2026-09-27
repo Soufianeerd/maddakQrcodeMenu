@@ -25,7 +25,7 @@ const translations = {
         "nav.desserts": "Desserts",
         "nav.cocktails": "Cocktails",
         "nav.boissons": "Boissons",
-        "nav.cafes": "Cafés",
+        "nav.cafes": "Cafés & Eaux",
 
         // Toast de bienvenue (3s)
         "toast.welcome": "Bienvenue chers amis",
@@ -277,7 +277,7 @@ const translations = {
         "nav.desserts": "Desserts",
         "nav.cocktails": "Cocktails",
         "nav.boissons": "Drinks",
-        "nav.cafes": "Coffees",
+        "nav.cafes": "Coffees & Waters",
 
         // Toast welcome (3s)
         "toast.welcome": "Welcome dear friends",
@@ -529,7 +529,7 @@ const translations = {
         "nav.desserts": "Desserts",
         "nav.cocktails": "Cocktails",
         "nav.boissons": "Getränke",
-        "nav.cafes": "Kaffee",
+        "nav.cafes": "Kaffee & Wasser",
 
         // Toast welcome (3s)
         "toast.welcome": "Willkommen, liebe Freunde",
@@ -781,7 +781,7 @@ const translations = {
         "nav.desserts": "الحلويات",
         "nav.cocktails": "الكوكتيلات",
         "nav.boissons": "المشروبات",
-        "nav.cafes": "القهوة",
+        "nav.cafes": "القهوة والمياه",
 
         // Toast welcome (3s)
         "toast.welcome": "أهلاً وسهلاً بكم أصدقاؤنا",

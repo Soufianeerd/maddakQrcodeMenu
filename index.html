@@ -21,10 +21,43 @@
 
     <!-- ══ BARRE FIXE TRANSLUCIDE (STICKY TOP) ══ -->
     <header class="floating-nav" id="mainHeader">
-        <div class="nav-top">
+        <div class="nav-inner">
             <a href="#hero" class="nav-brand" aria-label="Maddak Nancy - Haut de page">
                 <span class="nav-brand-text">MADDAK</span>
             </a>
+
+            <!-- Menu déroulant des catégories : [ Burgers ▾ ] -->
+            <div class="category-dropdown" id="categoryDropdown">
+                <button type="button" class="category-dropdown-btn" id="categoryDropdownBtn" aria-expanded="false" aria-haspopup="listbox" aria-label="Choisir une catégorie">
+                    <span class="category-dropdown-label" id="currentCategoryLabel" data-i18n="nav.burgers">Burgers</span>
+                    <span class="category-dropdown-arrow" aria-hidden="true">▾</span>
+                </button>
+
+                <!-- Liste déroulante des catégories -->
+                <div class="category-dropdown-menu" id="categoryDropdownMenu" role="listbox" aria-label="Catégories">
+                    <a href="#burgers" class="category-dropdown-item active" data-category="burgers" role="option">
+                        <span data-i18n="nav.burgers">Burgers</span>
+                    </a>
+                    <a href="#assiettes" class="category-dropdown-item" data-category="assiettes" role="option">
+                        <span data-i18n="nav.assiettes">Assiettes</span>
+                    </a>
+                    <a href="#sides-bowls" class="category-dropdown-item" data-category="sides-bowls" role="option">
+                        <span data-i18n="nav.bowls">Bowls & Salades</span>
+                    </a>
+                    <a href="#desserts" class="category-dropdown-item" data-category="desserts" role="option">
+                        <span data-i18n="nav.desserts">Desserts</span>
+                    </a>
+                    <a href="#cocktails" class="category-dropdown-item" data-category="cocktails" role="option">
+                        <span data-i18n="nav.cocktails">Cocktails</span>
+                    </a>
+                    <a href="#boissons" class="category-dropdown-item" data-category="boissons" role="option">
+                        <span data-i18n="nav.boissons">Boissons</span>
+                    </a>
+                    <a href="#cafes" class="category-dropdown-item" data-category="cafes" role="option">
+                        <span data-i18n="nav.cafes">Cafés & Eaux</span>
+                    </a>
+                </div>
+            </div>
 
             <!-- Sélecteur de langue 4 langues (FR, EN, DE, AR) -->
             <div class="lang-selector" id="langSelector" role="group" aria-label="Sélection de la langue">
@@ -50,18 +83,6 @@
                 </button>
             </div>
         </div>
-
-        <!-- Rangée Catégories Défilables (pleine largeur sur mobile et desktop) -->
-        <nav class="nav-categories" aria-label="Catégories du menu">
-            <div class="nav-links">
-                <a href="#burgers" class="nav-link" data-i18n="nav.burgers">Burgers</a>
-                <a href="#assiettes" class="nav-link" data-i18n="nav.assiettes">Assiettes</a>
-                <a href="#sides-bowls" class="nav-link" data-i18n="nav.bowls">Bowls & Salades</a>
-                <a href="#desserts" class="nav-link" data-i18n="nav.desserts">Desserts</a>
-                <a href="#cocktails" class="nav-link" data-i18n="nav.cocktails">Cocktails</a>
-                <a href="#boissons" class="nav-link" data-i18n="nav.boissons">Boissons</a>
-            </div>
-        </nav>
     </header>
 
     <!-- ══ TOAST NOTIFICATION BIENVENUE (3 SECONDES) ══ -->
@@ -851,18 +872,20 @@
                         </div>
                     </article>
 
-                    <!-- Diabolo / Sirop (14 saveurs, sans prix inventé) -->
+                    <!-- Diabolo / Sirop (3,50 €) -->
                     <article class="product-card">
                         <div class="prod-header">
                             <h3 class="prod-name" data-i18n="drk.diabolo.name">Diabolo / Sirop</h3>
+                            <span class="prod-price">3,50 €</span>
                         </div>
                         <p class="prod-desc prod-flavors" data-i18n="drk.diabolo.desc">Ananas · Hibiscus · Melon · Mangue · Framboise · Coco · Cerise · Grenadine · Fraise · Violette · Cassis · Mûre · Menthe · Kiwi</p>
                     </article>
 
-                    <!-- Jus de fruits (Multifruits, Ananas, Pomme, sans prix inventé) -->
+                    <!-- Jus de fruits (3,50 €) -->
                     <article class="product-card">
                         <div class="prod-header">
                             <h3 class="prod-name" data-i18n="drk.juice.name">Jus de fruits</h3>
+                            <span class="prod-price">3,50 €</span>
                         </div>
                         <p class="prod-desc prod-flavors" data-i18n="drk.juice.desc">Multifruits · Ananas · Pomme</p>
                     </article>
@@ -893,7 +916,7 @@
             </div>
 
             <!-- Séparateur plein écran : CAFÉS & INFUSIONS -->
-            <div class="section-divider">
+            <div id="cafes" class="section-divider">
                 <div class="divider-bg" style="background-image: url('asset/couverture.png');"></div>
                 <div class="divider-overlay"></div>
                 <div class="divider-inner">
