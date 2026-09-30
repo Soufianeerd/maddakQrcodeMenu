@@ -693,28 +693,31 @@ body {
     margin-right: 6px;
 }
 
-.badge-label-rouge {
-    display: inline-flex;
-    align-items: center;
-    font-family: var(--font-body);
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: #A82020;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    padding: 2px 8px;
-    border-radius: 999px;
+.logo-label-rouge {
+    display: inline-block;
     vertical-align: middle;
-    margin-left: 8px;
-    box-shadow: 0 2px 6px rgba(168, 32, 32, 0.3);
-    white-space: nowrap;
+    height: 32px;
+    width: auto;
+    margin-left: 10px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.35));
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
 }
 
-[dir="rtl"] .badge-label-rouge {
+[dir="rtl"] .logo-label-rouge {
     margin-left: 0;
-    margin-right: 8px;
+    margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+    .logo-label-rouge {
+        height: 25px;
+        margin-left: 6px;
+    }
+    [dir="rtl"] .logo-label-rouge {
+        margin-left: 0;
+        margin-right: 6px;
+    }
 }
 
 .category-subgroup-title {
